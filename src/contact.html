@@ -7,10 +7,128 @@
       <link rel="stylesheet" href="./styles/main.scss" type="text/css" />
    </head>
    <body>
-      home about contact us Contact Ask us about The quality of our talent
-      network Usage & implementation of our software How we help drive
-      innovation Name Email Address Company Name Title Message submit home about
-      987 Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432
-      Copyright 2020. All Rights Reserved
+      <header class="header">
+         <div class="header__nav-wrapper align">
+            <nav class="nav nav--header">
+               <ul>
+                  <li>
+                     <a
+                        href="/"
+                        aria-label="My team logo directing to homepage."
+                        title="Homepage"
+                        ><img
+                           src="./assets/logo.svg"
+                           alt="My team logo directing to homepage."
+                           class="logo--header logo"
+                     /></a>
+                  </li>
+                  <li><a href="/">home</a></li>
+                  <li><a href="./about.html">about</a></li>
+               </ul>
+            </nav>
+            <a href="./contact.html" class="link--contact link--btn"
+               >contact us</a
+            >
+         </div>
+      </header>
+
+      <main class="main">
+         <div class="contact--wrapper align">
+            <div class="split">
+               <section>
+                  <h1 class="contact__title">Contact</h1>
+                  <h2 class="contact__sub-title sub-title">Ask us about</h2>
+                  <ul class="contact__list">
+                     <li>The quality of our talent network</li>
+                     <li>Usage & implementation of our software</li>
+                     <li>How we help drive innovation</li>
+                  </ul>
+               </section>
+            </div>
+            <div class="split">
+               <form action="/" class="form">
+                  <fieldset>
+                     <input
+                        type="text"
+                        id="input-name"
+                        name="name"
+                        placeholder="Name"
+                        aria-label="Full name"
+                     />
+                     <input
+                        type="email"
+                        id="input-email"
+                        name="email"
+                        placeholder="Email Address"
+                        aria-label="Email address"
+                     />
+                     <input
+                        type="text"
+                        id="input-company"
+                        name="company-name"
+                        placeholder="Company Name"
+                        aria-label="Company name"
+                     />
+                     <input
+                        type="text"
+                        id="input-title"
+                        name="job-title"
+                        placeholder="Title"
+                        aria-label="Job title"
+                     />
+                     <textarea
+                        name="message"
+                        id="textarea-msg"
+                        cols="50"
+                        rows="5"
+                        placeholder="Message"
+                        aria-label="Message"
+                     ></textarea>
+                     <button type="submit" class="btn-submit" name="submit">
+                        submit
+                     </button>
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="footer--wrapper align">
+            <aside>
+               <div class="footer__nav-wrapper">
+                  <a
+                     href="/"
+                     aria-label="My team logo directing to homepage."
+                     title="Homepage"
+                     ><img
+                        src="./assets/logo.svg"
+                        alt="My team logo directing to homepage."
+                        class="logo--footer logo"
+                  /></a>
+                  <ul class="nav nav--footer">
+                     <li><a href="/">home</a></li>
+                     <li><a href="./about.html">about</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <small class="footer__address"
+                     >987 Hillcrest Lane Irvine, CA California 92714 Call Us :
+                     949-833-7432</small
+                  >
+               </div>
+            </aside>
+            <aside>
+               <ul class="footer__social-ul">
+                  <li><img src="./assets/icon-facebook.svg" alt="" /></li>
+                  <li><img src="./assets/icon-pinterest.svg" alt="" /></li>
+                  <li><img src="./assets/icon-twitter.svg" alt="" /></li>
+               </ul>
+               <small class="footer__copyright"
+                  >Copyright 2020. All Rights Reserved</small
+               >
+            </aside>
+         </div>
+      </footer>
    </body>
 </html>
