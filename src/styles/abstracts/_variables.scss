@@ -15,7 +15,7 @@ $fs-600: 6.666rem;
 $fs-500: 4.266rem;
 $fs-400: 3.2rem;
 $fs-300: 1.2rem;
-$fs-200: 0.937rem; // 15px base for REM conversion
+$fs-200: 1rem;
 
 // font-family
 
@@ -23,4 +23,15 @@ $ff-serif: 'Livvic', sans-serif;
 
 // font-weights
 
-// $fw-
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+// line-heights
+
+$lh-600: 1;
+$lh-500: 0.875;
+$lh-400: 1;
+$lh-300: 1.555;
+$lh-200: 1.666;

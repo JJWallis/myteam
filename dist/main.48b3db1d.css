@@ -73,5 +73,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  font: 1rem "Livvic", sans-serif;
+  line-height: 1.5;
+}
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
