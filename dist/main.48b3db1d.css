@@ -78,4 +78,106 @@ body {
   line-height: 1.5;
 }
 
+/* ----- layout ------ */
+.container {
+  width: 90%;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
+
+/* ----- bg colors ------ */
+.bg-green-pm {
+  background-color: #014d56;
+}
+
+.bg-green-jungle {
+  background-color: #004047;
+}
+
+.bg-green-dark {
+  background-color: #002529;
+}
+
+.bg-green-sac {
+  background-color: #012d32;
+}
+
+.bg-coral {
+  background-color: #f67e7e;
+}
+
+/* ----- fg colors ------ */
+.text-white {
+  color: white;
+}
+
+.text-coral {
+  color: #f67e7e;
+}
+
+.text-rapture {
+  color: #79c8c7;
+}
+
+.text-dark {
+  color: #002529;
+}
+
+/* ----- font sizes + line heights ------ */
+.fs-200 {
+  font-size: 1rem;
+  line-height: 1.666;
+}
+
+.fs-300 {
+  font-size: 1.2rem;
+  line-height: 1.555;
+}
+
+.fs-400 {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.fs-500 {
+  font-size: 4.266rem;
+  line-height: 0.875;
+}
+
+.fs-600 {
+  font-size: 6.666rem;
+  line-height: 1;
+}
+
+/* ----- font weights ------ */
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-sbold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* ----- utility+ ------ */
+
 /*# sourceMappingURL=/main.48b3db1d.css.map */
