@@ -1,0 +1,22 @@
+@use 'abstracts' as *;
+
+.container {
+   width: 90%;
+   max-width: 60rem;
+   margin-inline: auto;
+   //    outline: 2px solid red;
+}
+
+.flex {
+   display: flex;
+   // gap
+}
+
+.grid {
+   display: grid;
+   // gap
+}
+
+.flow > *:where(:not(:first-child)) {
+   margin-top: $flow-space;
+}

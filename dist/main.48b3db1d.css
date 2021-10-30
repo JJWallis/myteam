@@ -78,25 +78,6 @@ body {
   line-height: 1.5;
 }
 
-/* ----- layout ------ */
-.container {
-  width: 90%;
-  max-width: 60rem;
-  margin-inline: auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.flow > *:where(:not(:first-child)) {
-  margin-top: 1rem;
-}
-
 /* ----- bg colors ------ */
 .bg-green-pm {
   background-color: #014d56;
@@ -178,6 +159,22 @@ body {
   font-weight: 700;
 }
 
-/* ----- utility+ ------ */
+.container {
+  width: 90%;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
