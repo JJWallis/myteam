@@ -1,6 +1,6 @@
 # Frontend Mentor - myteam website solution
 
-This is a solution to the myteam website challenge on Frontend Mentor(https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW)
+This is a solution to the [myteam website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW)
 
 ## Table of contents
 
