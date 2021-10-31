@@ -1,6 +1,6 @@
-# Frontend Mentor - ‘…’ solution
+# Frontend Mentor - myteam website solution
 
-This is a solution to the **‘…’** challenge on Frontend Mentor(link)
+This is a solution to the myteam website challenge on Frontend Mentor(https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW)
 
 ## Table of contents
 
@@ -43,13 +43,11 @@ Users should be able to:
 ### Built with
 
 -  Semantic HTML5 markup
--  CSS custom properties
+-  Mobile-first workflow
 -  Flexbox
 -  CSS Grid
--  Mobile-first workflow
--  [React](https://reactjs.org/) - JS library
--  [Styled Components](https://styled-components.com/) - For styles
--  Sass - CSS preprocessor
+-  Sass
+-  Typescript
 
 ### What I learned
 
@@ -73,9 +71,17 @@ const proudOfThisFunc = () => {
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
+Development process - building design system 1st vs writing HTML 1st (have classes to apply)
+
+Img handling -
+
+SVG animation -
+
 ### Useful resources
 
--  [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+-  [Build a space travel website with Kevin Powell](https://scrimba.com/learn/spacetravel) - As this way my first multi-page project of this scale, I wanted to adopt a methodology that allowed me to work efficiently when tackling such a large task. Kevin is an amazing teacher who I learn from every time I watch him, forever a valueable resource!
+
+-  [Modular CSS with Sass Course](https://teamtreehouse.com/library/modular-css-with-sass) - Treehouse is an immense resource of great information from long-time developers. Although some of it can be outdated, the theoretical knowledge you gain of how the tech works behind the scenes way outweighs that small issue.
 
 ## Author
 
@@ -85,3 +91,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+###### TODO
+
+Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
+
+Accessibility - aria-selected
+
+specific selectors to re-use active class + keep JS code more DRY
+
+Sass TH features -
