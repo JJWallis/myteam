@@ -1,4 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
+/* ----- bg colors ------ */
+body {
+  background-color: #014d56;
+}
+
+.btn--pm--dark:hover {
+  background-color: #002529;
+}
+
+.btn--pm--light:hover, .btn--sd {
+  background-color: white;
+}
+
+.btn--sd:hover {
+  background-color: #79c8c7;
+}
+
+.form, .btn--pm--light, .btn--pm--dark {
+  background-color: transparent;
+}
+
+/* ----- fg colors ------ */
+.form, .btn--pm--light, .btn--pm--dark:hover, body {
+  color: white;
+}
+
+.btn, .btn--pm--light:hover {
+  color: #002529;
+}
+
+/* ----- font sizes + line heights ------ */
+body {
+  font-size: 0.9375rem;
+  line-height: 1.666;
+}
+
+/* ----- font weights ------ */
+.container {
+  width: 90%;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -73,51 +120,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* ----- bg colors ------ */
-.btn--pm--dark:hover {
-  background-color: #002529;
-}
-
-.btn--pm--light:hover, .btn--sd {
-  background-color: white;
-}
-
-.btn--sd:hover {
-  background-color: #79c8c7;
-}
-
-.btn--pm--light, .btn--pm--dark {
-  background-color: transparent;
-}
-
-/* ----- fg colors ------ */
-.btn--pm--light, .btn--pm--dark:hover {
-  color: white;
-}
-
-.btn, .btn--pm--light:hover {
-  color: #002529;
-}
-
-/* ----- font sizes + line heights ------ */
 body {
-  font-size: 0.9375rem;
-  line-height: 1.666;
-}
-
-/* ----- font weights ------ */
-.container {
-  width: 90%;
-  max-width: 60rem;
-  margin-inline: auto;
-}
-
-.flow > *:where(:not(:first-child)) {
-  margin-top: 1rem;
-}
-
-body {
-  font-family: "Livvic", sans-serif;
+  font-family: 600;
 }
 
 .btn {
@@ -154,17 +158,16 @@ body {
 .form:hover, .form:focus {
   border-bottom-color: #79c8c7;
 }
-.form-error {
+.form--error {
   border-bottom-color: #f67e7e;
 }
-.form-error::placeholder {
+.form--error::placeholder {
   color: rgba(246, 126, 126, 0.7);
 }
-.input {
+.form__input {
   padding-bottom: 0.8rem;
 }
-
-.text-area {
+.form__text-area {
   padding-bottom: 3rem;
 }
 
