@@ -4,5 +4,5 @@
 
 body {
    @extend %fs-200;
-   font-family: $fw-semi-bold;
+   @extend %fw-regular;
 }

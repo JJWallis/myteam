@@ -29,9 +29,9 @@
 @mixin p-el($el, $width: null, $height: null) {
    @if $el == 'before' or $el == 'after' {
       &::#{$el} {
-         content: '';
-         display: block;
+         content: 'Test';
          position: absolute;
+         display: block;
          width: $width;
          height: $height;
          @content;
