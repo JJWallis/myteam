@@ -147,4 +147,8 @@ body {
   margin-inline: auto;
 }
 
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=/main.48b3db1d.css.map */

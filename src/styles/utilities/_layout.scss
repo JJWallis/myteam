@@ -7,6 +7,10 @@
    //    outline: 2px solid white;
 }
 
+.flow > *:where(:not(:first-child)) {
+   margin-top: $flow-space;
+}
+
 %flex {
    display: flex;
    // gap
@@ -16,13 +20,3 @@
    display: grid;
    // gap
 }
-
-%flow {
-   & > *:where(:not(:first-child)) {
-      margin-top: $flow-space;
-   }
-}
-
-// .flow > *:where(:not(:first-child)) {
-//    margin-top: $flow-space;
-// }
