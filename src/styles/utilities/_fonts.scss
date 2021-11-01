@@ -2,45 +2,90 @@
 
 /* ----- font sizes + line heights ------ */
 
-.fs-200 {
+%fs-200 {
    font-size: $fs-200;
    line-height: $lh-200;
 }
 
-.fs-300 {
+%fs-300 {
    font-size: $fs-300;
    line-height: $lh-300;
 }
 
-.fs-400 {
+%fs-400 {
    font-size: $fs-400;
    line-height: $lh-400;
 }
 
-.fs-500 {
+%fs-500 {
    font-size: $fs-500;
    line-height: $lh-500;
 }
 
-.fs-600 {
+%fs-600 {
    font-size: $fs-600;
    line-height: $lh-600;
 }
 
 /* ----- font weights ------ */
 
-.fw-regular {
+%fw-regular {
    font-weight: $fw-regular;
 }
 
-.fw-medium {
+%fw-medium {
    font-weight: $fw-medium;
 }
 
-.fw-sbold {
+%fw-sbold {
    font-weight: $fw-semi-bold;
 }
 
-.fw-bold {
+%fw-bold {
    font-weight: $fw-bold;
 }
+
+// /* ----- font sizes + line heights ------ */
+
+// .fs-200 {
+//    font-size: $fs-200;
+//    line-height: $lh-200;
+// }
+
+// .fs-300 {
+//    font-size: $fs-300;
+//    line-height: $lh-300;
+// }
+
+// .fs-400 {
+//    font-size: $fs-400;
+//    line-height: $lh-400;
+// }
+
+// .fs-500 {
+//    font-size: $fs-500;
+//    line-height: $lh-500;
+// }
+
+// .fs-600 {
+//    font-size: $fs-600;
+//    line-height: $lh-600;
+// }
+
+// /* ----- font weights ------ */
+
+// .fw-regular {
+//    font-weight: $fw-regular;
+// }
+
+// .fw-medium {
+//    font-weight: $fw-medium;
+// }
+
+// .fw-sbold {
+//    font-weight: $fw-semi-bold;
+// }
+
+// .fw-bold {
+//    font-weight: $fw-bold;
+// }

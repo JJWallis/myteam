@@ -7,16 +7,22 @@
    //    outline: 2px solid white;
 }
 
-.flex {
+%flex {
    display: flex;
    // gap
 }
 
-.grid {
+%grid {
    display: grid;
    // gap
 }
 
-.flow > *:where(:not(:first-child)) {
-   margin-top: $flow-space;
+%flow {
+   & > *:where(:not(:first-child)) {
+      margin-top: $flow-space;
+   }
 }
+
+// .flow > *:where(:not(:first-child)) {
+//    margin-top: $flow-space;
+// }
