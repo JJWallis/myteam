@@ -112,9 +112,28 @@ body {
 }
 
 .form {
-  border-bottom: 0.1px solid white;
+  outline: none;
+  border: 0 0 0.1px solid white 0;
   width: 100%;
+  padding-top: 1rem;
 }
+.form::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.form-error {
+  border-bottom-color: #f67e7e;
+}
+.form-error::placeholder {
+  color: rgba(246, 126, 126, 0.7);
+}
+.input {
+  padding-bottom: 0.8rem;
+}
+
+.text-area {
+  padding-bottom: 3rem;
+}
+
 /* ----- bg colors ------ */
 .bg-green-pm {
   background-color: #014d56;

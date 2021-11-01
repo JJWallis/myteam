@@ -1,14 +1,28 @@
 @use 'abstracts' as *;
 
 .form {
-   border-bottom: 0.1px solid hsl($clr-pm-white);
+   outline: none;
+   border: 0 0 0.1px solid hsl($clr-pm-white) 0;
    width: 100%;
+   padding-top: 1rem;
    &::placeholder {
+      color: hsl(0 0% 100% / 0.7);
+   }
+   &-error {
+      border-bottom-color: hsl($clr-pm-coral);
+      &::placeholder {
+         color: hsl(0 87% 73% / 0.7);
+      }
+      &::after {
+         // mixin
+      }
    }
 }
 
 .input {
+   padding-bottom: 0.8rem;
 }
 
 .text-area {
+   padding-bottom: 3rem;
 }
