@@ -10,17 +10,17 @@
       text-decoration: none;
       border: 2px solid;
       &-light {
-         border-color: $clr-pm-white;
+         border-color: hsl($clr-pm-white);
          &:hover {
-            background-color: $clr-pm-white;
-            color: $clr-dark-green;
+            background-color: hsl($clr-pm-white);
+            color: hsl($clr-dark-green);
          }
       }
       &-dark {
-         border-color: $clr-dark-green;
+         border-color: hsl($clr-dark-green);
          &:hover {
-            background-color: $clr-dark-green;
-            color: $clr-pm-white;
+            background-color: hsl($clr-dark-green);
+            color: hsl($clr-pm-white);
          }
       }
    }
@@ -28,7 +28,7 @@
       outline: none;
       border: none;
       &:hover {
-         background-color: $clr-rapture-blue;
+         background-color: hsl($clr-rapture-blue);
       }
    }
 }

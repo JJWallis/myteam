@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
 /* Box sizing rules */
 *,
@@ -91,27 +90,31 @@ body {
   border: 2px solid;
 }
 .btn-pm-light {
-  border-color: 0° 0% 100%;
+  border-color: white;
 }
 .btn-pm-light:hover {
-  background-color: 0° 0% 100%;
-  color: 186° 100% 8%;
+  background-color: white;
+  color: #002529;
 }
 .btn-pm-dark {
-  border-color: 186° 100% 8%;
+  border-color: #002529;
 }
 .btn-pm-dark:hover {
-  background-color: 186° 100% 8%;
-  color: 0° 0% 100%;
+  background-color: #002529;
+  color: white;
 }
 .btn-sd {
   outline: none;
   border: none;
 }
 .btn-sd:hover {
-  background-color: 179° 42% 63%;
+  background-color: #79c8c7;
 }
 
+.form {
+  border-bottom: 0.1px solid white;
+  width: 100%;
+}
 /* ----- bg colors ------ */
 .bg-green-pm {
   background-color: #014d56;

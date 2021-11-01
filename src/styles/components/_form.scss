@@ -1,0 +1,14 @@
+@use 'abstracts' as *;
+
+.form {
+   border-bottom: 0.1px solid hsl($clr-pm-white);
+   width: 100%;
+   &::placeholder {
+   }
+}
+
+.input {
+}
+
+.text-area {
+}
