@@ -73,11 +73,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-body {
-  font: 1rem "Livvic", sans-serif;
-  line-height: 1.5;
-}
-
 /* ----- bg colors ------ */
 .btn--pm--dark:hover {
   background-color: #002529;
@@ -105,6 +100,11 @@ body {
 }
 
 /* ----- font sizes + line heights ------ */
+body {
+  font-size: 0.9375rem;
+  line-height: 1.666;
+}
+
 /* ----- font weights ------ */
 .container {
   width: 90%;
@@ -114,6 +114,10 @@ body {
 
 .flow > *:where(:not(:first-child)) {
   margin-top: 1rem;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
 }
 
 .btn {
