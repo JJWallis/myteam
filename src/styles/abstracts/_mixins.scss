@@ -2,7 +2,6 @@
 @use 'maps' as *;
 
 @mixin flex-parent($direction, $justify, $align) {
-   display: flex;
    flex-direction: $direction;
    justify-content: $justify;
    align-items: $align;
@@ -15,13 +14,19 @@
    background-size: #{$size};
 }
 
-@mixin position($position, $width, $height, $top, $left, $z-index) {
-   position: $position;
-   width: $width;
-   height: $height;
-   top: $top;
-   left: $left;
-   z-index: $z-index;
+@mixin p-el($el, $width: null, $height: null) {
+   @if $el == 'before' or $el == 'after' {
+      &::#{$el} {
+         content: '';
+         display: block;
+         position: absolute;
+         width: $width;
+         height: $height;
+         @content;
+      }
+   } @else {
+      @error 'Before or after string required for valid pseudo element.';
+   }
 }
 
 @mixin mq($key) {
