@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'maps' as *;
+
+@mixin flex-parent($direction, $justify, $align) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+@mixin position($position, $width, $height, $top, $left, $z-index) {
+   position: $position;
+   width: $width;
+   height: $height;
+   top: $top;
+   left: $left;
+   z-index: $z-index;
+}
+
+@mixin mq($key) {
+   @media (min-width: map-get($breakpoints, $key)) {
+      @content;
+   }
+}
+
+@mixin fq($prop, $val) {
+   @supports (#{$prop}: $val) {
+      @content;
+   }
+}
