@@ -1,0 +1,34 @@
+@use 'abstracts' as *;
+
+.btn {
+   border-radius: 50px;
+   padding: 1rem 3rem;
+   &-disabled {
+      opacity: 0.5;
+   }
+   &-pm {
+      text-decoration: none;
+      border: 2px solid;
+      &-light {
+         border-color: $clr-pm-white;
+         &:hover {
+            background-color: $clr-pm-white;
+            color: $clr-dark-green;
+         }
+      }
+      &-dark {
+         border-color: $clr-dark-green;
+         &:hover {
+            background-color: $clr-dark-green;
+            color: $clr-pm-white;
+         }
+      }
+   }
+   &-sd {
+      outline: none;
+      border: none;
+      &:hover {
+         background-color: $clr-rapture-blue;
+      }
+   }
+}
