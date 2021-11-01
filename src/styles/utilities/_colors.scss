@@ -22,6 +22,18 @@
    background-color: hsl($clr-pm-coral);
 }
 
+%bg-white {
+   background-color: hsl($clr-pm-white);
+}
+
+%bg-rapture {
+   background-color: hsl($clr-rapture-blue);
+}
+
+%bg-transparent {
+   background-color: transparent;
+}
+
 /* ----- fg colors ------ */
 
 %text-white {

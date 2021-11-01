@@ -1,34 +1,44 @@
 @use 'abstracts' as *;
+@use 'utilities' as *;
 
 .btn {
    border-radius: 50px;
-   padding: 1rem 3rem;
-   @include m(disabled) {
-      opacity: 0.5;
-   }
+   padding: 1em 3em;
+   @extend %text-dark;
+
    @include m(pm) {
       text-decoration: none;
       border: 2px solid;
       @include m(light) {
+         @extend %text-white;
+         @extend %bg-transparent;
          border-color: hsl($clr-pm-white);
          &:hover {
-            background-color: hsl($clr-pm-white);
-            color: hsl($clr-dark-green);
+            @extend %bg-white;
+            @extend %text-dark;
          }
       }
+
       @include m(dark) {
+         @extend %bg-transparent;
          border-color: hsl($clr-dark-green);
          &:hover {
-            background-color: hsl($clr-dark-green);
-            color: hsl($clr-pm-white);
+            @extend %bg-green-dark;
+            @extend %text-white;
          }
       }
    }
+
    @include m(sd) {
       outline: none;
       border: none;
+      @extend %bg-white;
       &:hover {
-         background-color: hsl($clr-rapture-blue);
+         @extend %bg-rapture;
       }
+   }
+
+   @include m(disabled) {
+      opacity: 0.5;
    }
 }
