@@ -138,43 +138,7 @@ body {
 }
 
 /* ----- bg colors ------ */
-.bg-green-pm {
-  background-color: #014d56;
-}
-
-.bg-green-jungle {
-  background-color: #004047;
-}
-
-.bg-green-dark {
-  background-color: #002529;
-}
-
-.bg-green-sac {
-  background-color: #012d32;
-}
-
-.bg-coral {
-  background-color: #f67e7e;
-}
-
 /* ----- fg colors ------ */
-.text-white {
-  color: white;
-}
-
-.text-coral {
-  color: #f67e7e;
-}
-
-.text-rapture {
-  color: #79c8c7;
-}
-
-.text-dark {
-  color: #002529;
-}
-
 /* ----- font sizes + line heights ------ */
 .fs-200 {
   font-size: 1rem;

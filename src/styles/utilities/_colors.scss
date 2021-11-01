@@ -2,40 +2,80 @@
 
 /* ----- bg colors ------ */
 
-.bg-green-pm {
+%bg-green-pm {
    background-color: hsl($clr-pm-green);
 }
 
-.bg-green-jungle {
+%bg-green-jungle {
    background-color: hsl($clr-jungle-green);
 }
 
-.bg-green-dark {
+%bg-green-dark {
    background-color: hsl($clr-dark-green);
 }
 
-.bg-green-sac {
+%bg-green-sac {
    background-color: hsl($clr-sacramento-green);
 }
 
-.bg-coral {
+%bg-coral {
    background-color: hsl($clr-pm-coral);
 }
 
 /* ----- fg colors ------ */
 
-.text-white {
+%text-white {
    color: hsl($clr-pm-white);
 }
 
-.text-coral {
+%text-coral {
    color: hsl($clr-pm-coral);
 }
 
-.text-rapture {
+%text-rapture {
    color: hsl($clr-rapture-blue);
 }
 
-.text-dark {
+%text-dark {
    color: hsl($clr-dark-green);
 }
+
+// /* ----- bg colors ------ */
+
+// .bg-green-pm {
+//    background-color: hsl($clr-pm-green);
+// }
+
+// .bg-green-jungle {
+//    background-color: hsl($clr-jungle-green);
+// }
+
+// .bg-green-dark {
+//    background-color: hsl($clr-dark-green);
+// }
+
+// .bg-green-sac {
+//    background-color: hsl($clr-sacramento-green);
+// }
+
+// .bg-coral {
+//    background-color: hsl($clr-pm-coral);
+// }
+
+// /* ----- fg colors ------ */
+
+// .text-white {
+//    color: hsl($clr-pm-white);
+// }
+
+// .text-coral {
+//    color: hsl($clr-pm-coral);
+// }
+
+// .text-rapture {
+//    color: hsl($clr-rapture-blue);
+// }
+
+// .text-dark {
+//    color: hsl($clr-dark-green);
+// }
