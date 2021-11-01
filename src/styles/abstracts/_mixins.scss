@@ -1,6 +1,18 @@
 @use 'variables' as *;
 @use 'maps' as *;
 
+@mixin e($element) {
+   &__#{$element} {
+      @content;
+   }
+}
+
+@mixin m($modifier) {
+   &--#{$modifier} {
+      @content;
+   }
+}
+
 @mixin flex-parent($direction, $justify, $align) {
    flex-direction: $direction;
    justify-content: $justify;
