@@ -77,6 +77,8 @@ Img handling -
 
 SVG animation -
 
+Sass maps - for out-putting CSS rules (vs hard-coding)
+
 ### Useful resources
 
 -  [Build a space travel website with Kevin Powell](https://scrimba.com/learn/spacetravel) - As this way my first multi-page project of this scale, I wanted to adopt a methodology that allowed me to work efficiently when tackling such a large task. Kevin is an amazing teacher who I learn from every time I watch him, forever a valueable resource!

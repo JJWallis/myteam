@@ -8,6 +8,13 @@
    align-items: $align;
 }
 
+@mixin bg-img($img, $position, $size) {
+   background-image: url('#{$img}');
+   background-repeat: no-repeat;
+   background-position: #{$position};
+   background-size: #{$size};
+}
+
 @mixin position($position, $width, $height, $top, $left, $z-index) {
    position: $position;
    width: $width;
