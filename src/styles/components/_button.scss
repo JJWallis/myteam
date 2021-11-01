@@ -3,20 +3,20 @@
 .btn {
    border-radius: 50px;
    padding: 1rem 3rem;
-   &-disabled {
+   @include m(disabled) {
       opacity: 0.5;
    }
-   &-pm {
+   @include m(pm) {
       text-decoration: none;
       border: 2px solid;
-      &-light {
+      @include m(light) {
          border-color: hsl($clr-pm-white);
          &:hover {
             background-color: hsl($clr-pm-white);
             color: hsl($clr-dark-green);
          }
       }
-      &-dark {
+      @include m(dark) {
          border-color: hsl($clr-dark-green);
          &:hover {
             background-color: hsl($clr-dark-green);
@@ -24,7 +24,7 @@
          }
       }
    }
-   &-sd {
+   @include m(sd) {
       outline: none;
       border: none;
       &:hover {
