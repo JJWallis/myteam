@@ -8,6 +8,10 @@
    &::placeholder {
       color: hsl(0 0% 100% / 0.7);
    }
+   &:hover,
+   &:focus {
+      border-bottom-color: hsl($clr-rapture-blue);
+   }
    &-error {
       border-bottom-color: hsl($clr-pm-coral);
       &::placeholder {
