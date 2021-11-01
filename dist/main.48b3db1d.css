@@ -8,11 +8,15 @@ body {
   background-color: #002529;
 }
 
+.small-border::before {
+  background-color: #f67e7e;
+}
+
 .btn--pm--light:hover, .btn--sd {
   background-color: white;
 }
 
-.btn--sd:hover {
+.hero .small-border::before, .btn--sd:hover {
   background-color: #79c8c7;
 }
 
@@ -164,19 +168,21 @@ select {
 .form--error::placeholder {
   color: rgba(246, 126, 126, 0.7);
 }
-.form--error::after {
-  content: "Test";
-  position: absolute;
-  display: block;
-  top: 100px;
-  font-size: 10rem;
-  color: red;
-}
 .form__input {
   padding-bottom: 0.8rem;
 }
 .form__text-area {
   padding-bottom: 3rem;
+}
+
+.small-border::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 5px;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

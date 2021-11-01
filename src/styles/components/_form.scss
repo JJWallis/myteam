@@ -21,11 +21,6 @@
       &::placeholder {
          color: hsl(0 87% 73% / 0.7);
       }
-      @include p-el(after) {
-         top: 100px;
-         font-size: 10rem;
-         color: red;
-      }
    }
 
    @include e(input) {

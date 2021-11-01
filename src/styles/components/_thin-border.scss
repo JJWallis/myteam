@@ -2,5 +2,12 @@
 @use 'utilities' as *;
 
 .small-border {
-   // pseudo el mixin
+   @include p-el(before, 20px, 5px) {
+      @extend %bg-coral;
+      top: 0;
+      left: 0;
+   }
+   .hero &::before {
+      @extend %bg-rapture;
+   }
 }
