@@ -2,10 +2,10 @@
 @use 'utilities' as *;
 
 .form {
-   outline: none;
-   border: 0 0 0.1px solid hsl($clr-pm-white) 0;
    width: 100%;
    padding-top: 1rem;
+   border: 0 0 0.1px solid hsl($clr-pm-white) 0;
+   outline: none;
    @extend %bg-transparent;
    @extend %text-white;
    &::placeholder {

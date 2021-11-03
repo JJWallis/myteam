@@ -2,13 +2,13 @@
 @use 'utilities' as *;
 
 .btn {
-   border-radius: 50px;
    padding: 1em 3em;
+   border-radius: 50px;
    @extend %text-dark;
 
    @include m(pm) {
-      text-decoration: none;
       border: 2px solid;
+      text-decoration: none;
       @include m(light) {
          @extend %text-white;
          @extend %bg-transparent;
@@ -30,8 +30,8 @@
    }
 
    @include m(sd) {
-      outline: none;
       border: none;
+      outline: none;
       @extend %bg-white;
       &:hover {
          @extend %bg-rapture;
