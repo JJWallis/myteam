@@ -1,9 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
-@media (min-width: 800px) {
-  body {
-    background-color: red;
-  }
+:root {
+  --clr-pm-green: 186 98% 17%;
+  --clr-pm-coral: 0 87% 73%;
+  --clr-pm-white: 0 0% 100%;
+  --clr-rapture-blue: 179 42% 63%;
+  --clr-police-blue: 187 41% 29%;
+  --clr-jungle-green: 186 100% 14%;
+  --clr-sacramento-green: 186 96% 10%;
+  --clr-dark-green: 186 100% 8%;
+  --fs-600: 6.6667rem;
+  --fs-500: 4.2667rem;
+  --fs-400: 3.2rem;
+  --fs-300: 1.2rem;
+  --fs-200: 0.9375rem;
+  --ff-serif: "Livvic", sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --lh-600: 1;
+  --lh-500: 0.875;
+  --lh-400: 1;
+  --lh-300: 1.5556;
+  --lh-200: 1.666;
+  --gap: 1rem;
+  --flow-space: 1rem;
 }
+
 /* ----- bg colors ------ */
 body {
   background-color: #014d56;
@@ -164,7 +187,7 @@ select {
   outline: none;
 }
 .form::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: hsl(var(--clr-pm-white)/0.7);
 }
 .form:hover, .form:focus {
   border-bottom-color: #79c8c7;
