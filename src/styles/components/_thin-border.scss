@@ -8,7 +8,6 @@
       @extend %bg-coral;
    }
    .hero &::before {
-      // change parent class
       @extend %bg-rapture;
    }
 }

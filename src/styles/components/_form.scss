@@ -4,7 +4,7 @@
 .form {
    width: 100%;
    padding-top: 1rem;
-   border: 0 0 0.1px solid hsl($clr-pm-white) 0;
+   border: 0 0 0.1px solid hsl(var(--clr-pm-white)) 0;
    outline: none;
    @extend %bg-transparent;
    @extend %text-white;
@@ -13,13 +13,13 @@
    }
    &:hover,
    &:focus {
-      border-bottom-color: hsl($clr-rapture-blue);
+      border-bottom-color: hsl(var(--clr-rapture-blue));
    }
 
    @include m(error) {
-      border-bottom-color: hsl($clr-pm-coral);
+      border-bottom-color: hsl(var(--clr-pm-coral));
       &::placeholder {
-         color: hsl(0 87% 73% / 0.7);
+         color: hsl(var(--clr-pm-coral) / 0.7);
       }
    }
 

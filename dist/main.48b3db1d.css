@@ -23,29 +23,30 @@
   --lh-400: 1;
   --lh-300: 1.5556;
   --lh-200: 1.666;
+  --align-mw: 60rem;
   --gap: 1rem;
   --flow-space: 1rem;
 }
 
 /* ----- bg colors ------ */
 body {
-  background-color: #014d56;
+  background-color: hsl(var(--clr-pm-green));
 }
 
 .btn--pm--dark:hover {
-  background-color: #002529;
+  background-color: hsl(var(--clr-dark-green));
 }
 
 .small-border::before {
-  background-color: #f67e7e;
+  background-color: hsl(var(--clr-pm-coral));
 }
 
 .btn--pm--light:hover, .btn--sd {
-  background-color: white;
+  background-color: hsl(var(--clr-pm-white));
 }
 
 .hero .small-border::before, .btn--sd:hover {
-  background-color: #79c8c7;
+  background-color: hsl(var(--clr-rapture-blue));
 }
 
 .form, .btn--pm--light, .btn--pm--dark {
@@ -54,32 +55,32 @@ body {
 
 /* ----- fg colors ------ */
 .form, .btn--pm--light, .btn--pm--dark:hover, body {
-  color: white;
+  color: hsl(var(--clr-pm-white));
 }
 
 .btn, .btn--pm--light:hover {
-  color: #002529;
+  color: hsl(var(--clr-dark-green));
 }
 
 /* ----- font sizes + line heights ------ */
 body {
-  font-size: 0.9375rem;
-  line-height: 1.666;
+  font-size: var(--fs-200, 0.9375rem);
+  line-height: var(--lh-200, 1.666);
 }
 
 /* ----- font weights ------ */
 body {
-  font-weight: 400;
+  font-weight: var(--fw-regular, 400);
 }
 
 .container {
   width: 90%;
-  max-width: 60rem;
+  max-width: var(--align-mw);
   margin-inline: auto;
 }
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: 1rem;
+  margin-top: var(--flow-space, 1rem);
 }
 
 /* Box sizing rules */
@@ -167,10 +168,10 @@ select {
   text-decoration: none;
 }
 .btn--pm--light {
-  border-color: white;
+  border-color: hsl(var(--clr-pm-white));
 }
 .btn--pm--dark {
-  border-color: #002529;
+  border-color: hsl(var(--clr-dark-green));
 }
 .btn--sd {
   border: none;
@@ -183,20 +184,20 @@ select {
 .form {
   width: 100%;
   padding-top: 1rem;
-  border: 0 0 0.1px solid white 0;
+  border: 0 0 0.1px solid hsl(var(--clr-pm-white)) 0;
   outline: none;
 }
 .form::placeholder {
   color: hsl(var(--clr-pm-white)/0.7);
 }
 .form:hover, .form:focus {
-  border-bottom-color: #79c8c7;
+  border-bottom-color: hsl(var(--clr-rapture-blue));
 }
 .form--error {
-  border-bottom-color: #f67e7e;
+  border-bottom-color: hsl(var(--clr-pm-coral));
 }
 .form--error::placeholder {
-  color: rgba(246, 126, 126, 0.7);
+  color: hsl(var(--clr-pm-coral)/0.7);
 }
 .form__input {
   padding-bottom: 0.8rem;

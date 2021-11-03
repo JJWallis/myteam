@@ -2,21 +2,21 @@
 
 .container {
    width: 90%;
-   max-width: 60rem;
+   max-width: var(--align-mw);
    margin-inline: auto;
    //    outline: 2px solid white;
 }
 
 .flow > *:where(:not(:first-child)) {
-   margin-top: $flow-space;
+   margin-top: var(--flow-space, 1rem);
 }
 
 %flex {
    display: flex;
-   // gap
+   gap: var(--gap, 1rem);
 }
 
 %grid {
    display: grid;
-   // gap
+   gap: var(--gap, 1rem);
 }
