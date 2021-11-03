@@ -45,3 +45,13 @@
 %fw-bold {
    font-weight: var(--fw-bold, 700);
 }
+
+/* ----- text alignment ------ */
+
+%txt-left {
+   text-align: left;
+}
+
+%txt-center {
+   text-align: center;
+}
