@@ -79,6 +79,8 @@ dd {
 ul[role=list],
 ol[role=list] {
   list-style: none;
+  padding: none;
+  margin: none;
 }
 
 /* Set core root defaults */
@@ -129,12 +131,12 @@ select {
   }
 }
 .btn {
-  border-radius: 50px;
   padding: 1em 3em;
+  border-radius: 50px;
 }
 .btn--pm {
-  text-decoration: none;
   border: 2px solid;
+  text-decoration: none;
 }
 .btn--pm--light {
   border-color: white;
@@ -143,18 +145,18 @@ select {
   border-color: #002529;
 }
 .btn--sd {
-  outline: none;
   border: none;
+  outline: none;
 }
 .btn--disabled {
   opacity: 0.5;
 }
 
 .form {
-  outline: none;
-  border: 0 0 0.1px solid white 0;
   width: 100%;
   padding-top: 1rem;
+  border: 0 0 0.1px solid white 0;
+  outline: none;
 }
 .form::placeholder {
   color: rgba(255, 255, 255, 0.7);
