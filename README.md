@@ -103,3 +103,5 @@ Accessibility - aria-selected
 specific selectors to re-use active class + keep JS code more DRY
 
 Sass TH features -
+
+CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)

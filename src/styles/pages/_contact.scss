@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+@use 'utilities' as *;
+
+.contact {
+   @extend %fs-300;
+}

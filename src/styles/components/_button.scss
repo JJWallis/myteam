@@ -2,9 +2,9 @@
 @use 'utilities' as *;
 
 .btn {
+   @extend %text-dark;
    padding: 1em 3em;
    border-radius: 50px;
-   @extend %text-dark;
 
    @include m(pm) {
       border: 2px solid;
@@ -30,9 +30,9 @@
    }
 
    @include m(sd) {
+      @extend %bg-white;
       border: none;
       outline: none;
-      @extend %bg-white;
       &:hover {
          @extend %bg-rapture;
       }

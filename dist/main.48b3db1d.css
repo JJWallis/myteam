@@ -68,6 +68,11 @@ body {
   line-height: var(--lh-200, 1.666);
 }
 
+.contact {
+  font-size: var(--fs-300, 1.2rem);
+  line-height: var(--lh-300, 1.5556);
+}
+
 /* ----- font weights ------ */
 body {
   font-weight: var(--fw-regular, 400);
