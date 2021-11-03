@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
+@media (min-width: 800px) {
+  body {
+    background-color: red;
+  }
+}
 /* ----- bg colors ------ */
 body {
   background-color: #014d56;

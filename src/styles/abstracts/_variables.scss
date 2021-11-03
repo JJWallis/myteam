@@ -17,6 +17,13 @@ $fs-400: 3.2rem;
 $fs-300: 1.2rem; // contact
 $fs-200: 0.9375rem;
 
+@media (min-width: 800px) {
+   $fs-200: 10rem;
+   body {
+      background-color: red;
+   }
+}
+
 // font-family
 
 $ff-serif: 'Livvic', sans-serif;
