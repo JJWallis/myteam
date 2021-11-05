@@ -24,7 +24,9 @@
   --lh-300: 1.5556;
   --lh-200: 1.666;
   --align-mw: 60rem;
-  --ct-padding: 3rem 0;
+  --ct-padding-sm: 2rem 0;
+  --ct-padding-md: 3rem 0;
+  --ct-padding-lg: 4rem 0;
   --gap: 1rem;
   --flow-space: 1rem;
 }

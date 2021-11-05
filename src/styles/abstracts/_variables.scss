@@ -40,7 +40,9 @@
    // layout
 
    --align-mw: 60rem;
-   --ct-padding: 3rem 0;
+   --ct-padding-sm: 2rem 0; // footer + cta
+   --ct-padding-md: 3rem 0; // clients
+   --ct-padding-lg: 4rem 0; // evertyhing else
    --gap: 1rem;
    --flow-space: 1rem;
 }
