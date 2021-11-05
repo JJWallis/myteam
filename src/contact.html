@@ -69,6 +69,7 @@
                <div class="split--child">
                   <form action="/" class="form">
                      <fieldset>
+                        <!-- fieldset above - add to reset or base styles -->
                         <!-- .sr-only class: -->
                         <!-- <legend> - 'myteam contact form' -->
                         <!-- <label> for each input -->
@@ -108,7 +109,12 @@
                            placeholder="Message"
                            aria-label="Message and comments textarea"
                         ></textarea>
-                        <button type="submit" class="btn-submit" name="submit">
+                        <button
+                           type="submit"
+                           id="submit-btn"
+                           name="submit"
+                           class="btn--submit btn btn--sd"
+                        >
                            submit
                         </button>
                      </fieldset>

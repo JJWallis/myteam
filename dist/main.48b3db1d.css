@@ -167,10 +167,10 @@ select {
   }
 }
 .btn {
-  padding: 1em 3em;
   border-radius: 50px;
 }
 .btn--pm {
+  padding: 1em 3em;
   border: 2px solid;
   text-decoration: none;
 }
@@ -181,8 +181,12 @@ select {
   border-color: hsl(var(--clr-dark-green));
 }
 .btn--sd {
+  padding: 0.5em 2em;
   border: none;
   outline: none;
+}
+.btn--contact {
+  padding: 0.7em 2em;
 }
 .btn--disabled {
   opacity: 0.5;

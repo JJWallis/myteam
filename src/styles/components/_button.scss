@@ -2,10 +2,10 @@
 @use 'utilities' as *;
 
 .btn {
-   padding: 1em 3em;
    border-radius: 50px;
 
    @include m(pm) {
+      padding: 1em 3em;
       border: 2px solid;
       text-decoration: none;
       @include m(light) {
@@ -32,11 +32,16 @@
    @include m(sd) {
       @extend %text-dark;
       @extend %bg-white;
+      padding: 0.5em 2em;
       border: none;
       outline: none;
       &:hover {
          @extend %bg-rapture;
       }
+   }
+
+   @include m(contact) {
+      padding: 0.7em 2em;
    }
 
    @include m(disabled) {
