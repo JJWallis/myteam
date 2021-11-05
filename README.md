@@ -79,11 +79,15 @@ SVG animation -
 
 Sass maps - for out-putting CSS rules (vs hard-coding)
 
+Accessibility - write more semantic HTML (better wrappers, multiple headers + footers, headings where appropaite)
+
 ### Useful resources
 
 -  [Build a space travel website with Kevin Powell](https://scrimba.com/learn/spacetravel) - As this way my first multi-page project of this scale, I wanted to adopt a methodology that allowed me to work efficiently when tackling such a large task. Kevin is an amazing teacher who I learn from every time I watch him, forever a valueable resource!
 
 -  [Modular CSS with Sass Course](https://teamtreehouse.com/library/modular-css-with-sass) - Treehouse is an immense resource of great information from long-time developers. Although some of it can be outdated, the theoretical knowledge you gain of how the tech works behind the scenes way outweighs that small issue.
+
+<!-- kevin HTML video - semantics -->
 
 ## Author
 
@@ -105,3 +109,5 @@ specific selectors to re-use active class + keep JS code more DRY
 Sass TH features -
 
 CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
+
+Accessibility - form (aria-label + legend + labels - with .sr-only class)
