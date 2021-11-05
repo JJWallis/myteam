@@ -87,6 +87,7 @@ body {
   width: 90%;
   max-width: var(--align-mw);
   margin-inline: auto;
+  outline: 1px solid white;
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -103,6 +104,10 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 fieldset {
