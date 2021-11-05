@@ -16,6 +16,11 @@
    gap: var(--gap, 1rem);
 }
 
+%space-between {
+   justify-content: space-between;
+   align-items: center;
+}
+
 %grid {
    display: grid;
    gap: var(--gap, 1rem);
