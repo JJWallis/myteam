@@ -59,7 +59,7 @@ body {
   color: hsl(var(--clr-pm-white));
 }
 
-.btn, .btn--pm--light:hover {
+.btn--pm--light:hover, .btn--pm--dark, .btn--sd {
   color: hsl(var(--clr-dark-green));
 }
 

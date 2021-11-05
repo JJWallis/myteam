@@ -2,7 +2,6 @@
 @use 'utilities' as *;
 
 .btn {
-   @extend %text-dark;
    padding: 1em 3em;
    border-radius: 50px;
 
@@ -20,6 +19,7 @@
       }
 
       @include m(dark) {
+         @extend %text-dark;
          @extend %bg-transparent;
          border-color: hsl(var(--clr-dark-green));
          &:hover {
@@ -30,6 +30,7 @@
    }
 
    @include m(sd) {
+      @extend %text-dark;
       @extend %bg-white;
       border: none;
       outline: none;
