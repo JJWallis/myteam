@@ -105,6 +105,20 @@ body {
   border: 0;
 }
 
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 /* Box sizing rules */
 *,
 *::before,
