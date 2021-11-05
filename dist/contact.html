@@ -50,16 +50,18 @@
                </div>
                <div class="split--child">
                   <form action="/" class="form">
+                     <legend class="sr-only">Contact form</legend>
                      <fieldset>
-                        <!--fieldset above - add to reset or base styles-->
-                        <!--.sr-only class:-->
-                        <!--<legend> - 'myteam contact form'-->
-                        <!--<label> for each input-->
+                        <label for="input-name" class="sr-only">Name</label>
                         <input type="text" id="input-name" name="name" placeholder="Name" aria-label="Full name input">
+                        <label for="input-email" class="sr-only">Email</label>
                         <input type="email" id="input-email" name="email" placeholder="Email Address" aria-label="Email address input">
+                        <label for="input-company" class="sr-only">Company Name</label>
                         <input type="text" id="input-company" name="company-name" placeholder="Company Name" aria-label="Company name input">
+                        <label for="input-title" class="sr-only">Job Title</label>
                         <input type="text" id="input-title" name="job-title" placeholder="Title" aria-label="Job title input">
-                        <textarea name="message" id="textarea-msg" cols="50" rows="5" placeholder="Message" aria-label="Message and comments textarea"></textarea>
+                        <label for="input-message" class="sr-only">Message</label>
+                        <textarea name="message" id="input-message" cols="50" rows="5" placeholder="Message" aria-label="Message input"></textarea>
                         <button type="submit" id="submit-btn" name="submit" class="btn--submit btn btn--sd">
                            submit
                         </button>
