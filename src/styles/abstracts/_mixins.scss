@@ -1,6 +1,10 @@
 @use 'variables' as *;
 @use 'maps' as *;
 
+// =========================================
+// BEM
+// =========================================
+
 @mixin e($element) {
    &__#{$element} {
       @content;
@@ -13,11 +17,19 @@
    }
 }
 
+// =========================================
+// flex
+// =========================================
+
 @mixin flex-parent($direction, $justify, $align) {
    flex-direction: $direction;
    justify-content: $justify;
    align-items: $align;
 }
+
+// =========================================
+// BG-IMG
+// =========================================
 
 @mixin bg-img($img, $position, $size) {
    background-image: url('#{$img}');
@@ -25,6 +37,10 @@
    background-position: #{$position};
    background-size: #{$size};
 }
+
+// =========================================
+// pseudo-el
+// =========================================
 
 @mixin p-el($el, $width: null, $height: null) {
    @if $el == 'before' or $el == 'after' {
@@ -41,11 +57,19 @@
    }
 }
 
+// =========================================
+// media query
+// =========================================
+
 @mixin mq($key) {
    @media (min-width: map-get($breakpoints, $key)) {
       @content;
    }
 }
+
+// =========================================
+// feature query
+// =========================================
 
 @mixin fq($prop, $val) {
    @supports (#{$prop}: $val) {

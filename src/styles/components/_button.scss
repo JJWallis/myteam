@@ -4,10 +4,15 @@
 .btn {
    border-radius: 50px;
 
+   // =========================================
+   // primary
+   // =========================================
+
    @include m(pm) {
       padding: 1em 3em;
       border: 2px solid;
       text-decoration: none;
+
       @include m(light) {
          @extend %text-white;
          @extend %bg-transparent;
@@ -28,6 +33,9 @@
          }
       }
    }
+   // =========================================
+   // secondary
+   // =========================================
 
    @include m(sd) {
       @extend %text-dark;
