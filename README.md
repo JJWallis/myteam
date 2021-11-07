@@ -20,7 +20,7 @@ This is a solution to the [myteam website challenge on Frontend Mentor](https://
 
 ### The challenge
 
-Users should be able to:
+Your users should be able to:
 
 -  View the optimal layout for each page depending on their device's screen size
 -  See hover states for all interactive elements throughout the site
@@ -35,7 +35,6 @@ Users should be able to:
 
 ### Links
 
--  Solution URL:
 -  Live Site URL:
 
 ## My process
@@ -99,6 +98,12 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 ###### TODO
+
+HTML:
+
+CSS:
+
+JS:
 
 Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
 
