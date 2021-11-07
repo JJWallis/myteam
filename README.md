@@ -87,7 +87,7 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 -  [Modular CSS with Sass Course](https://teamtreehouse.com/library/modular-css-with-sass) - Treehouse is an immense resource of great information from long-time developers. Although some of it can be outdated, the theoretical knowledge you gain of how the tech works behind the scenes way outweighs that small issue.
 
-<!-- kevin HTML video - semantics -->
+-  [Kevin Powell - most common HTML mistakes](https://www.youtube.com/watch?v=NexL5_Vdoq8&ab_channel=KevinPowell) - This video was a great resource in showing me how to properly structure a HTML page in the most semantic manner, focusing on not overusing headings and instead styling additional context about sections of content like headings if that style is desired.
 
 ## Author
 
