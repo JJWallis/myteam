@@ -1,5 +1,3 @@
-@use 'variables' as *;
-
 $breakpoints: (
    tablet: 20em,
    medium: 40em,
@@ -23,7 +21,6 @@ $typography: (
       fs-500: 4.2667rem,
       fs-400: 3.2rem,
       fs-300: 1.2rem,
-      // contact
       fs-200: 0.9375rem,
    ),
    family: (
@@ -56,22 +53,6 @@ $layout: (
    gap: 1rem,
    flow-space: 1rem,
 );
-
-:root {
-   @each $color, $value in $colors {
-      --clr-#{$color}: #{$value};
-   }
-
-   @each $screen-size, $font-size in $typography {
-      @each $size, $value in $font-size {
-         --#{$size}: #{$value};
-      }
-   }
-
-   @each $prop, $value in $layout {
-      --#{$prop}: #{$value};
-   }
-}
 
 // @each $color, $shades in $utilities {
 //    // utility classes

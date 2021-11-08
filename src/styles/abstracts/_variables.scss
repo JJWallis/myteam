@@ -1,1 +1,17 @@
-// @use 'maps' as *;
+@use 'maps' as *;
+
+:root {
+   @each $color, $value in $colors {
+      --clr-#{$color}: #{$value};
+   }
+
+   @each $screen-size, $font-size in $typography {
+      @each $size, $value in $font-size {
+         --#{$size}: #{$value};
+      }
+   }
+
+   @each $prop, $value in $layout {
+      --#{$prop}: #{$value};
+   }
+}
