@@ -53,7 +53,7 @@
 // BG-IMG
 // =========================================
 
-@mixin bg-img($img, $position, $size) {
+@mixin bg-img($img: null, $position: null, $size: null) {
    background-image: url('#{$img}');
    background-repeat: no-repeat;
    background-position: #{$position};
@@ -64,10 +64,10 @@
 // pseudo-el
 // =========================================
 
-@mixin p-el($el, $width: null, $height: null) {
+@mixin p-el($el, $content: '', $width: null, $height: null) {
    @if $el == 'before' or $el == 'after' {
       &::#{$el} {
-         content: '';
+         content: $content;
          position: absolute;
          display: block;
          width: $width;
