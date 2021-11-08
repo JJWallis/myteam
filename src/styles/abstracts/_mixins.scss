@@ -29,6 +29,22 @@
    align-items: $align;
 }
 
+@mixin box-model(
+   $disp: null,
+   $width: null,
+   $height: null,
+   $margin: null,
+   $padding: null,
+   $border: null
+) {
+   display: $disp;
+   width: $width;
+   height: $height;
+   margin: $margin;
+   padding: $padding;
+   border: $border;
+}
+
 // =========================================
 // BG-IMG
 // =========================================

@@ -1,5 +1,4 @@
 @use 'abstracts' as *;
-@use 'utilities' as *;
 
 .small-border {
    @include p-el(before, 20px, 5px) {
