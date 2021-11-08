@@ -21,9 +21,11 @@
 // flex
 // =========================================
 
-@mixin flex-parent($direction, $justify, $align) {
-   flex-direction: $direction;
-   justify-content: $justify;
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+   display: $disp;
+   flex-direction: $dir;
+   flex-wrap: $wrap;
+   justify-content: $just;
    align-items: $align;
 }
 
@@ -62,8 +64,12 @@
 // =========================================
 
 @mixin mq($key) {
-   @media (min-width: map-get($breakpoints, $key)) {
-      @content;
+   @if $key == 'tablet' or $key == 'medium' or $key == 'large' {
+      @media (min-width: map-get($breakpoints, $key)) {
+         @content;
+      }
+   } @else {
+      @error 'Tablet, medium or large required for valid media query.';
    }
 }
 
@@ -76,3 +82,8 @@
       @content;
    }
 }
+
+// @mixin var($property, $variable) {
+//    #{$property}: map-get($vars, $variable);
+//    #{$property}: var(--#{$variable});
+// }

@@ -53,7 +53,7 @@ body {
   background-color: hsl(var(--clr-rapture-blue));
 }
 
-.form, .btn--pm--light, .btn--pm--dark {
+.form, .btn--pm--dark {
   background-color: transparent;
 }
 

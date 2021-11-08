@@ -15,7 +15,6 @@
 
       @include m(light) {
          @extend %text-white;
-         @extend %bg-transparent;
          border-color: hsl(var(--clr-pm-white));
          &:hover {
             @extend %bg-white;

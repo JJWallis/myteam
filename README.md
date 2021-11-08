@@ -88,6 +88,8 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 -  [Kevin Powell - most common HTML mistakes](https://www.youtube.com/watch?v=NexL5_Vdoq8&ab_channel=KevinPowell) - This video was a great resource in showing me how to properly structure a HTML page in the most semantic manner, focusing on not overusing headings and instead styling additional context about sections of content like headings if that style is desired.
 
+-  [Generate Custom Properties & Utility Classes with Sass](https://www.youtube.com/watch?v=gP8yFWCTr7Q&ab_channel=KevinPowell)
+
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
@@ -111,7 +113,7 @@ Accessibility - aria-selected
 
 specific selectors to re-use active class + keep JS code more DRY
 
-Sass TH features -
+Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes
 
 CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
 
