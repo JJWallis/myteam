@@ -12,6 +12,10 @@ $utilities: (
       pm-coral: hsl(0 87% 73%),
       pm-white: hsl(0 0% 100%),
       rapture-blue: hsl(179 42% 63%),
+      police-blue: hsl(187 41% 29%),
+      jungle-green: hsl(186 100% 14%),
+      sacramento-green: hsl(186 96% 10%),
+      dark-green: hsl(186 100% 8%),
    ),
 );
 
@@ -21,11 +25,38 @@ $typography: (
       fs-500: 4.2667rem,
       fs-400: 3.2rem,
       fs-300: 1.2rem,
+      // contact
       fs-200: 0.9375rem,
    ),
    family: (
       ff-serif: 'Livvic' sans-serif,
    ),
+   weights: (
+      fw-regular: 400,
+      fw-medium: 500,
+      fw-semi-bold: 600,
+      fw-bold: 700,
+   ),
+   line-heights: (
+      lh-600: 1,
+      lh-500: 0.875,
+      lh-400: 1,
+      lh-300: 1.5556,
+      lh-200: 1.666,
+   ),
+);
+
+$layout: (
+   margin-test: 2rem,
+   align-mw: 60rem,
+   ct-padding-sm: 2rem 0,
+   // footer + cta
+   ct-padding-md: 3rem 0,
+   // clients
+   ct-padding-lg: 4rem 0,
+   // evertyhing else
+   gap: 1rem,
+   flow-space: 1rem,
 );
 
 :root {
@@ -43,6 +74,10 @@ $typography: (
       @each $size, $value in $font-size {
          --#{$size}: #{$value};
       }
+   }
+
+   @each $prop, $value in $layout {
+      --#{$prop}: #{$value};
    }
 }
 
