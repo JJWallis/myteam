@@ -18,3 +18,45 @@
       background-color: $value;
    }
 }
+
+@each $font, $map in $typography {
+   @if $font == sizes {
+      @each $property, $value in $map {
+         .#{$property} {
+            font-size: $value;
+         }
+      }
+   }
+
+   @if $font == family {
+      @each $property, $value in $map {
+         .#{$property} {
+            font-family: $value;
+         }
+      }
+   }
+
+   @if $font == weights {
+      @each $property, $value in $map {
+         .#{$property} {
+            font-weight: $value;
+         }
+      }
+   }
+
+   @if $font == line-heights {
+      @each $property, $value in $map {
+         .#{$property} {
+            line-height: $value;
+         }
+      }
+   }
+
+   @if $font == alignment {
+      @each $property, $value in $map {
+         .#{$property} {
+            text-align: $value;
+         }
+      }
+   }
+}
