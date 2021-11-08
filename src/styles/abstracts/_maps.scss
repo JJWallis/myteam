@@ -6,17 +6,15 @@ $breakpoints: (
    large: 60em,
 );
 
-$utilities: (
-   colors: (
-      pm-green: hsl(186 98% 17%),
-      pm-coral: hsl(0 87% 73%),
-      pm-white: hsl(0 0% 100%),
-      rapture-blue: hsl(179 42% 63%),
-      police-blue: hsl(187 41% 29%),
-      jungle-green: hsl(186 100% 14%),
-      sacramento-green: hsl(186 96% 10%),
-      dark-green: hsl(186 100% 8%),
-   ),
+$colors: (
+   pm-green: hsl(186 98% 17%),
+   pm-coral: hsl(0 87% 73%),
+   pm-white: hsl(0 0% 100%),
+   rapture-blue: hsl(179 42% 63%),
+   police-blue: hsl(187 41% 29%),
+   jungle-green: hsl(186 100% 14%),
+   sacramento-green: hsl(186 96% 10%),
+   dark-green: hsl(186 100% 8%),
 );
 
 $typography: (
@@ -59,30 +57,9 @@ $layout: (
    flow-space: 1rem,
 );
 
-:root {
-   // put into variables.scss
-   // select which vars to use to build var + utility class (from whichever map)
-   @each $color, $shades in $utilities {
-      // if shade == white or coral or rapture or dark-green - output utility class for both bg + text (@else - just bg)
-      @each $shade, $value in $shades {
-         --clr-#{$shade}: #{$value};
-      }
-   }
-
-   @each $screen-size, $font-size in $typography {
-      // @if $screen-size == small {} -- output utility classes for ones you need
-      @each $size, $value in $font-size {
-         --#{$size}: #{$value};
-      }
-   }
-
-   @each $prop, $value in $layout {
-      --#{$prop}: #{$value};
-   }
-}
-
 @each $color, $shades in $utilities {
    // utility classes
+   // colors = if $color == white or coral or rapture or dark-green - output utility class for both bg + text (@else - just bg)
    @each $shade, $value in $shades {
       .text-#{$shade} {
          color: $value;
