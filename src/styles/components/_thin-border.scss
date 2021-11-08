@@ -3,11 +3,11 @@
 
 .small-border {
    @include p-el(before, 20px, 5px) {
-      @extend %bg-coral;
+      // @extend %bg-coral;
       top: 0;
       left: 0;
    }
    .hero &::before {
-      @extend %bg-rapture;
+      // @extend %bg-rapture;
    }
 }

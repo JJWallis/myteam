@@ -2,8 +2,8 @@
 @use 'utilities' as *;
 
 .form {
-   @extend %bg-transparent;
-   @extend %text-white;
+   // @extend %bg-transparent;
+   // @extend %text-white;
    width: 100%;
    padding-top: 1rem;
    border: 0 0 0.1px solid hsl(var(--clr-pm-white)) 0;

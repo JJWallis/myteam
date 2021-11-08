@@ -14,21 +14,21 @@
       text-decoration: none;
 
       @include m(light) {
-         @extend %text-white;
+         // @extend %text-white;
          border-color: hsl(var(--clr-pm-white));
          &:hover {
-            @extend %bg-white;
-            @extend %text-dark;
+            // @extend %bg-white;
+            // @extend %text-dark;
          }
       }
 
       @include m(dark) {
-         @extend %text-dark;
-         @extend %bg-transparent;
+         // @extend %text-dark;
+         // @extend %bg-transparent;
          border-color: hsl(var(--clr-dark-green));
          &:hover {
-            @extend %bg-green-dark;
-            @extend %text-white;
+            // @extend %bg-green-dark;
+            // @extend %text-white;
          }
       }
    }
@@ -38,13 +38,13 @@
    // =========================================
 
    @include m(sd) {
-      @extend %text-dark;
-      @extend %bg-white;
+      // @extend %text-dark;
+      // @extend %bg-white;
       padding: 0.5em 2em;
       border: none;
       outline: none;
       &:hover {
-         @extend %bg-rapture;
+         // @extend %bg-rapture;
       }
    }
 

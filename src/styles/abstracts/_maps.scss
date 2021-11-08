@@ -53,13 +53,3 @@ $layout: (
    gap: 1rem,
    flow-space: 1rem,
 );
-
-// @each $color, $shades in $utilities {
-//    // utility classes
-//    // colors = if $color == white or coral or rapture or dark-green - output utility class for both bg + text (@else - just bg)
-//    @each $shade, $value in $shades {
-//       .text-#{$shade} {
-//          color: $value;
-//       }
-//    }
-// }
