@@ -32,38 +32,6 @@
    --flow-space: 1rem;
 }
 
-.text-pm-green {
-   color: #014d56;
-}
-
-.text-pm-coral {
-   color: #f67e7e;
-}
-
-.text-pm-white {
-   color: white;
-}
-
-.text-rapture-blue {
-   color: #79c8c7;
-}
-
-.text-police-blue {
-   color: #2c6168;
-}
-
-.text-jungle-green {
-   color: #004047;
-}
-
-.text-sacramento-green {
-   color: #012d32;
-}
-
-.text-dark-green {
-   color: #002529;
-}
-
 /* ----- bg colors ------ */
 body {
    background-color: hsl(var(--clr-pm-green));
