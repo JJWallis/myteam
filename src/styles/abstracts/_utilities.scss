@@ -11,11 +11,11 @@
       dark-green
    {
       .text-#{$color} {
-         color: $value;
+         color: var(--clr-#{$color}, $value);
       }
    }
    .bg-#{$color} {
-      background-color: $value;
+      background-color: var(--clr-#{$color}, $value);
    }
 }
 
@@ -23,7 +23,7 @@
    @if $font == sizes {
       @each $property, $value in $map {
          .#{$property} {
-            font-size: $value;
+            font-size: var(--#{$property}, $value);
          }
       }
    }
@@ -31,7 +31,7 @@
    @if $font == family {
       @each $property, $value in $map {
          .#{$property} {
-            font-family: $value;
+            font-family: var(--#{$property}, $value);
          }
       }
    }
@@ -39,7 +39,7 @@
    @if $font == weights {
       @each $property, $value in $map {
          .#{$property} {
-            font-weight: $value;
+            font-weight: var(--#{$property}, $value);
          }
       }
    }
@@ -47,7 +47,7 @@
    @if $font == line-heights {
       @each $property, $value in $map {
          .#{$property} {
-            line-height: $value;
+            line-height: var(--#{$property}, $value);
          }
       }
    }
@@ -55,7 +55,7 @@
    @if $font == alignment {
       @each $property, $value in $map {
          .#{$property} {
-            text-align: $value;
+            text-align: var(--#{$property}, $value);
          }
       }
    }
