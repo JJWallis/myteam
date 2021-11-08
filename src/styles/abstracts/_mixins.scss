@@ -82,8 +82,3 @@
       @content;
    }
 }
-
-// @mixin var($property, $variable) {
-//    #{$property}: map-get($vars, $variable);
-//    #{$property}: var(--#{$variable});
-// }
