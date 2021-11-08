@@ -50,7 +50,7 @@
 }
 
 // =========================================
-// BG-IMG
+// bg-img
 // =========================================
 
 @mixin bg-img($img: null, $position: null, $size: null) {
@@ -107,11 +107,17 @@
 }
 
 // =========================================
-// feature query
+// feature queries
 // =========================================
 
 @mixin fq($prop, $val) {
    @supports (#{$prop}: $val) {
+      @content;
+   }
+}
+
+@mixin fqs($selector) {
+   @supports selector(#{$selector}) {
       @content;
    }
 }
