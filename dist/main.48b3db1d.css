@@ -12,6 +12,22 @@
    --ff-serif: Livvic sans-serif;
 }
 
+.text-pm-green {
+   color: #014d56;
+}
+
+.text-pm-coral {
+   color: #f67e7e;
+}
+
+.text-pm-white {
+   color: white;
+}
+
+.text-rapture-blue {
+   color: #79c8c7;
+}
+
 /* ----- bg colors ------ */
 body {
    background-color: hsl(var(--clr-pm-green));
