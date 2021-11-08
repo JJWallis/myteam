@@ -29,6 +29,10 @@
    align-items: $align;
 }
 
+// =========================================
+// box-model
+// =========================================
+
 @mixin box-model(
    $disp: null,
    $width: null,
@@ -72,6 +76,19 @@
       }
    } @else {
       @error 'Before or after string required for valid pseudo element.';
+   }
+}
+
+// =========================================
+// social-icons
+// =========================================
+
+@mixin social-icon() {
+   transition: transform 200ms linear, color 130ms linear;
+   &:hover,
+   &:focus {
+      color: var(--clr-pm-coral);
+      transform: scale(1.1);
    }
 }
 
