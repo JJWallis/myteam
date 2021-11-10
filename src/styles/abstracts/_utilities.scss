@@ -61,6 +61,10 @@
    }
 }
 
+// =========================================
+// layout
+// =========================================
+
 .container {
    width: 90%;
    max-width: var(--align-mw);
@@ -92,15 +96,3 @@
    display: grid;
    gap: var(--gap, 1rem);
 }
-
-// .title--accent {
-//     font-weight: inherit;
-//   font-size: inherit;
-//       line-height: inherit;
-// .title--pm > & {
-// color:
-// }
-// .title--sd > & {
-// color:
-// }
-// }
