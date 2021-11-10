@@ -50,6 +50,17 @@
 }
 
 // =========================================
+// position
+// =========================================
+
+@mixin position($pos: absolute, $width: null, $height: null, $inset: null) {
+   position: $pos;
+   width: $width;
+   height: $height;
+   inset: $inset;
+}
+
+// =========================================
 // bg-img
 // =========================================
 
