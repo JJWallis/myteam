@@ -53,11 +53,11 @@
 // position
 // =========================================
 
-@mixin position($pos: absolute, $width: null, $height: null, $inset: null) {
+@mixin position($pos: absolute, $width: null, $height: null) {
    position: $pos;
    width: $width;
    height: $height;
-   inset: $inset;
+   @content;
 }
 
 // =========================================
