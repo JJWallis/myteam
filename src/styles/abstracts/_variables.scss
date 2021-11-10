@@ -12,7 +12,14 @@
    }
 
    @each $prop, $value in $layout {
+      // @if $prop == small {doBelow - change to nested loop within}
       --#{$prop}: #{$value};
+      // @else {
+      // @include mq(medium) {
+      // nested loop within - on medium map
+      // }
+      // }
+      // or hard code - barely any
    }
-   // mq - re-assign layout variables (flex-basis px - %, gap, fonts, text-alignment)
+   // mq - re-assign layout variables (flex-basis px - %, gap, text-alignment)
 }

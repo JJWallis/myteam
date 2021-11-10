@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap");
+/*
+Tablet: 
+
+Portrait
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+Landscape
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+*/
 :root {
   --clr-pm-green: #014d56;
   --clr-pm-coral: #f67e7e;
@@ -318,6 +336,10 @@ select {
   padding-bottom: 3rem;
 }
 
+/*
+.nav > * {}
+ .nav > .active {} - re-usable active class
+*/
 .small-border::before {
   content: 20px;
   position: absolute;
