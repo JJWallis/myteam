@@ -34,12 +34,21 @@
 .sidebar {
    display: none;
    @include mq(max-width, tablet) {
+      //    calc font-sizes + margins
+      //   link hover states
       display: block;
       padding: min(6rem, 15vh) 3rem;
       position: fixed;
       inset: 0 0 0 31.5%;
       z-index: 1000;
       overflow-x: hidden;
+      //   transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+      @include bg-img(
+         $img: '../assets/bg/bg-pattern-about-1-mobile-nav-1.svg',
+         $position: calc(100% + 153px) 100%,
+         $size: 300px
+      );
       & nav {
          margin-top: 2rem;
       }
@@ -47,7 +56,7 @@
          gap: var(--gap);
       }
       & li:nth-child(2) {
-         margin-left: 0.3rem;
+         margin-left: 0.4rem;
       }
       & a {
          font-size: var(--fs-300);
@@ -58,7 +67,7 @@
 // nav wide
 
 .nav--wide,
-.btn--contact--wide {
+.btn--wide {
    @include mq(max-width, tablet) {
       display: none;
    }

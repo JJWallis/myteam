@@ -380,6 +380,11 @@ body {
     inset: 0 0 0 31.5%;
     z-index: 1000;
     overflow-x: hidden;
+    transition: transform 0.5s ease-in-out;
+    background-image: url("/bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 153px) 100%;
+    background-size: 300px;
   }
   .sidebar nav {
     margin-top: 2rem;
@@ -388,7 +393,7 @@ body {
     gap: var(--gap);
   }
   .sidebar li:nth-child(2) {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
   }
   .sidebar a {
     font-size: var(--fs-300);
@@ -397,7 +402,7 @@ body {
 
 @media (max-width: 50em) {
   .nav--wide,
-.btn--contact--wide {
+.btn--wide {
     display: none;
   }
 }
