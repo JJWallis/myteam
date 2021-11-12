@@ -1,8 +1,16 @@
-// same top padding for all pages + diff bottom for homepage
+@use 'abstracts' as *;
 
 .header--pm {
    padding: var(--ct-padding-lg);
    outline: 3px solid red;
+}
+
+// nav
+
+.nav--wide {
+   @include mq(max-width, tablet) {
+      display: none;
+   }
 }
 
 // HERO
