@@ -5,18 +5,15 @@
       padding: var(--ct-padding-lg);
       outline: 3px solid var(--clr-pm-coral);
    }
+   @include m(home) {
+      padding-bottom: 13rem;
+   }
    @include e(nav--container) {
       position: relative;
    }
 }
 
 // nav mobile
-
-.container {
-   @include m(sidebar) {
-      //    position: fixed + overflow-x: hidden on body | inset: 0 0 0 30% (vs width: 75%) | z-index: 1000 | padding: min(6rem, 15vh) 2rem
-   }
-}
 
 .mobile-nav-toggle {
    display: none;
@@ -31,6 +28,27 @@
          $position: center,
          $size: 100%
       );
+   }
+}
+
+.sidebar {
+   display: none;
+   @include mq(max-width, tablet) {
+      display: block;
+      padding: min(6rem, 15vh) 3rem;
+      position: fixed;
+      inset: 0 0 0 31.5%;
+      z-index: 1000;
+      overflow-x: hidden;
+      & nav {
+         margin-top: 2rem;
+      }
+      & li:nth-child(2) {
+         margin-left: 0.3rem;
+      }
+      & a {
+         font-size: var(--fs-300);
+      }
    }
 }
 

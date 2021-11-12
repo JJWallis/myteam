@@ -339,6 +339,9 @@ body {
   padding: var(--ct-padding-lg);
   outline: 3px solid var(--clr-pm-coral);
 }
+.header--home {
+  padding-bottom: 13rem;
+}
 .header__nav--container {
   position: relative;
 }
@@ -359,6 +362,29 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+  }
+}
+
+.sidebar {
+  display: none;
+}
+@media (max-width: 50em) {
+  .sidebar {
+    display: block;
+    padding: min(6rem, 15vh) 3rem;
+    position: fixed;
+    inset: 0 0 0 31.5%;
+    z-index: 1000;
+    overflow-x: hidden;
+  }
+  .sidebar nav {
+    margin-top: 2rem;
+  }
+  .sidebar li:nth-child(2) {
+    margin-left: 0.3rem;
+  }
+  .sidebar a {
+    font-size: var(--fs-300);
   }
 }
 
