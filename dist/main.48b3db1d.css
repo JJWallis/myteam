@@ -169,7 +169,6 @@
 
 .grid-container {
   display: grid;
-  gap: var(--gap, 1rem);
 }
 
 fieldset {
@@ -276,12 +275,17 @@ body {
   border-radius: 50px;
 }
 .btn--pm {
-  padding: 1em 3em;
+  display: inline-block;
+  padding: 0.4em 2.1em;
   border: 2px solid;
-  text-decoration: none;
 }
 .btn--pm--light {
   border-color: hsl(var(--clr-pm-white));
+}
+@media (max-width: 50em) {
+  .btn--pm--light {
+    margin-top: 1.3rem;
+  }
 }
 .btn--pm--dark {
   border-color: hsl(var(--clr-dark-green));
@@ -379,6 +383,9 @@ body {
   }
   .sidebar nav {
     margin-top: 2rem;
+  }
+  .sidebar ul {
+    gap: var(--gap);
   }
   .sidebar li:nth-child(2) {
     margin-left: 0.3rem;

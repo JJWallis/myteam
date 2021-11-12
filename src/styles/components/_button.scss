@@ -8,11 +8,14 @@
    // =========================================
 
    @include m(pm) {
-      padding: 1em 3em;
+      display: inline-block;
+      padding: 0.4em 2.1em;
       border: 2px solid;
-      text-decoration: none;
 
       @include m(light) {
+         @include mq(max-width, tablet) {
+            margin-top: 1.3rem;
+         }
          // @extend %text-white;
          border-color: hsl(var(--clr-pm-white));
          &:hover {
