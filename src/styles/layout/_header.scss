@@ -12,16 +12,3 @@
       position: relative;
    }
 }
-
-.logo--pm {
-   display: inline-block;
-   // wide width slightly smaller - 90%
-}
-
-// HERO
-
-.hero {
-   @include m(parent) {
-      margin-top: var(--margin-test);
-   }
-}

@@ -1,0 +1,32 @@
+@use 'abstracts' as *;
+
+.form {
+   // @extend %bg-transparent;
+   // @extend %text-white;
+   width: 100%;
+   padding-top: 1rem;
+   border: 0 0 0.1px solid hsl(var(--clr-pm-white)) 0;
+   outline: none;
+   &::placeholder {
+      color: hsl(var(--clr-pm-white) / 0.7);
+   }
+   &:hover,
+   &:focus {
+      border-bottom-color: hsl(var(--clr-rapture-blue));
+   }
+
+   @include m(error) {
+      border-bottom-color: hsl(var(--clr-pm-coral));
+      &::placeholder {
+         color: hsl(var(--clr-pm-coral) / 0.7);
+      }
+   }
+
+   @include e(input) {
+      padding-bottom: 0.8rem;
+   }
+
+   @include e(text-area) {
+      padding-bottom: 3rem;
+   }
+}

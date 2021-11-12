@@ -1,0 +1,8 @@
+@use 'abstracts' as *;
+
+.logo {
+   @include m(pm) {
+      display: inline-block;
+      // wide width slightly smaller - 90%
+   }
+}

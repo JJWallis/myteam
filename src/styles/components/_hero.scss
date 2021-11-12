@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.hero {
+   @include m(parent) {
+      margin-top: var(--margin-test);
+   }
+}
