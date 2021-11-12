@@ -406,11 +406,19 @@ body {
   }
 }
 
+body[data-visible=true] {
+  overflow-y: hidden;
+}
+
 @media (max-width: 50em) {
   .nav--wide,
 .btn--wide {
     display: none;
   }
+}
+
+.logo--pm {
+  display: inline-block;
 }
 
 .hero--parent {

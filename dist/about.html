@@ -10,20 +10,36 @@
       <script defer="" src="/fontawesome.bd9656ef.js"></script>
    </head>
 
-   <body class="bg-pm-green text-pm-white">
+   <body class="bg-pm-green text-pm-white" data-visible="false">
       <header class="header--pm">
-         <div class="header__nav-container container">
-            <nav>
+         <div class="header__nav--container container">
+            <a href="/" aria-label="My team logo directing to homepage." title="Homepage"><img src="/logo.f6e82216.svg" alt="My team logo." class="logo logo--pm"></a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+               <span class="sr-only">Menu</span>
+            </button>
+            <div class="sidebar bg-police-blue" data-visible="false">
+               <nav>
+                  <ul id="primary-navigation" role="list" class="flow">
+                     <li><a href="/" class="text-pm-white">home</a></li>
+                     <li>
+                        <a href="/about.html" class="text-pm-white">about</a>
+                     </li>
+                     <li>
+                        <a href="/contact.html" class="btn btn--pm btn--pm--light text-pm-white">contact us</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+
+            <nav class="nav--wide">
                <ul role="list" class="nav nav--pm">
-                  <li>
-                     <a href="/index.html" aria-label="My team logo directing to homepage." title="Homepage"><img src="/logo.f6e82216.svg" alt="My team logo." class="logo logo--pm"></a>
-                  </li>
-                  <li><a href="/index.html">home</a></li>
+                  <li><a href="/">home</a></li>
                   <li><a href="/about.html">about</a></li>
                </ul>
             </nav>
-            <a href="/contact.html" class="btn btn--pm btn--pm--light">contact us</a>
+            <a href="/contact.html" class="btn--wide btn btn--pm btn--pm--light">contact us</a>
          </div>
+
          <!-- hero -->
          <section class="hero--parent split--parent container">
             <div class="hero--parent__child split--child">
