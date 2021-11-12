@@ -34,12 +34,12 @@
 .sidebar {
    display: none;
    @include mq(max-width, tablet) {
-      //    calc font-sizes + margins
       //   link hover states
       display: block;
       padding: min(6rem, 15vh) 3rem;
       position: fixed;
-      inset: 0 0 0 31.5%;
+      inset: 0 0 0 calc(100% - 310px);
+      width: 310px;
       z-index: 1000;
       overflow-x: hidden;
       //   transform: translateX(100%);
