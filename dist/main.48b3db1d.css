@@ -359,13 +359,17 @@ body {
     position: absolute;
     width: 1.5rem;
     z-index: 2000;
-    top: 0.25rem;
+    top: 0.4rem;
     right: 0;
     aspect-ratio: 1;
     background-image: url("/icon-hamburger.51c8812d.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+  }
+  .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url("/icon-close.6339e390.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -381,6 +385,7 @@ body {
     width: 310px;
     z-index: 1000;
     overflow-x: hidden;
+    transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     background-image: url("/bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg");
     background-repeat: no-repeat;
@@ -398,6 +403,9 @@ body {
   }
   .sidebar a {
     font-size: var(--fs-300);
+  }
+  .sidebar[data-visible=true] {
+    transform: translateX(0);
   }
 }
 
