@@ -395,9 +395,6 @@ body {
   .sidebar nav {
     margin-top: 2rem;
   }
-  .sidebar ul {
-    gap: var(--gap);
-  }
   .sidebar li:nth-child(2) {
     margin-left: 0.4rem;
   }
