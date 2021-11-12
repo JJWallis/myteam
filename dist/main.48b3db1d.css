@@ -341,7 +341,8 @@ select {
 }
 
 @media (max-width: 50em) {
-  .nav--wide {
+  .nav--wide,
+.btn--contact--wide {
     display: none;
   }
 }

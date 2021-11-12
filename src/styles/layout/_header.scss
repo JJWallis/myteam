@@ -1,13 +1,18 @@
 @use 'abstracts' as *;
 
-.header--pm {
-   padding: var(--ct-padding-lg);
-   outline: 3px solid red;
+.header {
+   @include m(pm) {
+      padding: var(--ct-padding-lg);
+      outline: 3px solid red;
+   }
 }
 
-// nav
+// nav mobile
 
-.nav--wide {
+// nav wide
+
+.nav--wide,
+.btn--contact--wide {
    @include mq(max-width, tablet) {
       display: none;
    }
@@ -15,6 +20,8 @@
 
 // HERO
 
-.hero--parent {
-   margin-top: var(--margin-test);
+.hero {
+   @include m(parent) {
+      margin-top: var(--margin-test);
+   }
 }
