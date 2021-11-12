@@ -331,25 +331,6 @@ body {
 .nav > * {}
  .nav > .active {} - re-usable active class
 */
-.small-border::before {
-  content: 20px;
-  position: absolute;
-  display: block;
-  width: 5px;
-  top: 0;
-  left: 0;
-}
-.header--pm {
-  padding: var(--ct-padding-lg);
-  outline: 3px solid var(--clr-pm-coral);
-}
-.header--home {
-  padding-bottom: 13rem;
-}
-.header__nav--container {
-  position: relative;
-}
-
 .mobile-nav-toggle {
   display: none;
 }
@@ -415,6 +396,25 @@ body[data-visible=true] {
 .btn--wide {
     display: none;
   }
+}
+
+.small-border::before {
+  content: 20px;
+  position: absolute;
+  display: block;
+  width: 5px;
+  top: 0;
+  left: 0;
+}
+.header--pm {
+  padding: var(--ct-padding-lg);
+  outline: 3px solid var(--clr-pm-coral);
+}
+.header--home {
+  padding-bottom: 13rem;
+}
+.header__nav--container {
+  position: relative;
 }
 
 .logo--pm {
