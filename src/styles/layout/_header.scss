@@ -17,13 +17,18 @@
 }
 
 .mobile-nav-toggle {
+   display: none;
    @include mq(max-width, tablet) {
-      outline: 1px solid pink;
       @include box-model($disp: block);
-      padding: 0.5rem;
       @include position(absolute, $width: 1.5rem, $z-index: 2000);
-      top: 10px;
+      top: 0.25rem;
       right: 0;
+      aspect-ratio: 1;
+      @include bg-img(
+         $img: '../assets/nav/icon-hamburger.svg',
+         $position: center,
+         $size: 100%
+      );
    }
 }
 
@@ -34,6 +39,10 @@
    @include mq(max-width, tablet) {
       display: none;
    }
+}
+
+.logo--pm {
+   // width slightly smaller - 90%
 }
 
 // HERO

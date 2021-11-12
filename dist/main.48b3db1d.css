@@ -190,7 +190,7 @@ a {
 button {
   border: none;
   outline: none;
-  background-color: transparent;
+  background: transparent;
 }
 button:hover {
   cursor: pointer;
@@ -343,16 +343,22 @@ select {
   position: relative;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
 @media (max-width: 50em) {
   .mobile-nav-toggle {
-    outline: 1px solid pink;
     display: block;
-    padding: 0.5rem;
     position: absolute;
     width: 1.5rem;
     z-index: 2000;
-    top: 10px;
+    top: 0.25rem;
     right: 0;
+    aspect-ratio: 1;
+    background-image: url("/icon-hamburger.51c8812d.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 }
 

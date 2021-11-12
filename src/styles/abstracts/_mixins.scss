@@ -60,8 +60,8 @@
 @mixin bg-img($img: null, $position: null, $size: null) {
    background-image: url('#{$img}');
    background-repeat: no-repeat;
-   background-position: #{$position};
-   background-size: #{$size};
+   background-position: $position;
+   background-size: $size;
 }
 
 // =========================================
