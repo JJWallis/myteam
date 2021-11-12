@@ -42,7 +42,7 @@ Landscape
   --lh-300: 1.5556;
   --lh-200: 1.666;
   --ta-center: center;
-  --margin-test: 2rem;
+  --margin-test: 3rem;
   --align-mw: 60rem;
   --ct-padding-sm: 2rem 0;
   --ct-padding-md: 3rem 0;
@@ -347,6 +347,14 @@ select {
   width: 5px;
   top: 0;
   left: 0;
+}
+.header--pm {
+  padding: var(--ct-padding-lg);
+  outline: 3px solid red;
+}
+
+.hero--parent {
+  margin-top: var(--margin-test);
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

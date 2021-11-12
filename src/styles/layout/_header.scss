@@ -1,1 +1,12 @@
 // same top padding for all pages + diff bottom for homepage
+
+.header--pm {
+   padding: var(--ct-padding-lg);
+   outline: 3px solid red;
+}
+
+// HERO
+
+.hero--parent {
+   margin-top: var(--margin-test);
+}
