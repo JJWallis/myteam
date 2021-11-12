@@ -13,7 +13,6 @@
   --fs-400: 3.2rem;
   --fs-300: 1.2rem;
   --fs-200: 0.9375rem;
-  --ff-serif: Livvic sans-serif;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 600;
@@ -99,10 +98,6 @@
 
 .fs-200 {
   font-size: var(--fs-200, 0.9375rem);
-}
-
-.ff-serif {
-  font-family: var(--ff-serif, "Livvic" sans-serif);
 }
 
 .fw-regular {
@@ -272,6 +267,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  font: var(--fw-regular) var(--fs-200) "livvic", sans-serif;
+  line-height: var(--lh-200);
+}
+
 .btn {
   border-radius: 50px;
 }
@@ -337,7 +337,7 @@ select {
 }
 .header--pm {
   padding: var(--ct-padding-lg);
-  outline: 3px solid red;
+  outline: 3px solid var(--clr-pm-coral);
 }
 .header__nav--container {
   position: relative;

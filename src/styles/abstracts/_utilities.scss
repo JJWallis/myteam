@@ -28,14 +28,6 @@
       }
    }
 
-   @if $font == family {
-      @each $property, $value in $map {
-         .#{$property} {
-            font-family: var(--#{$property}, $value);
-         }
-      }
-   }
-
    @if $font == weights {
       @each $property, $value in $map {
          .#{$property} {

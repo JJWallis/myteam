@@ -3,6 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
 
 body {
-   // @extend %fs-200;
-   // @extend %fw-regular;
+   font: var(--fw-regular) var(--fs-200) 'livvic', sans-serif;
+   line-height: var(--lh-200);
 }

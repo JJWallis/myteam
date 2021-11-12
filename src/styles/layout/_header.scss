@@ -3,7 +3,7 @@
 .header {
    @include m(pm) {
       padding: var(--ct-padding-lg);
-      outline: 3px solid red;
+      outline: 3px solid var(--clr-pm-coral);
    }
    @include e(nav--container) {
       position: relative;
@@ -12,8 +12,10 @@
 
 // nav mobile
 
-.nav--sidebar__container {
-   //    position: fixed + overflow: hidden on body | inset: 0 0 0 30% (vs width: 75%) | z-index: 1000 | padding: min(6rem, 15vh) 2rem
+.container {
+   @include m(sidebar) {
+      //    position: fixed + overflow-x: hidden on body | inset: 0 0 0 30% (vs width: 75%) | z-index: 1000 | padding: min(6rem, 15vh) 2rem
+   }
 }
 
 .mobile-nav-toggle {
