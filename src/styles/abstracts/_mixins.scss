@@ -34,19 +34,10 @@
 // box-model
 // =========================================
 
-@mixin box-model(
-   $disp: null,
-   $width: null,
-   $height: null,
-   $margin: null,
-   $padding: null,
-   $border: null
-) {
+@mixin box-model($disp: null, $width: null, $height: null, $border: null) {
    display: $disp;
    width: $width;
    height: $height;
-   margin: $margin;
-   padding: $padding;
    border: $border;
 }
 
@@ -54,10 +45,11 @@
 // position
 // =========================================
 
-@mixin position($pos: absolute, $width: null, $height: null) {
+@mixin position($pos, $width: null, $height: null, $z-index: null) {
    position: $pos;
    width: $width;
    height: $height;
+   z-index: $z-index;
    @content;
 }
 

@@ -5,9 +5,27 @@
       padding: var(--ct-padding-lg);
       outline: 3px solid red;
    }
+   @include e(nav--container) {
+      position: relative;
+   }
 }
 
 // nav mobile
+
+.nav--sidebar__container {
+   //    position: fixed + overflow: hidden on body | inset: 0 0 0 30% (vs width: 75%) | z-index: 1000 | padding: min(6rem, 15vh) 2rem
+}
+
+.mobile-nav-toggle {
+   @include mq(max-width, tablet) {
+      outline: 1px solid pink;
+      @include box-model($disp: block);
+      padding: 0.5rem;
+      @include position(absolute, $width: 1.5rem, $z-index: 2000);
+      top: 10px;
+      right: 0;
+   }
+}
 
 // nav wide
 

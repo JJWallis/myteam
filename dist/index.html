@@ -13,10 +13,12 @@
       <header class="header--pm header--home">
          <div class="header__nav--container container">
             <a href="/" aria-label="My team logo directing to homepage." title="Homepage"><img src="/logo.f6e82216.svg" alt="My team logo." class="logo logo--pm"></a>
-            <!-- hamburger -->
-            <div class="nav--sidebar__container">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+               <span class="sr-only">Menu</span>
+            </button>
+            <div class="nav--mobile--container">
                <nav class="nav--mobile">
-                  <ul role="list" class="nav nav--pm">
+                  <ul id="primary-navigation" role="list" class="nav nav--pm">
                      <li><a href="/">home</a></li>
                      <li><a href="/about.html">about</a></li>
                      <li>
