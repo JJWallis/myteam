@@ -132,3 +132,5 @@ Testing, testing, testing
 Kevin Notes:
 
 Classes on <body> for other pages too?
+
+<H3> - vs <strong> for build sub-titles (homepage)
