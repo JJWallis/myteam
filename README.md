@@ -137,4 +137,4 @@ Classes on <body> for other pages too?
 
 Grid container - descendant selectors for grid-items + not just classes themselves (.container > .item {...})
 
-'meta' - className (for meta info about content sections - with explainer class?) 
+'meta' - className (for meta info about content sections - with explainer class?)
