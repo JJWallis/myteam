@@ -126,3 +126,9 @@ Tetsing, Testing, testing, testing
 Testing, testing, testing
 
 Testing, testing, testing
+
+---
+
+Kevin Notes:
+
+Classes on <body> for other pages too?
