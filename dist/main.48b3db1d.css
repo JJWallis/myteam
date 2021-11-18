@@ -121,6 +121,42 @@
    font-size: var(--fs-200);
 }
 
+.lh-500 {
+   line-height: var(--lh-500);
+}
+
+.lh-400 {
+   line-height: var(--lh-400);
+}
+
+.lh-300 {
+   line-height: var(--lh-300);
+}
+
+.lh-200 {
+   line-height: var(--lh-200);
+}
+
+.fw-regular {
+   font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+   font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+   font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+   font-weight: var(--fw-bold);
+}
+
+.alignment {
+   text-align: var(--alignment);
+}
+
 .container {
    width: 90%;
    max-width: var(--align-mw);

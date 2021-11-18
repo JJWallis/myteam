@@ -27,32 +27,31 @@
          }
       }
    }
+
+   @if $screen-size == lh-small {
+      @each $property, $value in $map {
+         .#{$property} {
+            line-height: var(--#{$property});
+         }
+      }
+   }
+
+   @if $screen-size == weights {
+      @each $property, $value in $map {
+         .#{$property} {
+            font-weight: var(--#{$property});
+         }
+      }
+   }
+
+   @if $screen-size == align-small {
+      @each $property, $value in $map {
+         .#{$property} {
+            text-align: var(--#{$property});
+         }
+      }
+   }
 }
-
-//    @if $font == weights {
-//       @each $property, $value in $map {
-//          .#{$property} {
-//             font-weight: var(--#{$property}, $value);
-//          }
-//       }
-//    }
-
-//    @if $font == line-heights {
-//       @each $property, $value in $map {
-//          .#{$property} {
-//             line-height: var(--#{$property}, $value);
-//          }
-//       }
-//    }
-
-//    @if $font == alignment {
-//       @each $property, $value in $map {
-//          .#{$property} {
-//             text-align: var(--#{$property}, $value);
-//          }
-//       }
-//    }
-// }
 
 // =========================================
 // layout
