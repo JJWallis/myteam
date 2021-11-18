@@ -1,26 +1,27 @@
 @use 'maps' as *;
-
-// mq - re-assign layout variables (flex-basis px - %, gap, text-alignment)
-// re-build vars which don't get overidden - or else not declared anymore
+@use 'mixins' as *;
 
 :root {
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};
    }
 
-   // @each $screen-size, $font-size in $typography {
-   //    @each $size, $value in $font-size {
-   //       --#{$size}: #{$value};
-   //    }
-   // }
+   @each $screen-size, $map in $type-scale {
+      @if $screen-size == small {
+         @each $size, $value in $map {
+            --#{$size}: #{$value};
+         }
+      } @else if $screen-size == large {
+         @include mq($width: min-width, $key: tablet) {
+            @each $size, $value in $map {
+               --#{$size}: #{$value};
+            }
+         }
+      }
+      // next if + loop
+   }
 
    @each $prop, $value in $layout {
-      // @if $prop == small {doBelow - change to nested loop within}
       --#{$prop}: #{$value};
-      // @else {
-      // @include mq(medium) {
-      // nested loop within - on medium map
-      // }
-      // }
    }
 }
