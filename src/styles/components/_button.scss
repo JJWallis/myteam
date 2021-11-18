@@ -2,6 +2,8 @@
 
 .btn {
    border-radius: 50px;
+   transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out;
 
    // =========================================
    // primary
@@ -16,11 +18,12 @@
          @include mq(max-width, tablet) {
             margin-top: 1.3rem;
          }
-         // @extend %text-white;
+         // color: white
          border-color: hsl(var(--clr-pm-white));
          &:hover {
-            // @extend %bg-white;
-            // @extend %text-dark;
+            background-color: var(--clr-pm-white);
+            color: var(--clr-dark-green);
+            border: none;
          }
       }
 
@@ -29,8 +32,8 @@
          // @extend %bg-transparent;
          border-color: hsl(var(--clr-dark-green));
          &:hover {
-            // @extend %bg-green-dark;
-            // @extend %text-white;
+            background-color: var(--clr-dark-green);
+            color: var(--clr-pm-white);
          }
       }
    }
@@ -46,7 +49,7 @@
       border: none;
       outline: none;
       &:hover {
-         // @extend %bg-rapture;
+         background-color: var(--clr-rapture-blue);
       }
    }
 

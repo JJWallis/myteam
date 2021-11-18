@@ -6,7 +6,7 @@
       outline: 3px solid var(--clr-pm-coral);
    }
    @include m(home) {
-      padding-bottom: 13rem;
+      padding-bottom: min(28vh, 16rem);
    }
    @include e(nav--container) {
       position: relative;

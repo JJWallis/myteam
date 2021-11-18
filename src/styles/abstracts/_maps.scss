@@ -69,9 +69,8 @@ $layout: (
    // footer + cta
    ct-padding-md: 3rem 0,
    // clients
-   ct-padding-lg: 4rem 0,
-   // evertyhing else
-   // same top padding for all pages + diff bottom for homepage
+   ct-padding-lg: 4.5rem 0 min(15vh, 8.5rem) 0,
+   // everything else
    gap: 1rem,
    flow-space: 1rem,
    // flex-basis: 250px, - 100% change
