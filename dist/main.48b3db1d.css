@@ -384,7 +384,11 @@ body[data-visible=true] {
 
 .logo--pm {
   display: inline-block;
-  width: 120%;
+}
+@media (max-width: 50em) {
+  .logo--pm {
+    width: 13.1rem;
+  }
 }
 
 .hero--parent {
@@ -408,7 +412,7 @@ body[data-visible=true] {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    width: 1.5rem;
+    width: 2rem;
     z-index: 2000;
     top: 0.4rem;
     right: 0;
@@ -458,8 +462,7 @@ body[data-visible=true] {
 }
 .header__nav--container {
   position: relative;
-  display: flex;
-  align-items: center;
+  min-height: 4rem;
 }
 
 /*

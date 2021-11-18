@@ -10,6 +10,6 @@
    }
    @include e(nav--container) {
       position: relative;
-      @include flexy($align: center);
+      min-height: 4rem;
    }
 }
