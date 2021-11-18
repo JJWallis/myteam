@@ -458,7 +458,11 @@ body[data-visible=true] {
   outline: 3px solid var(--clr-pm-coral);
 }
 .header--home {
-  padding-bottom: min(28vh, 16rem);
+  padding-bottom: min(40vh, 20rem);
+  background-image: url("/bg-pattern-home-2.a329aae4.svg");
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-size: 475px;
 }
 .header__nav--container {
   position: relative;
