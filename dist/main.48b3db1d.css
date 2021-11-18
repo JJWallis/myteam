@@ -13,6 +13,11 @@
   --fs-300-h3: 1.5rem;
   --fs-300: 1.2rem;
   --fs-200: 1.2rem;
+  --lh-500: 1;
+  --lh-400: 1;
+  --lh-300: 1.5556;
+  --lh-200: 1.666;
+  --alignment: center;
   --margin-test: 3rem;
   --align-mw: 60rem;
   --ct-padding-sm: 2rem 0;
@@ -28,6 +33,11 @@
     --fs-300-h3: 1.2rem;
     --fs-300: 1.2rem;
     --fs-200: 0.9375rem;
+    --lh-500: 0.875;
+    --lh-400: 1;
+    --lh-300: 1.5556;
+    --lh-200: 1.5556;
+    --alignment: left;
   }
 }
 

@@ -26,6 +26,13 @@ $type-scale: (
       // contact no change
       fs-200: 1.2rem,
       // wide: 0.9375rem,
+      lh-500: 1,
+      lh-400: 1,
+      // h2 no change
+      lh-300: 1.5556,
+      // contact + h3 no change
+      lh-200: 1.666,
+      alignment: center,
    ),
    large: (
       fs-500: 6.6667rem,
@@ -33,25 +40,10 @@ $type-scale: (
       fs-300-h3: 1.2rem,
       fs-300: 1.2rem,
       fs-200: 0.9375rem,
-   ),
-   line-heights-small: (
-      lh-500: 1,
-      lh-400: 1,
-      // h2 no change
-      lh-300: 1.5556,
-      // contact + h3 no change
-      lh-200: 1.666,
-   ),
-   line-heights-large: (
       lh-500: 0.875,
       lh-400: 1,
       lh-300: 1.5556,
       lh-200: 1.5556,
-   ),
-   alignment-small: (
-      alignment: center,
-   ),
-   alignment-large: (
       alignment: left,
    ),
 );
