@@ -19,14 +19,15 @@
    }
 }
 
-// @each $font, $map in $typography {
-//    @if $font == sizes {
-//       @each $property, $value in $map {
-//          .#{$property} {
-//             font-size: var(--#{$property}, $value);
-//          }
-//       }
-//    }
+@each $screen-size, $map in $type-scale {
+   @if $screen-size == small {
+      @each $property, $value in $map {
+         .#{$property} {
+            font-size: var(--#{$property});
+         }
+      }
+   }
+}
 
 //    @if $font == weights {
 //       @each $property, $value in $map {

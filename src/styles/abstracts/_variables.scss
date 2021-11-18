@@ -17,6 +17,16 @@
                --#{$size}: #{$value};
             }
          }
+      } @else if $screen-size == lh-small {
+         @each $size, $value in $map {
+            --#{$size}: #{$value};
+         }
+      } @else if $screen-size == lh-large {
+         @include mq($width: min-width, $key: tablet) {
+            @each $size, $value in $map {
+               --#{$size}: #{$value};
+            }
+         }
       } @else if $screen-size == weights {
          @each $size, $value in $map {
             --#{$size}: #{$value};
@@ -25,7 +35,7 @@
          @each $size, $value in $map {
             --#{$size}: #{$value};
          }
-      } @else {
+      } @else if $screen-size == align-large {
          @include mq($width: min-width, $key: tablet) {
             @each $size, $value in $map {
                --#{$size}: #{$value};
