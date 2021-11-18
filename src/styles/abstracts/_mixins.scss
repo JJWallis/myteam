@@ -66,11 +66,17 @@
 // pseudo-el
 // =========================================
 
-@mixin p-el($el, $content: '', $width: null, $height: null) {
+@mixin p-el(
+   $el,
+   $content: '',
+   $position: absolute,
+   $width: null,
+   $height: null
+) {
    @if $el == 'before' or $el == 'after' {
       &::#{$el} {
          content: $content;
-         position: absolute;
+         position: $position;
          display: block;
          width: $width;
          height: $height;

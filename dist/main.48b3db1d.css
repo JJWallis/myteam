@@ -332,9 +332,6 @@ body {
   opacity: 0.5;
 }
 
-/*
-.nav > * {}
-*/
 .sidebar {
   display: none;
 }
@@ -343,8 +340,8 @@ body {
     display: block;
     padding: min(10rem, 20vh) 3rem;
     position: fixed;
-    inset: 0 0 0 calc(100% - 310px);
-    width: 310px;
+    inset: 0 0 0 calc(100% - 347px);
+    width: 347px;
     z-index: 1000;
     overflow-x: hidden;
     transform: translateX(100%);
@@ -365,23 +362,27 @@ body {
 body[data-visible=true] {
   overflow-y: hidden;
 }
+@media (max-width: 50em) {
+  body[data-visible=true]::before {
+    content: "";
+    position: fixed;
+    display: block;
+    inset: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
 
 .small-border::before {
   content: 20px;
-  position: absolute;
+  position: 5px;
   display: block;
-  width: 5px;
   top: 0;
   left: 0;
 }
 
 .logo--pm {
   display: inline-block;
-}
-@media (max-width: 50em) {
-  .logo--pm {
-    width: 13.1rem;
-  }
 }
 
 .hero--parent {

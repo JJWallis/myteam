@@ -1,18 +1,13 @@
 @use 'abstracts' as *;
 
-/*
-.nav > * {}
-*/
-
 .sidebar {
    display: none;
    @include mq(max-width, tablet) {
-      //   dark overlay when active
       display: block;
       padding: min(10rem, 20vh) 3rem;
       position: fixed;
-      inset: 0 0 0 calc(100% - 310px);
-      width: 310px;
+      inset: 0 0 0 calc(100% - 347px);
+      width: 347px;
       z-index: 1000;
       overflow-x: hidden;
       transform: translateX(100%);
@@ -33,4 +28,11 @@
 
 body[data-visible='true'] {
    overflow-y: hidden;
+   @include mq(max-width, tablet) {
+      @include p-el('before', $position: fixed) {
+         inset: 0;
+         z-index: 999;
+         background-color: rgba(0, 0, 0, 0.55);
+      }
+   }
 }
