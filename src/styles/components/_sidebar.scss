@@ -9,7 +9,7 @@
    @include mq(max-width, tablet) {
       //   dark overlay when active
       display: block;
-      padding: min(6rem, 15vh) 3rem;
+      padding: min(10rem, 20vh) 3rem;
       position: fixed;
       inset: 0 0 0 calc(100% - 310px);
       width: 310px;
@@ -22,14 +22,8 @@
          $position: calc(100% + 153px) 100%,
          $size: 300px
       );
-      & nav {
-         margin-top: 2rem;
-      }
       & li:nth-child(2) {
          margin-left: 0.4rem;
-      }
-      & a {
-         font-size: var(--fs-300);
       }
       &[data-visible='true'] {
          transform: translateX(0);

@@ -290,7 +290,7 @@ body {
 
 .btn {
   border-radius: 50px;
-  transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .btn--pm {
   display: inline-block;
@@ -308,7 +308,7 @@ body {
 .btn--pm--light:hover {
   background-color: var(--clr-pm-white);
   color: var(--clr-dark-green);
-  border: none;
+  border-color: transparent;
 }
 .btn--pm--dark {
   border-color: hsl(var(--clr-dark-green));
@@ -341,7 +341,7 @@ body {
 @media (max-width: 50em) {
   .sidebar {
     display: block;
-    padding: min(6rem, 15vh) 3rem;
+    padding: min(10rem, 20vh) 3rem;
     position: fixed;
     inset: 0 0 0 calc(100% - 310px);
     width: 310px;
@@ -354,14 +354,8 @@ body {
     background-position: calc(100% + 153px) 100%;
     background-size: 300px;
   }
-  .sidebar nav {
-    margin-top: 2rem;
-  }
   .sidebar li:nth-child(2) {
     margin-left: 0.4rem;
-  }
-  .sidebar a {
-    font-size: var(--fs-300);
   }
   .sidebar[data-visible=true] {
     transform: translateX(0);
@@ -472,7 +466,7 @@ body[data-visible=true] {
    .nav > * {}
 */
 nav a {
-  transition: color 0.5s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 nav a:hover {
   color: var(--clr-pm-coral);
