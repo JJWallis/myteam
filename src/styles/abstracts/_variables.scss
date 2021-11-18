@@ -1,5 +1,8 @@
 @use 'maps' as *;
 
+// mq - re-assign layout variables (flex-basis px - %, gap, text-alignment)
+// re-build vars which don't get overidden - or else not declared anymore
+
 :root {
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};
@@ -19,7 +22,5 @@
       // nested loop within - on medium map
       // }
       // }
-      // or hard code - barely any
    }
-   // mq - re-assign layout variables (flex-basis px - %, gap, text-alignment)
 }
