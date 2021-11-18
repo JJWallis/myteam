@@ -126,15 +126,3 @@ Tetsing, Testing, testing, testing
 Testing, testing, testing
 
 Testing, testing, testing
-
----
-
-Kevin Notes:
-
-Classes on <body> for other pages too?
-
-<H3> - vs <strong> for build sub-titles (homepage) | Kevin's ex - only one sentence under each heading
-
-Grid container - descendant selectors for grid-items + not just classes themselves (.container > .item {...})
-
-'meta' - className (for meta info about content sections - with explainer class?)

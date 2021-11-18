@@ -367,7 +367,7 @@ body {
 
 /*
 .nav > * {}
- .nav > .active {} - re-usable active class
+ .nav > .active {} 
 */
 .mobile-nav-toggle {
   display: none;
