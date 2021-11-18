@@ -406,7 +406,7 @@ body[data-visible=true] {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    width: 2rem;
+    width: 1.8rem;
     z-index: 2000;
     top: 0.4rem;
     right: 0;
@@ -460,7 +460,6 @@ body[data-visible=true] {
 }
 .header__nav--container {
   position: relative;
-  min-height: 4rem;
 }
 
 /*

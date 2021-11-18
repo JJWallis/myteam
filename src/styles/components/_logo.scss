@@ -3,8 +3,5 @@
 .logo {
    @include m(pm) {
       display: inline-block;
-      // @include mq(max-width, tablet) {
-      // width: 13.1rem;
-      // }
    }
 }
