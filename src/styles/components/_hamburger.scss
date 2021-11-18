@@ -1,0 +1,20 @@
+@use 'abstracts' as *;
+
+.mobile-nav-toggle {
+   display: none;
+   @include mq(max-width, tablet) {
+      @include box-model($disp: block);
+      @include position(absolute, $width: 1.5rem, $z-index: 2000);
+      top: 0.4rem;
+      right: 0;
+      aspect-ratio: 1;
+      @include bg-img(
+         $img: '../assets/nav/icon-hamburger.svg',
+         $position: center,
+         $size: 100%
+      );
+      &[aria-expanded='true'] {
+         @include bg-img($img: '../assets/about/icon-close.svg');
+      }
+   }
+}

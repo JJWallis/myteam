@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/nav/icon-hamburger.svg":[["icon-hamburger.51c8812d.svg","assets/nav/icon-hamburger.svg"],"assets/nav/icon-hamburger.svg"],"./../assets/about/icon-close.svg":[["icon-close.6339e390.svg","assets/about/icon-close.svg"],"assets/about/icon-close.svg"],"./../assets/bg/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg","assets/bg/bg-pattern-about-1-mobile-nav-1.svg"],"assets/bg/bg-pattern-about-1-mobile-nav-1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../assets/bg/bg-pattern-about-1-mobile-nav-1.svg":[["bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg","assets/bg/bg-pattern-about-1-mobile-nav-1.svg"],"assets/bg/bg-pattern-about-1-mobile-nav-1.svg"],"./../assets/nav/icon-hamburger.svg":[["icon-hamburger.51c8812d.svg","assets/nav/icon-hamburger.svg"],"assets/nav/icon-hamburger.svg"],"./../assets/about/icon-close.svg":[["icon-close.6339e390.svg","assets/about/icon-close.svg"],"assets/about/icon-close.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

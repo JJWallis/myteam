@@ -3,6 +3,7 @@
 .logo {
    @include m(pm) {
       display: inline-block;
+      width: 120%;
       // wide width slightly smaller - 90%
    }
 }
