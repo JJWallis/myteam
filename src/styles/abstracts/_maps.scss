@@ -32,11 +32,6 @@ $type-scale: (
       lh-300: 1.5556,
       // contact + h3 no change
       lh-200: 1.666,
-      alignment: center,
-      fw-regular: 400,
-      fw-medium: 500,
-      fw-semi-bold: 600,
-      fw-bold: 700,
    ),
    large: (
       fs-500: 6.6667rem,
@@ -48,11 +43,18 @@ $type-scale: (
       lh-400: 1,
       lh-300: 1.5556,
       lh-200: 1.5556,
-      alignment: left,
+   ),
+   weights: (
       fw-regular: 400,
       fw-medium: 500,
       fw-semi-bold: 600,
       fw-bold: 700,
+   ),
+   align-small: (
+      alignment: center,
+   ),
+   align-large: (
+      alignment: left,
    ),
 );
 

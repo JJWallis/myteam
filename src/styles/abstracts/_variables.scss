@@ -17,8 +17,21 @@
                --#{$size}: #{$value};
             }
          }
+      } @else if $screen-size == weights {
+         @each $size, $value in $map {
+            --#{$size}: #{$value};
+         }
+      } @else if $screen-size == align-small {
+         @each $size, $value in $map {
+            --#{$size}: #{$value};
+         }
+      } @else {
+         @include mq($width: min-width, $key: tablet) {
+            @each $size, $value in $map {
+               --#{$size}: #{$value};
+            }
+         }
       }
-      // next if + loop
    }
 
    @each $prop, $value in $layout {
