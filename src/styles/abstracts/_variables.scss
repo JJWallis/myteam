@@ -8,11 +8,11 @@
       --clr-#{$color}: #{$value};
    }
 
-   @each $screen-size, $font-size in $typography {
-      @each $size, $value in $font-size {
-         --#{$size}: #{$value};
-      }
-   }
+   // @each $screen-size, $font-size in $typography {
+   //    @each $size, $value in $font-size {
+   //       --#{$size}: #{$value};
+   //    }
+   // }
 
    @each $prop, $value in $layout {
       // @if $prop == small {doBelow - change to nested loop within}
