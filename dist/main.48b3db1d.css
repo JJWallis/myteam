@@ -290,7 +290,7 @@ body {
 
 .btn {
   border-radius: 50px;
-  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .btn--pm {
   display: inline-block;
@@ -334,7 +334,6 @@ body {
 
 /*
 .nav > * {}
- .nav > .active {} 
 */
 .sidebar {
   display: none;
@@ -471,8 +470,14 @@ body[data-visible=true] {
 
 /*
    .nav > * {}
-   .nav > .active {} 
 */
+nav a {
+  transition: color 0.5s ease-in-out;
+}
+nav a:hover {
+  color: var(--clr-pm-coral);
+}
+
 @media (max-width: 50em) {
   .nav--wide,
 .btn--wide {

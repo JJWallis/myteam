@@ -2,14 +2,12 @@
 
 /*
 .nav > * {}
- .nav > .active {} 
 */
 
 .sidebar {
    display: none;
    @include mq(max-width, tablet) {
       //   dark overlay when active
-      //   link hover states
       display: block;
       padding: min(6rem, 15vh) 3rem;
       position: fixed;

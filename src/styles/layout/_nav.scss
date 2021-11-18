@@ -2,8 +2,16 @@
 
 /*
    .nav > * {}
-   .nav > .active {} 
 */
+
+nav {
+   & a {
+      transition: color 0.5s ease-in-out;
+      &:hover {
+         color: var(--clr-pm-coral);
+      }
+   }
+}
 
 // nav wide
 
