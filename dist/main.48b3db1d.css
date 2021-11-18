@@ -11,8 +11,9 @@
   --fs-600: 6.6667rem;
   --fs-500: 4.2667rem;
   --fs-400: 3.2rem;
+  --fs-300-h3: 1.5rem;
   --fs-300: 1.2rem;
-  --fs-200: 0.9375rem;
+  --fs-200: 1.2rem;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 600;
@@ -92,12 +93,16 @@
   font-size: var(--fs-400, 3.2rem);
 }
 
+.fs-300-h3 {
+  font-size: var(--fs-300-h3, 1.5rem);
+}
+
 .fs-300 {
   font-size: var(--fs-300, 1.2rem);
 }
 
 .fs-200 {
-  font-size: var(--fs-200, 0.9375rem);
+  font-size: var(--fs-200, 1.2rem);
 }
 
 .fw-regular {
