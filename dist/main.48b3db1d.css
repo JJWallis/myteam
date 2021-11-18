@@ -18,6 +18,10 @@
   --lh-300: 1.5556;
   --lh-200: 1.666;
   --alignment: center;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
   --margin-test: 3rem;
   --align-mw: 60rem;
   --ct-padding-sm: 2rem 0;
@@ -38,6 +42,10 @@
     --lh-300: 1.5556;
     --lh-200: 1.5556;
     --alignment: left;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
   }
 }
 
