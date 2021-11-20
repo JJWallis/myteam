@@ -7,6 +7,12 @@
    outline: 1px solid white;
 
    @include m(build) {
-      padding-block: var(--margin-test);
+      --ct-padding-lg: 9rem 0 min(15vh, 8.5rem);
+      padding: var(--ct-padding-lg);
+      @include bg-img(
+         $img: '../assets/bg/bg-pattern-home-3.svg',
+         $position: calc(100% + 125px) 0%,
+         $size: 250px
+      );
    }
 }

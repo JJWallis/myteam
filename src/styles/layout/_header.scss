@@ -2,12 +2,13 @@
 
 .header {
    @include m(pm) {
-      padding: var(--ct-padding-lg);
+      padding: var(--ct-padding-hdr);
       // outline: 3px solid var(--clr-pm-coral);
    }
 
    @include m(home) {
-      padding-bottom: min(40vh, 18rem);
+      --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
+      padding: var(--ct-padding-hdr);
       @include bg-img('../assets/bg/bg-pattern-home-2.svg', center 100%, 475px);
    }
 

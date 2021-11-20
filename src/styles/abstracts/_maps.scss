@@ -38,7 +38,7 @@ $type-scale: (
       lh-400: 1,
       // h2 no change
       lh-300: 1.5556,
-      // contact + h3 no change
+      // contact no change
       lh-200: 1.666,
    ),
    lh-large: (
@@ -71,7 +71,8 @@ $layout: (
    // footer + cta
    ct-padding-md: 3rem 0,
    // clients
-   ct-padding-lg: 4rem 0 min(15vh, 8.5rem) 0,
+   ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
+   ct-padding-hdr: 4rem 0 min(15vh, 8.5rem),
    // everything else
    gap: 1.8rem,
    flow-space: 1rem,
