@@ -158,13 +158,6 @@
   text-align: var(--alignment);
 }
 
-.container {
-  width: 90%;
-  max-width: var(--align-mw);
-  margin-inline: auto;
-  outline: 1px solid white;
-}
-
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }
@@ -468,6 +461,16 @@ body {
 }
 .split--child {
   position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--align-mw);
+  margin-inline: auto;
+  outline: 1px solid white;
+}
+.container--build {
+  padding-block: var(--margin-test);
 }
 
 .form {
