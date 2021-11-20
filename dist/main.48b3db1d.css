@@ -28,7 +28,7 @@
   --ct-padding-sm: 2rem 0;
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4.5rem 0 min(15vh, 8.5rem) 0;
-  --gap: 1rem;
+  --gap: 1.8rem;
   --flow-space: 1rem;
 }
 @media (min-width: 50em) {
@@ -432,9 +432,11 @@ body {
 }
 
 .split--parent {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
 }
-
 .form {
   width: 100%;
   padding-top: 1rem;

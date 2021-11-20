@@ -2,6 +2,10 @@
 
 .split {
    @include m(parent) {
-      background-color: red;
+      @include flexy($dir: column, $align: center);
+      gap: var(--gap);
+   }
+
+   @include m(child) {
    }
 }
