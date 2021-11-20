@@ -53,6 +53,7 @@
 @media (min-width: 50em) {
   :root {
     --gap: 5.5rem;
+    --ct-padding-cta: 7rem 0;
   }
 }
 @media (min-width: 80em) {
@@ -341,6 +342,11 @@ body {
 .btn--contact {
   padding: 0.7em 2em;
 }
+@media (min-width: 50em) {
+  .btn--cta {
+    padding: 0.6em 2.2em;
+  }
+}
 .btn--disabled {
   opacity: 0.5;
 }
@@ -569,6 +575,27 @@ body {
   content: url("/icon-chart.d3e2fc52.svg");
   position: absolute;
   display: block;
+}
+
+.cta--parent > :first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --gap: 4rem;
+  gap: var(--gap);
+}
+@media (min-width: 50em) {
+  .cta--parent > :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 50em) {
+  .cta--parent > :first-child {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .footer--pm {

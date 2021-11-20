@@ -55,6 +55,12 @@
       padding: 0.7em 2em;
    }
 
+   @include m(cta) {
+      @include mq(min-width, tablet) {
+         padding: 0.6em 2.2em;
+      }
+   }
+
    @include m(disabled) {
       opacity: 0.5;
    }
