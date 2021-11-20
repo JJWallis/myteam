@@ -1,0 +1,30 @@
+@use 'abstracts' as *;
+
+.icon {
+   @include m(position) {
+      position: relative;
+      @include p-el(before, $width: 50px, $height: 50px) {
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         background-color: red;
+      }
+      //   &:first-child {
+      //      @include p-el(before, $content) {
+      //      }
+      //   }
+      //   &:nth-child(2) {
+      //      @include p-el(before, $content) {
+      //      }
+      //   }
+      //   &:last-child {
+      //      @include p-el(before, $content) {
+      //      }
+      //   }
+   }
+}
+
+// Home mobile:
+// top: -70px;
+//  left: 50%;
+//  transform: translateX(-50%);
