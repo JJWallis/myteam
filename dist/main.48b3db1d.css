@@ -527,8 +527,12 @@ body {
   background-size: 250px;
 }
 .container--testimonials {
-  --ct-padding-lg: 10rem 0 min(30vh, 17rem);
+  --ct-padding-lg: 12rem 0 min(30vh, 17rem);
   padding: var(--ct-padding-lg);
+  background-image: url("/bg-pattern-home-4-about-3.5345c0c0.svg"), url("/bg-pattern-home-5.d123f279.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
+  background-size: 200px, 250px;
 }
 
 @media (max-width: 50em) {

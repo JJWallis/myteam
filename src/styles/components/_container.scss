@@ -26,7 +26,12 @@
    }
 
    @include m(testimonials) {
-      --ct-padding-lg: 10rem 0 min(30vh, 17rem);
+      --ct-padding-lg: 12rem 0 min(30vh, 17rem);
       padding: var(--ct-padding-lg);
+      background-image: url('../assets/bg/bg-pattern-home-4-about-3.svg'),
+         url('../assets/bg/bg-pattern-home-5.svg');
+      background-repeat: no-repeat;
+      background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
+      background-size: 200px, 250px;
    }
 }
