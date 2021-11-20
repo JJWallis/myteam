@@ -55,11 +55,14 @@ $type-scale: (
    ),
    align-small: (
       alignment: center,
-      // tabelt for gap
-      // creates diff versions - tablet + large,,
+      gap: 8rem,
+      // mobile for gap - change to align-mobile
+      // creates diff versions - tablet + large,,,,,,
    ),
    align-large: (
+      // change to align-tabelt + add align-large
       alignment: left,
+      gap: 5.5rem,
    ),
 );
 
@@ -75,7 +78,6 @@ $layout: (
    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
    ct-padding-hdr: 4rem 0 min(15vh, 8.5rem),
    // everything else
-   gap: 8rem,
    flow-space: 1rem,
    // flex-basis: 100%
 );

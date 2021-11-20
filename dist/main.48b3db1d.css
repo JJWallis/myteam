@@ -22,6 +22,7 @@
   --fw-semi-bold: 600;
   --fw-bold: 700;
   --alignment: center;
+  --gap: 8rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
@@ -29,7 +30,6 @@
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
-  --gap: 8rem;
   --flow-space: 1rem;
 }
 @media (min-width: 50em) {
@@ -52,6 +52,7 @@
 @media (min-width: 50em) {
   :root {
     --alignment: left;
+    --gap: 5.5rem;
   }
 }
 
@@ -157,6 +158,10 @@
 
 .alignment {
   text-align: var(--alignment);
+}
+
+.gap {
+  text-align: var(--gap);
 }
 
 .flow > *:where(:not(:first-child)) {
