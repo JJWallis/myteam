@@ -16,4 +16,11 @@
          }
       }
    }
+
+   // SOCIAL
+   @include m(social) {
+      @include flexy($align: center);
+      --gap: 0.8rem;
+      gap: var(--gap);
+   }
 }

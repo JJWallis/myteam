@@ -36,3 +36,12 @@
       // background-blend-mode: color-dodge;
    }
 }
+
+.social-icon {
+   font-size: 2rem;
+   color: var(--clr-pm-white);
+   transition: color 0.2s ease-in-out;
+   &:hover {
+      color: var(--clr-pm-coral);
+   }
+}
