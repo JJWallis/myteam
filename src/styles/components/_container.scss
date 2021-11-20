@@ -24,4 +24,7 @@
          $size: 250px
       );
    }
+
+   @include m(testimonials) {
+   }
 }

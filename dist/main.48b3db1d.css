@@ -526,7 +526,6 @@ body {
   background-position: calc(0% - 0px) 120%;
   background-size: 250px;
 }
-
 @media (max-width: 50em) {
   .list--build {
     --flow-space: 8rem;
