@@ -5,6 +5,12 @@
       @include flexy($dir: column, $align: center);
       // flex-direction var instead
       gap: var(--gap);
+
+      .header--pm & {
+         @include mq($width: max-width, $key: large) {
+            --gap: 1.8rem;
+         }
+      }
    }
 
    @include m(child) {

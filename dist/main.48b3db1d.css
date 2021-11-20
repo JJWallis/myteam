@@ -29,7 +29,7 @@
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
-  --gap: 1.8rem;
+  --gap: 8rem;
   --flow-space: 1rem;
 }
 @media (min-width: 50em) {
@@ -460,6 +460,11 @@ body {
   align-items: center;
   gap: var(--gap);
 }
+@media (max-width: 80em) {
+  .header--pm .split--parent {
+    --gap: 1.8rem;
+  }
+}
 .split--child {
   position: relative;
 }
@@ -471,7 +476,7 @@ body {
   outline: 1px solid white;
 }
 .container--build {
-  --ct-padding-lg: 9rem 0 min(15vh, 8.5rem);
+  --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
   padding: var(--ct-padding-lg);
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
@@ -534,6 +539,10 @@ nav a:hover {
 .btn--wide {
     display: none;
   }
+}
+
+.build--parent__child {
+  outline: 1px solid red;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

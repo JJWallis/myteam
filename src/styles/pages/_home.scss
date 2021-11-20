@@ -1,1 +1,9 @@
 @use 'abstracts' as *;
+
+// BUILD
+
+.build--parent {
+   @include e(child) {
+      outline: 1px solid red;
+   }
+}
