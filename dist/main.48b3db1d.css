@@ -23,10 +23,10 @@
   --fw-bold: 700;
   --alignment: center;
   --gap: 8rem;
+  --ct-padding-cta: 6rem 0;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
-  --ct-padding-cta: 4rem 0;
   --ct-padding-ftr: 2rem 0;
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
@@ -59,6 +59,7 @@
   :root {
     --alignment: left;
     --gap: 9rem;
+    --ct-padding-cta: 4.5rem 0;
   }
 }
 
@@ -172,6 +173,10 @@
 
 .gap {
   text-align: var(--gap);
+}
+
+.ct-padding-cta {
+  text-align: var(--ct-padding-cta);
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -320,12 +325,10 @@ body {
   color: var(--clr-dark-green);
   border-color: transparent;
 }
-.btn--pm--dark {
-  border-color: hsl(var(--clr-dark-green));
-}
 .btn--pm--dark:hover {
   background-color: var(--clr-dark-green);
   color: var(--clr-pm-white);
+  border-color: transparent;
 }
 .btn--sd {
   padding: 0.5em 2em;

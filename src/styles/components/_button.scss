@@ -28,12 +28,10 @@
       }
 
       @include m(dark) {
-         // @extend %text-dark;
-         // @extend %bg-transparent;
-         border-color: hsl(var(--clr-dark-green));
          &:hover {
             background-color: var(--clr-dark-green);
             color: var(--clr-pm-white);
+            border-color: transparent;
          }
       }
    }
