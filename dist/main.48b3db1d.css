@@ -9,7 +9,7 @@
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
   --fs-500: 4.2667rem;
-  --fs-400: 3.2rem;
+  --fs-400: 2.75rem;
   --fs-300-h3: 1.5rem;
   --fs-300: 1.2rem;
   --fs-200: 1.2rem;
@@ -35,7 +35,7 @@
 @media (min-width: 50em) {
   :root {
     --fs-500: 6.6667rem;
-    --fs-400: 2.5rem;
+    --fs-400: 2.4rem;
     --fs-300-h3: 1.2rem;
     --fs-300: 1.2rem;
     --fs-200: 0.9375rem;
@@ -393,7 +393,7 @@ body {
   position: absolute;
   display: block;
   width: 60px;
-  height: 5px;
+  height: 6px;
   background-color: var(--clr-pm-coral);
   top: 0;
   left: 0;
@@ -411,6 +411,10 @@ body {
   position: absolute;
   display: block;
   background-color: var(--clr-rapture-blue);
+}
+
+.title--build {
+  width: 78%;
 }
 
 .logo--pm {
@@ -490,7 +494,7 @@ body {
   padding: var(--ct-padding-lg);
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
-  background-position: calc(100% + 125px) 0%;
+  background-position: calc(100% + 128px) 0%;
   background-size: 250px;
 }
 
@@ -553,6 +557,10 @@ nav a:hover {
 
 .build--parent__child {
   outline: 1px solid red;
+}
+.build--parent__child:first-child {
+  padding-top: 2.5rem;
+  padding-right: 0.1rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

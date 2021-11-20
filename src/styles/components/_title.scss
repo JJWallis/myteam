@@ -1,6 +1,7 @@
 @use 'abstracts' as *;
 
 .title {
-   @include m(pm) {
+   @include m(build) {
+      width: 78%;
    }
 }

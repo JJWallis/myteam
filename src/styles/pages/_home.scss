@@ -4,6 +4,10 @@
 
 .build--parent {
    @include e(child) {
+      &:first-child {
+         padding-top: 2.5rem;
+         padding-right: 0.1rem;
+      }
       outline: 1px solid red;
    }
 }
