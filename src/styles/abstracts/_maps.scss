@@ -1,6 +1,5 @@
 $breakpoints: (
    tablet: 50em,
-   medium: 90em,
    large: 130em,
 );
 
@@ -75,5 +74,5 @@ $layout: (
    // everything else
    gap: 1.8rem,
    flow-space: 1rem,
-   // flex-basis: 250px, - 100% change
+   // flex-basis: 100%
 );

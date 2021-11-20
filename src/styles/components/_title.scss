@@ -1,22 +1,6 @@
 @use 'abstracts' as *;
 
-// .title {
-//    .title--pm {
-//    }
-//    .title--sd {
-//    }
-//    .title--tr {
-//    }
-// }
-
-// .title--accent {
-//     font-weight: inherit;
-//   font-size: inherit;
-//       line-height: inherit;
-// .title--pm > & {
-// color:
-// }
-// .title--sd > & {
-// color:
-// }
-// }
+.title {
+   @include m(pm) {
+   }
+}
