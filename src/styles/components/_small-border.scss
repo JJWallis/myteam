@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .small-border {
-   @include p-el(before, $width: 60px, $height: 6px) {
+   @include p-el(before, $width: 67px, $height: 6px) {
       background-color: var(--clr-pm-coral);
       top: 0;
       left: 0;

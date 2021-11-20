@@ -3,14 +3,14 @@
 .icon {
    @include m(position) {
       position: relative;
-      @include p-el(before, $width: 50px, $height: 50px) {
+      @include p-el(before) {
          top: 35%;
          left: 0;
          transform: translateY(-50%);
 
          .list--build & {
             @include mq($width: max-width, $key: tablet) {
-               top: -70px;
+               top: -80px;
                left: 50%;
                transform: translateX(-50%);
             }

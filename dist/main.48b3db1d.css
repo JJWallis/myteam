@@ -392,7 +392,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
+  width: 67px;
   height: 6px;
   background-color: var(--clr-pm-coral);
   top: 0;
@@ -481,7 +481,7 @@ body {
 }
 @media (max-width: 50em) {
   .container--build .split--parent {
-    --gap: 14rem;
+    --gap: 12rem;
   }
 }
 .split--child {
@@ -500,7 +500,7 @@ body {
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
   background-position: calc(100% + 128px) 0%;
-  background-size: 250px 325px;
+  background-size: 250px 333px;
 }
 
 @media (max-width: 50em) {
@@ -526,15 +526,13 @@ body {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
-  height: 50px;
   top: 35%;
   left: 0;
   transform: translateY(-50%);
 }
 @media (max-width: 50em) {
   .list--build .icon--position::before {
-    top: -70px;
+    top: -80px;
     left: 50%;
     transform: translateX(-50%);
   }
