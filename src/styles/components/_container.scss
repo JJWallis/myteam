@@ -4,7 +4,7 @@
    width: 90%;
    max-width: var(--align-mw);
    margin-inline: auto;
-   outline: 1px solid white;
+   // outline: 1px solid white;
 
    @include m(build) {
       --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -23,10 +23,13 @@
          $position: calc(0% - 0px) 112.5%,
          $size: 250px
       );
+      @media (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, large)) {
+         background-position: calc(0% - 0px) 122%;
+      }
    }
 
    @include m(testimonials) {
-      --ct-padding-lg: 12rem 0 min(30vh, 17rem);
+      --ct-padding-lg: 12rem 0 min(30vh, 14rem);
       padding: var(--ct-padding-lg);
       background-image: url('../assets/bg/bg-pattern-home-4-about-3.svg'),
          url('../assets/bg/bg-pattern-home-5.svg');

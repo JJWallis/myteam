@@ -12,7 +12,7 @@
    @include m(pm) {
       display: inline-block;
       padding: 0.4em 2.1em;
-      border: 2px solid;
+      border: 2.5px solid;
 
       @include m(light) {
          @include mq(max-width, tablet) {

@@ -311,7 +311,7 @@ body {
 .btn--pm {
   display: inline-block;
   padding: 0.4em 2.1em;
-  border: 2px solid;
+  border: 2.5px solid;
 }
 .btn--pm--light {
   border-color: hsl(var(--clr-pm-white));
@@ -515,7 +515,6 @@ body {
   width: 90%;
   max-width: var(--align-mw);
   margin-inline: auto;
-  outline: 1px solid white;
 }
 .container--build {
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -532,8 +531,13 @@ body {
   background-position: calc(0% - 0px) 112.5%;
   background-size: 250px;
 }
+@media (min-width: 50em) and (max-width: 80em) {
+  .container--cta {
+    background-position: calc(0% - 0px) 122%;
+  }
+}
 .container--testimonials {
-  --ct-padding-lg: 12rem 0 min(30vh, 17rem);
+  --ct-padding-lg: 12rem 0 min(30vh, 14rem);
   padding: var(--ct-padding-lg);
   background-image: url("/bg-pattern-home-4-about-3.5345c0c0.svg"), url("/bg-pattern-home-5.d123f279.svg");
   background-repeat: no-repeat;
