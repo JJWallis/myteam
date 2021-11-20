@@ -504,6 +504,9 @@ body {
     --gap: 12rem;
   }
 }
+.container--testimonials .split--parent {
+  --gap: 4rem;
+}
 .split--child {
   position: relative;
 }
@@ -526,7 +529,7 @@ body {
   padding: var(--ct-padding-cta);
   background-image: url("/bg-pattern-home-6-about-5.56b63356.svg");
   background-repeat: no-repeat;
-  background-position: calc(0% - 0px) 120%;
+  background-position: calc(0% - 0px) 112.5%;
   background-size: 250px;
 }
 .container--testimonials {
@@ -612,6 +615,26 @@ body {
   .cta--parent > :first-child {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+.employee-name {
+  font-style: normal;
+  font-size: 1.6rem;
+}
+@media (min-width: 50em) {
+  .employee-name {
+    font-size: 1.4rem;
+  }
+}
+
+.job-title {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+@media (min-width: 80em) {
+  .job-title {
+    margin-bottom: 3rem;
   }
 }
 
