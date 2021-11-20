@@ -3,7 +3,7 @@
 .header {
    @include m(pm) {
       padding: var(--ct-padding-lg);
-      outline: 3px solid var(--clr-pm-coral);
+      // outline: 3px solid var(--clr-pm-coral);
    }
 
    @include m(home) {

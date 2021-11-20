@@ -385,11 +385,28 @@ body {
 }
 
 .small-border::before {
-  content: 20px;
-  position: 5px;
+  content: "";
+  position: absolute;
   display: block;
+  width: 60px;
+  height: 5px;
+  background-color: var(--clr-pm-coral);
   top: 0;
   left: 0;
+}
+@media (max-width: 80em) {
+  .small-border--hero::before {
+    content: "";
+    position: absolute;
+    display: block;
+    opacity: 0;
+  }
+}
+.header--home .small-border::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--clr-rapture-blue);
 }
 
 .logo--pm {
@@ -449,6 +466,10 @@ body {
   align-items: center;
   gap: var(--gap);
 }
+.split--child {
+  position: relative;
+}
+
 .form {
   width: 100%;
   padding-top: 1rem;
@@ -476,7 +497,6 @@ body {
 
 .header--pm {
   padding: var(--ct-padding-lg);
-  outline: 3px solid var(--clr-pm-coral);
 }
 .header--home {
   padding-bottom: min(40vh, 18rem);
