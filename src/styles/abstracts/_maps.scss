@@ -57,10 +57,12 @@ $type-scale: (
       alignment: center,
       gap: 8rem,
       ct-padding-cta: 6rem 0,
+      ct-padding-ftr: 7rem 0 5rem,
    ),
    align-tablet: (
       gap: 5.5rem,
       ct-padding-cta: 7rem 0,
+      ct-padding-ftr: 6rem 0 4rem,
    ),
    align-large: (
       alignment: left,
@@ -73,7 +75,6 @@ $layout: (
    margin-test: 3rem,
    margin-hero: 8rem,
    align-mw: 60rem,
-   ct-padding-ftr: 2rem 0,
    ct-padding-md: 3rem 0,
    // clients
    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
