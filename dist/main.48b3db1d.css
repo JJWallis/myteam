@@ -526,6 +526,11 @@ body {
   background-position: calc(0% - 0px) 120%;
   background-size: 250px;
 }
+.container--testimonials {
+  --ct-padding-lg: 10rem 0 min(30vh, 17rem);
+  padding: var(--ct-padding-lg);
+}
+
 @media (max-width: 50em) {
   .list--build {
     --flow-space: 8rem;

@@ -26,5 +26,7 @@
    }
 
    @include m(testimonials) {
+      --ct-padding-lg: 10rem 0 min(30vh, 17rem);
+      padding: var(--ct-padding-lg);
    }
 }
