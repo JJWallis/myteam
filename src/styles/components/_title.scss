@@ -4,4 +4,8 @@
    @include m(build) {
       width: 78%;
    }
+
+   @include m(cta) {
+      letter-spacing: 0.7px;
+   }
 }
