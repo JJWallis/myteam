@@ -479,6 +479,11 @@ body {
     --gap: 1.8rem;
   }
 }
+@media (max-width: 50em) {
+  .container--build .split--parent {
+    --gap: 14rem;
+  }
+}
 .split--child {
   position: relative;
 }

@@ -11,6 +11,12 @@
             --gap: 1.8rem;
          }
       }
+
+      .container--build & {
+         @include mq($width: max-width, $key: tablet) {
+            --gap: 14rem;
+         }
+      }
    }
 
    @include m(child) {
