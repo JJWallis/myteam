@@ -433,6 +433,9 @@ body {
 .title--cta {
   letter-spacing: 0.7px;
 }
+.title--testimonials {
+  margin-bottom: 4rem;
+}
 
 .logo--pm {
   display: inline-block;
@@ -674,6 +677,14 @@ nav a:hover {
   .build--parent__child:last-child {
     text-align: left;
   }
+}
+
+.testimonials--parent__quotes article {
+  outline: 1px solid blue;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

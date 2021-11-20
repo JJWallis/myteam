@@ -8,4 +8,8 @@
    @include m(cta) {
       letter-spacing: 0.7px;
    }
+
+   @include m(testimonials) {
+      margin-bottom: 4rem;
+   }
 }

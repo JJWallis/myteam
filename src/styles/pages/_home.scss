@@ -15,3 +15,13 @@
       }
    }
 }
+
+.testimonials--parent {
+   @include e(quotes) {
+      & article {
+         outline: 1px solid blue;
+         padding-top: 3rem;
+         @include flexy($dir: column, $align: center);
+      }
+   }
+}
