@@ -44,7 +44,7 @@
       }
    }
 
-   @if $screen-size == align-small {
+   @if $screen-size == align-mobile {
       @each $property, $value in $map {
          .#{$property} {
             text-align: var(--#{$property});

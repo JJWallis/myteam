@@ -28,7 +28,7 @@ $type-scale: (
    ),
    large: (
       fs-500: 6.6667rem,
-      fs-400: 3.2rem,
+      fs-400: 2.5rem,
       fs-300-h3: 1.2rem,
       fs-300: 1.2rem,
       fs-200: 0.9375rem,
@@ -53,21 +53,20 @@ $type-scale: (
       fw-semi-bold: 600,
       fw-bold: 700,
    ),
-   align-small: (
+   align-mobile: (
       alignment: center,
       gap: 8rem,
-      // mobile for gap - change to align-mobile
-      // creates diff versions - tablet + large,,,,,,
+   ),
+   align-tablet: (
+      gap: 5.5rem,
    ),
    align-large: (
-      // change to align-tabelt + add align-large
       alignment: left,
-      gap: 5.5rem,
+      gap: 9rem,
    ),
 );
 
 $layout: (
-   // small + large + tablet here too - setup loop
    margin-test: 3rem,
    margin-hero: 8rem,
    align-mw: 60rem,

@@ -31,12 +31,18 @@
          @each $size, $value in $map {
             --#{$size}: #{$value};
          }
-      } @else if $screen-size == align-small {
+      } @else if $screen-size == align-mobile {
          @each $size, $value in $map {
             --#{$size}: #{$value};
          }
-      } @else if $screen-size == align-large {
+      } @else if $screen-size == align-tablet {
          @include mq($width: min-width, $key: tablet) {
+            @each $size, $value in $map {
+               --#{$size}: #{$value};
+            }
+         }
+      } @else if $screen-size == align-large {
+         @include mq($width: min-width, $key: large) {
             @each $size, $value in $map {
                --#{$size}: #{$value};
             }
