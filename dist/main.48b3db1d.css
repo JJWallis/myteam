@@ -30,7 +30,7 @@
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
-  --flow-space: 1rem;
+  --flow-space: 1.5rem;
 }
 @media (min-width: 50em) {
   :root {
@@ -495,7 +495,23 @@ body {
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
   background-position: calc(100% + 128px) 0%;
-  background-size: 250px;
+  background-size: 250px 325px;
+}
+
+@media (max-width: 50em) {
+  .list--build {
+    --flow-space: 8rem;
+  }
+}
+@media (max-width: 50em) {
+  .list--build__child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.list--build__child h3 {
+  margin-bottom: 0.5rem;
 }
 
 .form {
@@ -560,7 +576,11 @@ nav a:hover {
 }
 .build--parent__child:first-child {
   padding-top: 2.5rem;
-  padding-right: 0.1rem;
+}
+@media (min-width: 50em) {
+  .build--parent__child:last-child {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

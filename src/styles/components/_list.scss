@@ -1,0 +1,19 @@
+@use 'abstracts' as *;
+
+.list {
+   // BUILD
+   @include m(build) {
+      @include mq($width: max-width, $key: tablet) {
+         --flow-space: 8rem;
+      }
+
+      @include e(child) {
+         @include mq($width: max-width, $key: tablet) {
+            @include flexy($dir: column, $align: center);
+         }
+         & h3 {
+            margin-bottom: 0.5rem;
+         }
+      }
+   }
+}

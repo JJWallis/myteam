@@ -4,10 +4,14 @@
 
 .build--parent {
    @include e(child) {
+      outline: 1px solid red;
       &:first-child {
          padding-top: 2.5rem;
-         padding-right: 0.1rem;
       }
-      outline: 1px solid red;
+      &:last-child {
+         @include mq($width: min-width, $key: tablet) {
+            text-align: left;
+         }
+      }
    }
 }
