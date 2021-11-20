@@ -26,6 +26,8 @@
    }
 }
 
+// Overlay
+
 body {
    @include mq(max-width, tablet) {
       @include p-el('before', $position: fixed) {

@@ -2,7 +2,6 @@
 
 .hero {
    @include m(parent) {
-      margin-top: var(--margin-test);
-      // min() ?
+      margin-top: min(var(--margin-hero), 15vh);
    }
 }

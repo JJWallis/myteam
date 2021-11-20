@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.split {
+   @include m(parent) {
+      background-color: red;
+   }
+}

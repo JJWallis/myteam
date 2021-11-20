@@ -56,6 +56,7 @@ $type-scale: (
    ),
    align-small: (
       alignment: center,
+      // creates diff versions - tablet + large
    ),
    align-large: (
       alignment: left,
@@ -64,6 +65,7 @@ $type-scale: (
 
 $layout: (
    margin-test: 3rem,
+   margin-hero: 8rem,
    align-mw: 60rem,
    ct-padding-sm: 2rem 0,
    // footer + cta
