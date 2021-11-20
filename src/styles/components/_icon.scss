@@ -30,4 +30,9 @@
          }
       }
    }
+
+   @include m(quote) {
+      @include bg-img('../assets/bg/icon-quotes.svg', center 0%, 100px);
+      // background-blend-mode: color-dodge;
+   }
 }

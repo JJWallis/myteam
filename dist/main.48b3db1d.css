@@ -587,6 +587,12 @@ body {
   position: absolute;
   display: block;
 }
+.icon--quote {
+  background-image: url("/icon-quotes.44483bab.svg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 100px;
+}
 
 .cta--parent > :first-child {
   display: flex;
@@ -680,11 +686,13 @@ nav a:hover {
 }
 
 .testimonials--parent__quotes article {
-  outline: 1px solid blue;
-  padding-top: 3rem;
+  padding-top: 3.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.testimonials--parent__quotes article .explainer {
+  margin-bottom: 1.3rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

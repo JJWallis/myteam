@@ -1,7 +1,5 @@
 @use 'abstracts' as *;
 
-// BUILD
-
 .build--parent {
    @include e(child) {
       // outline: 1px solid red;
@@ -19,9 +17,11 @@
 .testimonials--parent {
    @include e(quotes) {
       & article {
-         outline: 1px solid blue;
-         padding-top: 3rem;
+         padding-top: 3.4rem;
          @include flexy($dir: column, $align: center);
+         & .explainer {
+            margin-bottom: 1.3rem;
+         }
       }
    }
 }
