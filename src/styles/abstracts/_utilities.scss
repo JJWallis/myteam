@@ -2,6 +2,8 @@
 
 @each $color, $value in $colors {
    @if $color ==
+      sacramento-green or
+      $color ==
       pm-white or
       $color ==
       pm-coral or

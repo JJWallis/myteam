@@ -26,7 +26,8 @@
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
-  --ct-padding-sm: 2rem 0;
+  --ct-padding-cta: 4rem 0;
+  --ct-padding-ftr: 2rem 0;
   --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
@@ -95,6 +96,10 @@
 
 .bg-jungle-green {
   background-color: var(--clr-jungle-green, #004047);
+}
+
+.text-sacramento-green {
+  color: var(--clr-sacramento-green, #012d32);
 }
 
 .bg-sacramento-green {
@@ -502,6 +507,9 @@ body {
   background-position: calc(100% + 128px) 0%;
   background-size: 250px 333px;
 }
+.container--cta {
+  padding: var(--ct-padding-cta);
+}
 
 @media (max-width: 50em) {
   .list--build {
@@ -532,7 +540,7 @@ body {
 }
 @media (max-width: 50em) {
   .list--build .icon--position::before {
-    top: -80px;
+    top: -84px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -551,6 +559,10 @@ body {
   content: url("/icon-chart.d3e2fc52.svg");
   position: absolute;
   display: block;
+}
+
+.footer--pm {
+  padding: var(--ct-padding-ftr);
 }
 
 .form {
@@ -610,9 +622,6 @@ nav a:hover {
   }
 }
 
-.build--parent__child {
-  outline: 1px solid red;
-}
 .build--parent__child:first-child {
   padding-top: 2.5rem;
 }

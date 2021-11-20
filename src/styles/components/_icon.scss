@@ -10,7 +10,7 @@
 
          .list--build & {
             @include mq($width: max-width, $key: tablet) {
-               top: -80px;
+               top: -84px;
                left: 50%;
                transform: translateX(-50%);
             }

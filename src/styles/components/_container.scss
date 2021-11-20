@@ -15,4 +15,8 @@
          $size: 250px 333px
       );
    }
+
+   @include m(cta) {
+      padding: var(--ct-padding-cta);
+   }
 }

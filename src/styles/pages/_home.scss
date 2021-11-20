@@ -4,7 +4,7 @@
 
 .build--parent {
    @include e(child) {
-      outline: 1px solid red;
+      // outline: 1px solid red;
       &:first-child {
          padding-top: 2.5rem;
       }
