@@ -7,7 +7,16 @@
          top: 35%;
          left: 0;
          transform: translateY(-50%);
+
+         .list--build & {
+            @include mq($width: max-width, $key: tablet) {
+               top: -70px;
+               left: 50%;
+               transform: translateX(-50%);
+            }
+         }
       }
+
       &:first-child {
          @include p-el(before, $content: url('../assets/bg/icon-person.svg')) {
          }
@@ -22,8 +31,3 @@
       }
    }
 }
-
-// Home mobile:
-// top: -70px;
-//  left: 50%;
-//  transform: translateX(-50%);

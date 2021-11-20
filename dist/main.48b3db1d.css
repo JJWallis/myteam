@@ -532,6 +532,13 @@ body {
   left: 0;
   transform: translateY(-50%);
 }
+@media (max-width: 50em) {
+  .list--build .icon--position::before {
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .icon--position:first-child::before {
   content: url("/icon-person.2608a357.svg");
   position: absolute;
