@@ -5,10 +5,12 @@
       padding: var(--ct-padding-lg);
       outline: 3px solid var(--clr-pm-coral);
    }
+
    @include m(home) {
       padding-bottom: min(40vh, 18rem);
       @include bg-img('../assets/bg/bg-pattern-home-2.svg', center 100%, 475px);
    }
+
    @include e(nav--container) {
       position: relative;
    }

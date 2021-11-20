@@ -5,7 +5,7 @@
    @include mq(max-width, tablet) {
       @include box-model($disp: block);
       @include position(absolute, $width: 1.8rem, $z-index: 2000);
-      top: 0.4rem;
+      top: 0.2rem;
       right: 0;
       aspect-ratio: 1;
       @include bg-img(

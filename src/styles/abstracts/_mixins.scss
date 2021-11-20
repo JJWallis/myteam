@@ -32,11 +32,10 @@
 // box-model
 // =========================================
 
-@mixin box-model($disp: null, $width: null, $height: null, $border: null) {
+@mixin box-model($disp: null, $width: null, $height: null) {
    display: $disp;
    width: $width;
    height: $height;
-   border: $border;
 }
 
 // =========================================

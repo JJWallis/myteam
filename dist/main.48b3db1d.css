@@ -27,7 +27,7 @@
   --align-mw: 60rem;
   --ct-padding-sm: 2rem 0;
   --ct-padding-md: 3rem 0;
-  --ct-padding-lg: 4.5rem 0 min(15vh, 8.5rem) 0;
+  --ct-padding-lg: 4rem 0 min(15vh, 8.5rem) 0;
   --gap: 1.8rem;
   --flow-space: 1rem;
 }
@@ -427,7 +427,7 @@ body {
     position: absolute;
     width: 1.8rem;
     z-index: 2000;
-    top: 0.4rem;
+    top: 0.2rem;
     right: 0;
     aspect-ratio: 1;
     background-image: url("/icon-hamburger.51c8812d.svg");

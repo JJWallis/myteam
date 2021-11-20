@@ -3,6 +3,7 @@
 .hero {
    @include m(parent) {
       margin-top: min(var(--margin-hero), 15vh);
+
       @include e(child) {
          & > article {
             // change article? - specific component class > :first-child {...}
