@@ -5,13 +5,14 @@
       margin-top: min(var(--margin-hero), 15vh);
       @include e(child) {
          & > article {
-            // change article?
+            // change article? - specific component class > :first-child {...}
             @include flexy($dir: column, $align: center);
          }
       }
    }
+}
 
-   @include m(explainer) {
-      width: 95%;
-   }
+.explainer {
+   width: 95%;
+   max-width: 610px;
 }

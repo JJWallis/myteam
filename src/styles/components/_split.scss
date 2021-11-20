@@ -3,6 +3,7 @@
 .split {
    @include m(parent) {
       @include flexy($dir: column, $align: center);
+      // flex-direction var instead
       gap: var(--gap);
    }
 

@@ -402,8 +402,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.hero--explainer {
+
+.explainer {
   width: 95%;
+  max-width: 610px;
 }
 
 .skip-to-content {
