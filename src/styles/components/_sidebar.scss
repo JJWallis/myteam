@@ -26,13 +26,20 @@
    }
 }
 
-body[data-visible='true'] {
-   overflow-y: hidden;
+body {
    @include mq(max-width, tablet) {
       @include p-el('before', $position: fixed) {
          inset: 0;
          z-index: 999;
          background-color: rgba(0, 0, 0, 0.55);
+         opacity: 0;
+         transition: opacity 0.5s ease-in-out;
+      }
+      &[data-visible='true'] {
+         overflow-y: hidden;
+         @include p-el('before') {
+            opacity: 1;
+         }
       }
    }
 }

@@ -359,17 +359,25 @@ body {
   }
 }
 
-body[data-visible=true] {
-  overflow-y: hidden;
-}
 @media (max-width: 50em) {
-  body[data-visible=true]::before {
+  body::before {
     content: "";
     position: fixed;
     display: block;
     inset: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  body[data-visible=true] {
+    overflow-y: hidden;
+  }
+  body[data-visible=true]::before {
+    content: "";
+    position: absolute;
+    display: block;
+    opacity: 1;
   }
 }
 
