@@ -1,0 +1,13 @@
+@use 'abstracts' as *;
+
+.address {
+   display: block;
+   opacity: 0.7;
+   text-align: center;
+   @include mq(min-width, tablet) {
+      text-align: right;
+   }
+   @include mq(min-width, large) {
+      text-align: left;
+   }
+}

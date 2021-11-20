@@ -440,6 +440,9 @@ body {
 .logo--pm {
   display: inline-block;
 }
+.logo--sd {
+  width: 130px;
+}
 
 .hero--parent {
   margin-top: min(var(--margin-hero), 15vh);
@@ -515,6 +518,7 @@ body {
   width: 90%;
   max-width: var(--align-mw);
   margin-inline: auto;
+  outline: 1px solid white;
 }
 .container--build {
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -649,6 +653,22 @@ body {
   border: 3px solid white;
 }
 
+.address {
+  display: block;
+  opacity: 0.7;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .address {
+    text-align: right;
+  }
+}
+@media (min-width: 80em) {
+  .address {
+    text-align: left;
+  }
+}
+
 .footer--pm {
   padding: var(--ct-padding-ftr);
 }
@@ -696,6 +716,13 @@ body {
 /*
    .nav > * {}
 */
+.nav--sd {
+  display: flex;
+  align-items: center;
+  --gap: 2rem;
+  gap: var(--gap);
+}
+
 nav a {
   transition: color 0.2s ease-in-out;
 }

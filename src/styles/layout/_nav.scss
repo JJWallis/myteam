@@ -4,6 +4,12 @@
    .nav > * {}
 */
 
+.nav--sd {
+   @include flexy($align: center);
+   --gap: 2rem;
+   gap: var(--gap);
+}
+
 nav {
    & a {
       transition: color 0.2s ease-in-out;
