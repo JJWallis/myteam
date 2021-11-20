@@ -19,8 +19,11 @@
       & article {
          padding-top: 3.4rem;
          @include flexy($dir: column, $align: center);
-         & .explainer {
+         & .quote {
             margin-bottom: 1.3rem;
+            @include mq(min-width, tablet) {
+               margin-bottom: 2rem;
+            }
          }
       }
    }
