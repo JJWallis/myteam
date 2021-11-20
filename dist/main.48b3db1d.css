@@ -630,12 +630,19 @@ body {
 
 .job-title {
   font-size: 1.1rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 80em) {
   .job-title {
     margin-bottom: 3rem;
   }
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
 .footer--pm {

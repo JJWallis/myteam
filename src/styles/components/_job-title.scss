@@ -2,7 +2,7 @@
 
 .job-title {
    font-size: 1.1rem;
-   margin-bottom: 1.3rem;
+   margin-bottom: 1rem;
    @include mq(min-width, large) {
       margin-bottom: 3rem;
    }
