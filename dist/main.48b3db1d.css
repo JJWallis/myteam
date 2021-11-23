@@ -607,6 +607,20 @@ body {
 }
 .container--clients {
   padding: var(--ct-padding-about);
+  background-image: url("/bg-pattern-about-4.2781565f.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 100px) -29%;
+  background-size: 200px;
+}
+@media (min-width: 50em) {
+  .container--clients {
+    background-position: calc(0% - 0px) -27%;
+  }
+}
+@media (min-width: 80em) {
+  .container--clients {
+    background-position: calc(0% - 0px) 0%;
+  }
 }
 
 .list--build {

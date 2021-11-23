@@ -51,5 +51,16 @@
 
    @include m(clients) {
       padding: var(--ct-padding-about);
+      @include bg-img(
+         $img: '../assets/bg/bg-pattern-about-4.svg',
+         $position: calc(0% - 100px) -29%,
+         $size: 200px
+      );
+      @include mq(min-width, tablet) {
+         background-position: calc(0% - 0px) -27%;
+      }
+      @include mq(min-width, large) {
+         background-position: calc(0% - 0px) 0%;
+      }
    }
 }
