@@ -822,6 +822,7 @@ body {
 }
 .header__nav--container {
   position: relative;
+  outline: 3px solid var(--clr-pm-coral);
 }
 
 nav a {
@@ -837,10 +838,23 @@ nav a:hover {
   --gap: 2rem;
   gap: var(--gap);
 }
+.nav--wide {
+  position: absolute;
+  top: 33%;
+  left: 200px;
+  transform: translateY(-50%);
+}
 @media (max-width: 50em) {
   .nav--wide {
     display: none;
   }
+}
+.nav--wide__pm > * {
+  display: inline-block;
+}
+.nav--wide__pm > *:not(:last-child) {
+  --gap: 1.5rem;
+  margin-right: var(--gap);
 }
 
 .build--parent__child:first-child {

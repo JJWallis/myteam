@@ -20,5 +20,20 @@ nav {
       @include mq(max-width, tablet) {
          display: none;
       }
+
+      position: absolute;
+      top: 33%;
+      left: 200px;
+      transform: translateY(-50%);
+
+      @include e(pm) {
+         & > * {
+            display: inline-block;
+            &:not(:last-child) {
+               --gap: 1.5rem;
+               margin-right: var(--gap);
+            }
+         }
+      }
    }
 }

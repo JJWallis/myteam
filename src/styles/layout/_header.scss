@@ -18,5 +18,6 @@
 
    @include e(nav--container) {
       position: relative;
+      outline: 3px solid var(--clr-pm-coral);
    }
 }
