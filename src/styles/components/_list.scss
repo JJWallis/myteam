@@ -21,15 +21,7 @@
       }
    }
 
-   // SOCIAL
-   @include m(social) {
-      @include flexy($align: center);
-      --gap: 0.8rem;
-      gap: var(--gap);
-      @include mq(min-width, large) {
-         @include flexy($just: flex-end);
-      }
-   }
+   /*============== ABOUT ==============*/
 
    @include m(clients) {
       @include flexy($dir: column, $align: center);
@@ -37,6 +29,26 @@
 
       @include mq(min-width, tablet) {
          @include flexy($dir: row, $just: center);
+      }
+   }
+
+   @include m(contact) {
+      outline: 1px solid white;
+      @include flexy($dir: column, $align: flex-end);
+      gap: 3rem;
+      & > * {
+         width: 70%;
+      }
+   }
+
+   /*============== EXTRA ==============*/
+
+   @include m(social) {
+      @include flexy($align: center);
+      --gap: 0.8rem;
+      gap: var(--gap);
+      @include mq(min-width, large) {
+         @include flexy($just: flex-end);
       }
    }
 }
