@@ -57,17 +57,18 @@ $type-scale: (
       alignment: center,
       gap: 8rem,
       ct-padding-cta: 6.5rem 0,
-      ct-padding-ftr: 7rem 0 5rem,
+      ct-padding-ftr: 5rem 0 5rem,
    ),
    align-tablet: (
       gap: 5.5rem,
       ct-padding-cta: 7rem 0,
-      ct-padding-ftr: 6rem 0 4rem,
+      ct-padding-ftr: 4rem 0,
    ),
    align-large: (
       alignment: left,
       gap: 9rem,
       ct-padding-cta: 4.5rem 0,
+      ct-padding-ftr: 3rem,
    ),
 );
 

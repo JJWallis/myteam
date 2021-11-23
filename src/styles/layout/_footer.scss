@@ -38,7 +38,7 @@
 }
 
 .grid-container--footer {
-   outline: 1px solid white;
+   // outline: 1px solid white;
    grid-template-columns: 1fr;
    grid-auto-rows: auto;
    grid-template-areas:
@@ -47,7 +47,7 @@
       'address'
       'social'
       'copyright';
-   gap: 2.8rem;
+   gap: 2rem;
    @include mq(max-width, tablet) {
       place-items: center;
    }
@@ -73,6 +73,6 @@
    }
 
    & > * {
-      outline: 1px solid red;
+      // outline: 1px solid red;
    }
 }
