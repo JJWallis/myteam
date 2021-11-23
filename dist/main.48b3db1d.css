@@ -348,6 +348,11 @@ body {
 .btn--contact {
   padding: 0.7em 2em;
 }
+@media (max-width: 50em) {
+  .btn--contact--wide {
+    display: none;
+  }
+}
 @media (min-width: 50em) {
   .btn--cta {
     padding: 0.6em 2.2em;
@@ -819,16 +824,6 @@ body {
   position: relative;
 }
 
-/*
-   .nav > * {}
-*/
-.nav--sd {
-  display: flex;
-  align-items: center;
-  --gap: 2rem;
-  gap: var(--gap);
-}
-
 nav a {
   transition: color 0.2s ease-in-out;
 }
@@ -836,9 +831,14 @@ nav a:hover {
   color: var(--clr-pm-coral);
 }
 
+.nav--sd {
+  display: flex;
+  align-items: center;
+  --gap: 2rem;
+  gap: var(--gap);
+}
 @media (max-width: 50em) {
-  .nav--wide,
-.btn--wide {
+  .nav--wide {
     display: none;
   }
 }

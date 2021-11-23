@@ -1,15 +1,5 @@
 @use 'abstracts' as *;
 
-/*
-   .nav > * {}
-*/
-
-.nav--sd {
-   @include flexy($align: center);
-   --gap: 2rem;
-   gap: var(--gap);
-}
-
 nav {
    & a {
       transition: color 0.2s ease-in-out;
@@ -19,11 +9,16 @@ nav {
    }
 }
 
-// nav wide
+.nav {
+   @include m(sd) {
+      @include flexy($align: center);
+      --gap: 2rem;
+      gap: var(--gap);
+   }
 
-.nav--wide,
-.btn--wide {
-   @include mq(max-width, tablet) {
-      display: none;
+   @include m(wide) {
+      @include mq(max-width, tablet) {
+         display: none;
+      }
    }
 }

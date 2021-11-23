@@ -18,7 +18,6 @@
          @include mq(max-width, tablet) {
             margin-top: 1.3rem;
          }
-         // color: white
          border-color: hsl(var(--clr-pm-white));
          &:hover {
             background-color: var(--clr-pm-white);
@@ -53,6 +52,12 @@
 
    @include m(contact) {
       padding: 0.7em 2em;
+      @include m(wide) {
+         @include mq(max-width, tablet) {
+            display: none;
+         }
+         // styles
+      }
    }
 
    @include m(cta) {
