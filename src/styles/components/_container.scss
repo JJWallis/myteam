@@ -80,5 +80,10 @@
 
    @include m(contact) {
       padding: var(--ct-padding-contact);
+      @include bg-img(
+         $img: '../assets/bg/bg-pattern-contact-2.svg',
+         $position: calc(100% + 100px) calc(100% + 112px),
+         $size: 200px
+      );
    }
 }
