@@ -454,6 +454,9 @@ body {
   background-color: var(--clr-rapture-blue);
 }
 
+.title {
+  /* ================ ABOUT ============== */
+}
 .title--build {
   width: 75%;
 }
@@ -480,6 +483,9 @@ body {
   .title--clients {
     margin-bottom: 3.5rem;
   }
+}
+.title--directors {
+  text-align: center;
 }
 .title--cta {
   letter-spacing: 0.7px;
@@ -634,7 +640,13 @@ body {
     background-position: calc(0% - 0px) 0%;
   }
 }
-
+.container--directors {
+  padding: var(--ct-padding-about);
+  background-image: url("/bg-pattern-about-2-contact-1.e268053b.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 100px) -100px;
+  background-size: 200px;
+}
 .list--build {
   outline: 1px solid white;
 }

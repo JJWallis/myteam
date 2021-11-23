@@ -63,4 +63,14 @@
          background-position: calc(0% - 0px) 0%;
       }
    }
+
+   @include m(directors) {
+      padding: var(--ct-padding-about);
+      background-image: url('../assets/bg/bg-pattern-about-2-contact-1.svg');
+      background-repeat: no-repeat;
+      background-position: calc(0% - 100px) -100px;
+      background-size: 200px;
+      @include mq(min-width, tablet) {
+      }
+   }
 }
