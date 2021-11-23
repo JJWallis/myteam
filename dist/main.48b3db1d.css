@@ -708,6 +708,7 @@ body {
 }
 .footer__address {
   grid-area: address;
+  margin-bottom: 1rem;
 }
 .footer__social {
   grid-area: social;
@@ -715,13 +716,31 @@ body {
 .footer__copyright {
   grid-area: copyright;
 }
+@media (max-width: 50em) {
+  .footer__copyright {
+    margin-top: -1.5rem;
+  }
+}
 
 .grid-container--footer {
   outline: 1px solid white;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  place-items: center;
+  grid-template-areas: "logo" "navigation" "address" "social" "copyright";
   gap: 2.8rem;
+}
+@media (max-width: 50em) {
+  .grid-container--footer {
+    place-items: center;
+  }
+}
+@media (min-width: 50em) {
+  .grid-container--footer {
+    grid-template-columns: 150px 1fr 290px;
+    grid-template-rows: repeat(3, minmax(40px, auto));
+    grid-template-areas: "logo . address" "navigation . ." "social . copyright";
+    gap: 0;
+  }
 }
 .grid-container--footer > * {
   outline: 1px solid red;

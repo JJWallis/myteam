@@ -15,6 +15,7 @@
 
    @include e(address) {
       grid-area: address;
+      margin-bottom: 1rem;
    }
 
    @include e(social) {
@@ -23,6 +24,9 @@
 
    @include e(copyright) {
       grid-area: copyright;
+      @include mq(max-width, tablet) {
+         margin-top: -1.5rem;
+      }
    }
 }
 
@@ -30,8 +34,27 @@
    outline: 1px solid white;
    grid-template-columns: 1fr;
    grid-auto-rows: auto;
-   place-items: center;
+   grid-template-areas:
+      'logo'
+      'navigation'
+      'address'
+      'social'
+      'copyright';
    gap: 2.8rem;
+   @include mq(max-width, tablet) {
+      place-items: center;
+   }
+
+   @include mq(min-width, tablet) {
+      grid-template-columns: 150px 1fr 290px;
+      grid-template-rows: repeat(3, minmax(40px, auto));
+      grid-template-areas:
+         'logo . address'
+         'navigation . .'
+         'social . copyright';
+      gap: 0;
+   }
+
    & > * {
       outline: 1px solid red;
    }
