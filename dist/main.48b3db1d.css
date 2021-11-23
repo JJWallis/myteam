@@ -9,7 +9,7 @@
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
   --fs-500: 4.2667rem;
-  --fs-400: 2.75rem;
+  --fs-400: 2.5rem;
   --fs-300-h3: 1.5rem;
   --fs-300: 1.2rem;
   --fs-200: 1.2rem;
@@ -448,11 +448,13 @@ body {
   background-color: var(--clr-rapture-blue);
 }
 
-.title--sd {
-  --fs-400: 2.5rem;
-}
 .title--build {
   width: 75%;
+}
+@media (min-width: 50em) {
+  .title--build {
+    width: 68%;
+  }
 }
 .title--testimonials {
   margin-bottom: 4rem;
@@ -557,6 +559,7 @@ body {
 @media (min-width: 50em) {
   .container--build {
     padding-top: 7.5rem;
+    background-size: 250px 290px;
   }
 }
 .container--cta {
@@ -879,7 +882,7 @@ nav a:hover {
 }
 
 .build--parent__child:first-child {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 @media (min-width: 50em) {
   .build--parent__child:last-child {

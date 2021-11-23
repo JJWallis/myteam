@@ -1,12 +1,11 @@
 @use 'abstracts' as *;
 
 .title {
-   @include m(sd) {
-      --fs-400: 2.5rem;
-   }
-
    @include m(build) {
       width: 75%;
+      @include mq(min-width, tablet) {
+         width: 68%;
+      }
    }
 
    @include m(testimonials) {
