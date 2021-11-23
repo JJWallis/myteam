@@ -554,6 +554,11 @@ body {
   background-position: calc(100% + 128px) 0%;
   background-size: 250px 333px;
 }
+@media (min-width: 50em) {
+  .container--build {
+    padding-top: 7.5rem;
+  }
+}
 .container--cta {
   padding: var(--ct-padding-cta);
   background-image: url("/bg-pattern-home-6-about-5.56b63356.svg");
@@ -735,9 +740,9 @@ body {
   max-width: 610px;
 }
 @media (min-width: 50em) {
-  .explainer {
-    width: 80%;
-    max-width: 740px;
+  .explainer--hero {
+    width: 65%;
+    max-width: 700px;
   }
 }
 
