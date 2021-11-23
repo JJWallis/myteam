@@ -210,6 +210,13 @@
   display: grid;
 }
 
+.position-center {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 fieldset {
   padding: 0;
   margin: 0;
@@ -348,6 +355,13 @@ body {
 .btn--contact {
   padding: 0.7em 2em;
 }
+.btn--contact--wide {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
 @media (max-width: 50em) {
   .btn--contact--wide {
     display: none;
@@ -453,6 +467,11 @@ body {
 
 .logo--pm {
   display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 .logo--sd {
   width: 130px;
@@ -822,6 +841,7 @@ body {
 }
 .header__nav--container {
   position: relative;
+  min-height: 2rem;
   outline: 3px solid var(--clr-pm-coral);
 }
 
@@ -841,7 +861,7 @@ nav a:hover {
 .nav--wide {
   position: absolute;
   z-index: 2;
-  top: 33%;
+  top: 50%;
   left: 200px;
   transform: translateY(-50%);
 }

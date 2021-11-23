@@ -21,7 +21,7 @@ nav {
          display: none;
       }
       @include position($pos: absolute, $z-index: 2) {
-         top: 33%;
+         top: 50%;
          left: 200px;
          transform: translateY(-50%);
       }

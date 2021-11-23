@@ -1,4 +1,5 @@
 @use 'maps' as *;
+@use 'mixins' as *;
 
 @each $color, $value in $colors {
    @if $color ==
@@ -81,4 +82,11 @@
 
 .grid-container {
    display: grid;
+}
+
+.position-center {
+   @include position($pos: absolute, $z-index: 2) {
+      top: 50%;
+      transform: translateY(-50%);
+   }
 }

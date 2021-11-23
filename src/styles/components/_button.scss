@@ -56,7 +56,11 @@
          @include mq(max-width, tablet) {
             display: none;
          }
-         // styles
+         @include position($pos: absolute, $z-index: 2) {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+         }
       }
    }
 
