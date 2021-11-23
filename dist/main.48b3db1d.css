@@ -577,6 +577,12 @@ body {
   --gap: 0.8rem;
   gap: var(--gap);
 }
+@media (min-width: 80em) {
+  .list--social {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
 .icon--position {
   position: relative;
@@ -724,6 +730,11 @@ body {
     padding-bottom: 1.2rem;
   }
 }
+@media (min-width: 80em) {
+  .footer__nav {
+    padding-bottom: 0;
+  }
+}
 .footer__address {
   grid-area: address;
   margin-bottom: 1rem;
@@ -754,7 +765,7 @@ body {
 }
 @media (min-width: 50em) {
   .grid-container--footer {
-    grid-template-columns: 150px 1fr 290px;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: repeat(3, minmax(40px, auto));
     grid-template-areas: "logo . address" "navigation . ." "social . copyright";
     gap: 0;
@@ -762,10 +773,10 @@ body {
 }
 @media (min-width: 80em) {
   .grid-container--footer {
-    grid-template-columns: repeat(2, 150px) 1fr 290px;
+    grid-template-columns: repeat(2, auto) 1fr auto;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "logo address . social" "navigation address . copyright";
-    gap: 4rem;
+    gap: 2.2rem 6.5rem;
   }
 }
 .grid-container--footer > * {

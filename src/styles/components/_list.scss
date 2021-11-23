@@ -22,5 +22,8 @@
       @include flexy($align: center);
       --gap: 0.8rem;
       gap: var(--gap);
+      @include mq(min-width, large) {
+         @include flexy($just: flex-end);
+      }
    }
 }

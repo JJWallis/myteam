@@ -14,6 +14,10 @@
       @include mq(min-width, tablet) {
          padding-bottom: 1.2rem;
       }
+
+      @include mq(min-width, large) {
+         padding-bottom: 0;
+      }
    }
 
    @include e(address) {
@@ -49,7 +53,7 @@
    }
 
    @include mq(min-width, tablet) {
-      grid-template-columns: 150px 1fr 290px;
+      grid-template-columns: auto 1fr auto;
       grid-template-rows: repeat(3, minmax(40px, auto));
       grid-template-areas:
          'logo . address'
@@ -59,13 +63,13 @@
    }
 
    @include mq(min-width, large) {
-      grid-template-columns: repeat(2, 150px) 1fr 290px;
+      grid-template-columns: repeat(2, auto) 1fr auto;
       grid-template-rows: repeat(2, auto);
       grid-template-areas:
          'logo address . social'
          'navigation address . copyright';
 
-      gap: 4rem;
+      gap: 2.2rem 6.5rem;
    }
 
    & > * {
