@@ -6,6 +6,11 @@
       // outline: 3px solid var(--clr-pm-coral);
    }
 
+   @include e(nav--container) {
+      position: relative;
+      min-height: 2rem;
+   }
+
    @include m(home) {
       --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
       padding: var(--ct-padding-hdr);
@@ -16,8 +21,11 @@
       );
    }
 
-   @include e(nav--container) {
-      position: relative;
-      min-height: 2rem;
+   @include m(about) {
+      @include bg-img(
+         '../assets/bg/bg-pattern-about-1-mobile-nav-1.svg',
+         calc(100% + 105px) calc(100% + 105px),
+         210px
+      );
    }
 }
