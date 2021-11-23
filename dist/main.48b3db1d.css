@@ -840,6 +840,7 @@ nav a:hover {
 }
 .nav--wide {
   position: absolute;
+  z-index: 2;
   top: 33%;
   left: 200px;
   transform: translateY(-50%);
