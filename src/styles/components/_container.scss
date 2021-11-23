@@ -66,11 +66,13 @@
 
    @include m(directors) {
       padding: var(--ct-padding-about);
-      background-image: url('../assets/bg/bg-pattern-about-2-contact-1.svg');
+      background-image: url('../assets/bg/bg-pattern-about-2-contact-1.svg'),
+         url('../assets/bg/bg-pattern-home-4-about-3.svg');
       background-repeat: no-repeat;
-      background-position: calc(0% - 100px) -100px;
-      background-size: 200px;
+      background-position: calc(0% - 100px) -100px, calc(100% + 0px) 100%;
+      background-size: 200px, 150px;
       @include mq(min-width, tablet) {
+         background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
       }
    }
 }

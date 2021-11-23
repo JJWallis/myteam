@@ -486,6 +486,7 @@ body {
 }
 .title--directors {
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 .title--cta {
   letter-spacing: 0.7px;
@@ -642,11 +643,17 @@ body {
 }
 .container--directors {
   padding: var(--ct-padding-about);
-  background-image: url("/bg-pattern-about-2-contact-1.e268053b.svg");
+  background-image: url("/bg-pattern-about-2-contact-1.e268053b.svg"), url("/bg-pattern-home-4-about-3.5345c0c0.svg");
   background-repeat: no-repeat;
-  background-position: calc(0% - 100px) -100px;
-  background-size: 200px;
+  background-position: calc(0% - 100px) -100px, calc(100% + 0px) 100%;
+  background-size: 200px, 150px;
 }
+@media (min-width: 50em) {
+  .container--directors {
+    background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
+  }
+}
+
 .list--build {
   outline: 1px solid white;
 }
