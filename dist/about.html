@@ -371,24 +371,28 @@
 
       <!-- FOOTER -->
       <footer class="footer--pm bg-dark-green">
-         <div class="container--footer container">
-            <aside>
-               <nav class="footer__nav">
-                  <a href="/index.html" aria-label="My team logo directing to homepage." title="Homepage"><img src="/logo.f6e82216.svg" alt="My team logo." class="logo logo--sd"></a>
+         <div role="grid" class="grid-container grid-container--footer container">
+            <div role="gridcell" class="footer__logo">
+               <a href="/" aria-label="My team logo directing to homepage." title="Homepage"><img src="/logo.f6e82216.svg" alt="My team logo." class="logo logo--sd"></a>
+            </div>
+            <div role="gridcell" class="footer__nav">
+               <nav>
                   <ul role="list" class="nav nav--sd">
-                     <li><a href="/index.html">home</a></li>
-                     <li><a href="/about.html">about</a></li>
+                     <li><a href="/" class="text-pm-white">home</a></li>
+                     <li>
+                        <a href="/about.html" class="text-pm-white">about</a>
+                     </li>
                   </ul>
                </nav>
-               <div>
-                  <small class="address">987 Hillcrest Lane<br>
-                     Irvine CA<br>
-                     California 92714<br>
-                     Call Us : 949-833-7432
-                  </small>
-               </div>
-            </aside>
-            <aside>
+            </div>
+            <div role="gridcell" class="footer__address">
+               <small class="address">987 Hillcrest Lane<br>
+                  Irvine CA<br>
+                  California 92714<br>
+                  Call Us : 949-833-7432
+               </small>
+            </div>
+            <div role="gridcell" class="footer__social">
                <ul role="list" class="list--social">
                   <li>
                      <a href="/" aria-label="Facebook's logo directing to myteam's Facebook page." title="myteam Facebook page">
@@ -410,8 +414,10 @@
                      </a>
                   </li>
                </ul>
+            </div>
+            <div role="gridcell" class="footer__copyright">
                <small class="copyright">Copyright 2020. All Rights Reserved</small>
-            </aside>
+            </div>
          </div>
       </footer>
    </body>
