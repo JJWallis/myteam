@@ -3,6 +3,7 @@
 .list {
    // BUILD
    @include m(build) {
+      // outline: 1px solid white;
       @include mq($width: max-width, $key: tablet) {
          --flow-space: 8rem;
       }

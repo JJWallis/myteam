@@ -618,8 +618,8 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 35%;
-  left: 0;
+  top: 50%;
+  left: -85px;
   transform: translateY(-50%);
 }
 @media (max-width: 50em) {
@@ -746,6 +746,9 @@ body {
   .explainer--hero {
     width: 65%;
     max-width: 700px;
+  }
+  .explainer--build {
+    width: 79%;
   }
 }
 

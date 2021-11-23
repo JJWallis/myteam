@@ -4,8 +4,8 @@
    @include m(position) {
       position: relative;
       @include p-el(before) {
-         top: 35%;
-         left: 0;
+         top: 50%;
+         left: -85px;
          transform: translateY(-50%);
 
          .list--build & {
@@ -33,7 +33,6 @@
 
    @include m(quote) {
       @include bg-img('../assets/bg/icon-quotes.svg', center 0%, 100px);
-      // background-blend-mode: color-dodge;
    }
 }
 

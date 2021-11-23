@@ -9,6 +9,9 @@
          width: 65%;
          max-width: 700px;
       }
+      @include m(build) {
+         width: 79%;
+      }
    }
 }
 
