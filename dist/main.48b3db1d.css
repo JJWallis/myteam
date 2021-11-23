@@ -670,8 +670,16 @@ body {
   padding: var(--ct-padding-contact);
   background-image: url("/bg-pattern-contact-2.252c4978.svg");
   background-repeat: no-repeat;
-  background-position: calc(100% + 100px) calc(100% + 112px);
+  background-position: calc(100% + 95px) calc(100% + 112px);
   background-size: 200px;
+}
+@media (min-width: 50em) {
+  .container--contact {
+    background-image: url("/bg-pattern-contact-2.252c4978.svg"), url("/bg-pattern-about-2-contact-1.e268053b.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 95px) 100%, calc(0% - 100px) 0px;
+    background-size: 200px, 200px;
+  }
 }
 
 .list {

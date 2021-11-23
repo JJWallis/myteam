@@ -82,8 +82,15 @@
       padding: var(--ct-padding-contact);
       @include bg-img(
          $img: '../assets/bg/bg-pattern-contact-2.svg',
-         $position: calc(100% + 100px) calc(100% + 112px),
+         $position: calc(100% + 95px) calc(100% + 112px),
          $size: 200px
       );
+      @include mq(min-width, tablet) {
+         background-image: url('../assets/bg/bg-pattern-contact-2.svg'),
+            url('../assets/bg/bg-pattern-about-2-contact-1.svg');
+         background-repeat: no-repeat;
+         background-position: calc(100% + 95px) 100%, calc(0% - 100px) 0px;
+         background-size: 200px, 200px;
+      }
    }
 }
