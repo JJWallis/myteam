@@ -25,7 +25,7 @@
   --gap: 8rem;
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
-  --ct-padding-about: 4rem 0 7rem;
+  --ct-padding-about: 5rem 0 7rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
@@ -507,7 +507,6 @@ body {
 .logo--client__gadget {
   width: 120px;
 }
-
 .hero--parent {
   margin-top: min(var(--margin-hero), 15vh);
 }
@@ -671,7 +670,6 @@ body {
   }
 }
 .list--clients {
-  outline: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
