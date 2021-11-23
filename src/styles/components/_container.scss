@@ -4,7 +4,7 @@
    width: 90%;
    max-width: var(--align-mw);
    margin-inline: auto;
-   outline: 1px solid white;
+   // outline: 1px solid white;
 
    @include m(build) {
       --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);

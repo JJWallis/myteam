@@ -23,7 +23,7 @@
   --fw-bold: 700;
   --alignment: center;
   --gap: 8rem;
-  --ct-padding-cta: 6rem 0;
+  --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 7rem 0 5rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
@@ -521,7 +521,6 @@ body {
   width: 90%;
   max-width: var(--align-mw);
   margin-inline: auto;
-  outline: 1px solid white;
 }
 .container--build {
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -700,6 +699,32 @@ body {
 
 .footer--pm {
   padding: var(--ct-padding-ftr);
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__nav {
+  grid-area: navigation;
+}
+.footer__address {
+  grid-area: address;
+}
+.footer__social {
+  grid-area: social;
+}
+.footer__copyright {
+  grid-area: copyright;
+}
+
+.grid-container--footer {
+  outline: 1px solid white;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  place-items: center;
+  gap: 2.8rem;
+}
+.grid-container--footer > * {
+  outline: 1px solid red;
 }
 
 .form {

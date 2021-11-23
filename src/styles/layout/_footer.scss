@@ -4,8 +4,35 @@
    @include m(pm) {
       padding: var(--ct-padding-ftr);
    }
+
+   @include e(logo) {
+      grid-area: logo;
+   }
+
+   @include e(nav) {
+      grid-area: navigation;
+   }
+
+   @include e(address) {
+      grid-area: address;
+   }
+
+   @include e(social) {
+      grid-area: social;
+   }
+
+   @include e(copyright) {
+      grid-area: copyright;
+   }
 }
 
 .grid-container--footer {
-   // & > ... {}
+   outline: 1px solid white;
+   grid-template-columns: 1fr;
+   grid-auto-rows: auto;
+   place-items: center;
+   gap: 2.8rem;
+   & > * {
+      outline: 1px solid red;
+   }
 }
