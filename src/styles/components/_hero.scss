@@ -6,7 +6,6 @@
 
       @include e(child) {
          & > article {
-            // change article? - specific component class > :first-child {...}
             @include flexy($dir: column, $align: center);
          }
       }

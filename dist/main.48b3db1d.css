@@ -35,7 +35,6 @@
 }
 @media (min-width: 50em) {
   :root {
-    --fs-500: 6.6667rem;
     --fs-400: 2.4rem;
     --fs-300-h3: 1.2rem;
     --fs-300: 1.2rem;
@@ -63,6 +62,7 @@
     --gap: 9rem;
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
+    --fs-500: 6.6667rem;
   }
 }
 
@@ -733,6 +733,12 @@ body {
 .explainer {
   width: 98%;
   max-width: 610px;
+}
+@media (min-width: 50em) {
+  .explainer {
+    width: 80%;
+    max-width: 740px;
+  }
 }
 
 .footer--pm {
