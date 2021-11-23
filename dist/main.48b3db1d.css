@@ -8,6 +8,7 @@
   --clr-jungle-green: #004047;
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
+  --clr-transparent: transparent;
   --fs-500: 4.2667rem;
   --fs-400: 2.5rem;
   --fs-300-h3: 1.5rem;
@@ -122,6 +123,10 @@
 
 .bg-dark-green {
   background-color: var(--clr-dark-green, #002529);
+}
+
+.bg-transparent {
+  background-color: var(--clr-transparent, transparent);
 }
 
 .fs-500 {
@@ -953,10 +958,10 @@ body {
   }
 }
 .form {
-  width: 100%;
-  padding-top: 1rem;
-  border: 0 0 0.1px solid hsl(var(--clr-pm-white)) 0;
   outline: none;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid white;
 }
 .form::placeholder {
   color: hsl(var(--clr-pm-white)/0.7);
@@ -971,10 +976,11 @@ body {
   color: hsl(var(--clr-pm-coral)/0.7);
 }
 .form__input {
-  padding-bottom: 0.8rem;
+  padding: 1.5rem 0.7rem;
 }
 .form__text-area {
-  padding-bottom: 3rem;
+  padding: 2rem 0.7rem 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .header--pm {
