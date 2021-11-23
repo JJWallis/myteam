@@ -46,4 +46,10 @@
          background-size: 170px 120px, 230px 130px;
       }
    }
+
+   /* =============== ABOUT =================*/
+
+   @include m(clients) {
+      padding: var(--ct-padding-about);
+   }
 }

@@ -25,10 +25,10 @@
   --gap: 8rem;
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
+  --ct-padding-about: 5.5rem 0;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
-  --ct-padding-md: 3rem 0;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
   --flow-space: 1.5rem;
@@ -54,6 +54,7 @@
     --gap: 5.5rem;
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
+    --ct-padding-about: 6.5rem 0;
   }
 }
 @media (min-width: 80em) {
@@ -62,6 +63,7 @@
     --gap: 9rem;
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
+    --ct-padding-about: 7.5rem 0;
     --fs-500: 6.6667rem;
   }
 }
@@ -184,6 +186,10 @@
 
 .ct-padding-ftr {
   text-align: var(--ct-padding-ftr);
+}
+
+.ct-padding-about {
+  text-align: var(--ct-padding-about);
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -554,6 +560,7 @@ body {
   width: 90%;
   max-width: var(--align-mw);
   margin-inline: auto;
+  /* =============== ABOUT =================*/
 }
 .container--build {
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -594,6 +601,9 @@ body {
     --ct-padding-lg: 7rem 0 min(27vh, 10rem);
     background-size: 170px 120px, 230px 130px;
   }
+}
+.container--clients {
+  padding: var(--ct-padding-about);
 }
 
 .list--build {
