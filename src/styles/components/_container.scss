@@ -75,4 +75,10 @@
          background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
       }
    }
+
+   /* =============== CONTACT =================*/
+
+   @include m(contact) {
+      padding: var(--ct-padding-contact);
+   }
 }

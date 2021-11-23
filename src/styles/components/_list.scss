@@ -33,7 +33,6 @@
    }
 
    @include m(contact) {
-      outline: 1px solid white;
       @include flexy($dir: column, $align: flex-end);
       gap: 3rem;
       & > * {

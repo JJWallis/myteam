@@ -27,6 +27,7 @@
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
   --ct-padding-about: 5rem 0 7rem;
+  --ct-padding-contact: 0 0 6rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
@@ -56,6 +57,7 @@
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
     --ct-padding-about: 6rem 0 7rem;
+    --ct-padding-contact: 0 0 8rem;
   }
 }
 @media (min-width: 80em) {
@@ -65,6 +67,7 @@
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
     --ct-padding-about: 8rem 0 9rem;
+    --ct-padding-contact: 0 0 10rem;
     --fs-500: 6.6667rem;
   }
 }
@@ -195,6 +198,10 @@
 
 .ct-padding-about {
   text-align: var(--ct-padding-about);
+}
+
+.ct-padding-contact {
+  text-align: var(--ct-padding-contact);
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -588,6 +595,7 @@ body {
   max-width: var(--align-mw);
   margin-inline: auto;
   /* =============== ABOUT =================*/
+  /* =============== CONTACT =================*/
 }
 .container--build {
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
@@ -658,6 +666,9 @@ body {
     background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
   }
 }
+.container--contact {
+  padding: var(--ct-padding-contact);
+}
 
 .list {
   /*============== ABOUT ==============*/
@@ -700,7 +711,6 @@ body {
   }
 }
 .list--contact {
-  outline: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
