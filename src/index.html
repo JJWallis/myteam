@@ -267,18 +267,23 @@
 
       <!-- FOOTER -->
       <footer class="footer--pm bg-dark-green">
-         <div class="container--footer container">
-            <aside>
+         <div
+            role="grid"
+            class="grid-container grid-container--footer container"
+         >
+            <div role="gridcell">
+               <a
+                  href="/"
+                  aria-label="My team logo directing to homepage."
+                  title="Homepage"
+                  ><img
+                     src="./assets/logos/logo.svg"
+                     alt="My team logo."
+                     class="logo logo--sd"
+               /></a>
+            </div>
+            <div role="gridcell">
                <nav class="footer__nav">
-                  <a
-                     href="/"
-                     aria-label="My team logo directing to homepage."
-                     title="Homepage"
-                     ><img
-                        src="./assets/logos/logo.svg"
-                        alt="My team logo."
-                        class="logo logo--sd"
-                  /></a>
                   <ul role="list" class="nav nav--sd">
                      <li><a href="/" class="text-pm-white">home</a></li>
                      <li>
@@ -286,16 +291,16 @@
                      </li>
                   </ul>
                </nav>
-               <div>
-                  <small class="address"
-                     >987 Hillcrest Lane<br />
-                     Irvine CA<br />
-                     California 92714<br />
-                     Call Us : 949-833-7432
-                  </small>
-               </div>
-            </aside>
-            <aside>
+            </div>
+            <div role="gridcell">
+               <small class="address"
+                  >987 Hillcrest Lane<br />
+                  Irvine CA<br />
+                  California 92714<br />
+                  Call Us : 949-833-7432
+               </small>
+            </div>
+            <div role="gridcell">
                <ul role="list" class="list--social">
                   <li>
                      <a
@@ -335,10 +340,12 @@
                      </a>
                   </li>
                </ul>
+            </div>
+            <div role="gridcell">
                <small class="copyright"
                   >Copyright 2020. All Rights Reserved</small
                >
-            </aside>
+            </div>
          </div>
       </footer>
    </body>

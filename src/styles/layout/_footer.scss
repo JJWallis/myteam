@@ -1,7 +1,5 @@
 @use 'abstracts' as *;
 
-// Grid container - descendant selectors for grid-items + not just classes themselves (great with grid-areas) - .container > .item {…}
-
 .footer {
    @include m(pm) {
       padding: var(--ct-padding-ftr);
