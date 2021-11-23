@@ -35,5 +35,9 @@
       outline: 1px solid white;
       @include flexy($dir: column, $align: center);
       gap: 3.2rem;
+
+      @include mq(min-width, tablet) {
+         @include flexy($dir: row, $just: center);
+      }
    }
 }

@@ -17,5 +17,8 @@
 
    @include m(client) {
       width: 200px;
+      @include e(gadget) {
+         width: 120px;
+      }
    }
 }
