@@ -507,6 +507,7 @@ body {
 .logo--client__gadget {
   width: 120px;
 }
+
 .hero--parent {
   margin-top: min(var(--margin-hero), 15vh);
 }

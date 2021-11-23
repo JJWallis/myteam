@@ -20,8 +20,5 @@
       @include e(gadget) {
          width: 120px;
       }
-      @include mq(min-width, tablet) {
-         // width: 250px;
-      }
    }
 }
