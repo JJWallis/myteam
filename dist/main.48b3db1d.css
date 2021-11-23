@@ -679,6 +679,7 @@ body {
 @media (min-width: 50em) {
   .address {
     text-align: right;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 80em) {
@@ -690,6 +691,13 @@ body {
 .copyright {
   opacity: 0.7;
   font-size: 1.1rem;
+}
+@media (min-width: 50em) {
+  .copyright {
+    display: block;
+    font-size: 0.9rem;
+    text-align: right;
+  }
 }
 
 .explainer {
@@ -705,6 +713,11 @@ body {
 }
 .footer__nav {
   grid-area: navigation;
+}
+@media (min-width: 50em) {
+  .footer__nav {
+    padding-bottom: 1.2rem;
+  }
 }
 .footer__address {
   grid-area: address;
