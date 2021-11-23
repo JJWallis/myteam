@@ -24,7 +24,7 @@
   --alignment: center;
   --gap: 8rem;
   --ct-padding-cta: 6.5rem 0;
-  --ct-padding-ftr: 5rem 0 5rem;
+  --ct-padding-ftr: 5rem 0 4rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
   --align-mw: 60rem;
@@ -461,7 +461,8 @@ body {
 }
 @media (min-width: 50em) {
   .title--testimonials {
-    width: 66%;
+    width: 65%;
+    max-width: 550px;
     margin: 0 auto 4rem;
   }
 }

@@ -11,7 +11,8 @@
    @include m(testimonials) {
       margin-bottom: 4rem;
       @include mq(min-width, tablet) {
-         width: 66%;
+         width: 65%;
+         max-width: 550px;
          margin: 0 auto 4rem;
       }
    }
