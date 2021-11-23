@@ -58,6 +58,16 @@
       gap: 0;
    }
 
+   @include mq(min-width, large) {
+      grid-template-columns: repeat(2, 150px) 1fr 290px;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+         'logo address . social'
+         'navigation address . copyright';
+
+      gap: 4rem;
+   }
+
    & > * {
       outline: 1px solid red;
    }

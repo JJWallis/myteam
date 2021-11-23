@@ -451,6 +451,11 @@ body {
 .logo--sd {
   width: 130px;
 }
+@media (min-width: 80em) {
+  .logo--sd {
+    width: 150px;
+  }
+}
 
 .hero--parent {
   margin-top: min(var(--margin-hero), 15vh);
@@ -753,6 +758,14 @@ body {
     grid-template-rows: repeat(3, minmax(40px, auto));
     grid-template-areas: "logo . address" "navigation . ." "social . copyright";
     gap: 0;
+  }
+}
+@media (min-width: 80em) {
+  .grid-container--footer {
+    grid-template-columns: repeat(2, 150px) 1fr 290px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo address . social" "navigation address . copyright";
+    gap: 4rem;
   }
 }
 .grid-container--footer > * {

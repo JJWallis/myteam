@@ -4,7 +4,11 @@
    @include m(pm) {
       display: inline-block;
    }
+
    @include m(sd) {
       width: 130px;
+      @include mq(min-width, large) {
+         width: 150px;
+      }
    }
 }
