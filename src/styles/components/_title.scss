@@ -17,6 +17,10 @@
       }
    }
 
+   @include m(clients) {
+      text-align: center;
+   }
+
    @include m(cta) {
       letter-spacing: 0.7px;
    }
