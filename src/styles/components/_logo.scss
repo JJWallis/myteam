@@ -14,4 +14,8 @@
          width: 150px;
       }
    }
+
+   @include m(client) {
+      width: 200px;
+   }
 }

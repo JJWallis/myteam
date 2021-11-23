@@ -30,4 +30,10 @@
          @include flexy($just: flex-end);
       }
    }
+
+   @include m(clients) {
+      outline: 1px solid white;
+      @include flexy($dir: column, $align: center);
+      gap: 3.2rem;
+   }
 }
