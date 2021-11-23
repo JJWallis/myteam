@@ -4,9 +4,9 @@
    display: none;
    @include mq(max-width, tablet) {
       @include box-model($disp: block);
-      @include position(absolute, $width: 1.8rem, $z-index: 2000);
-      top: 0.2rem;
+      width: 1.8rem;
       right: 0;
+      z-index: 2000;
       aspect-ratio: 1;
       @include bg-img(
          $img: '../assets/nav/icon-hamburger.svg',

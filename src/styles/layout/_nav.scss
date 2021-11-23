@@ -20,11 +20,7 @@ nav {
       @include mq(max-width, tablet) {
          display: none;
       }
-      @include position($pos: absolute, $z-index: 2) {
-         top: 50%;
-         left: 200px;
-         transform: translateY(-50%);
-      }
+      left: 170px;
       @include e(pm) {
          & > * {
             display: inline-block;

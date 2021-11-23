@@ -2,11 +2,9 @@
 
 .logo {
    @include m(pm) {
-      display: inline-block;
-      @include position($pos: absolute, $z-index: 2) {
-         top: 50%;
-         left: 0;
-         transform: translateY(-50%);
+      left: 0;
+      @include mq(min-width, tablet) {
+         width: 130px;
       }
    }
 

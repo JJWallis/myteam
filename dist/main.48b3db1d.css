@@ -356,11 +356,7 @@ body {
   padding: 0.7em 2em;
 }
 .btn--contact--wide {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
   right: 0;
-  transform: translateY(-50%);
 }
 @media (max-width: 50em) {
   .btn--contact--wide {
@@ -466,12 +462,12 @@ body {
 }
 
 .logo--pm {
-  display: inline-block;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
   left: 0;
-  transform: translateY(-50%);
+}
+@media (min-width: 50em) {
+  .logo--pm {
+    width: 130px;
+  }
 }
 .logo--sd {
   width: 130px;
@@ -507,11 +503,9 @@ body {
 @media (max-width: 50em) {
   .mobile-nav-toggle {
     display: block;
-    position: absolute;
     width: 1.8rem;
-    z-index: 2000;
-    top: 0.2rem;
     right: 0;
+    z-index: 2000;
     aspect-ratio: 1;
     background-image: url("/icon-hamburger.51c8812d.svg");
     background-repeat: no-repeat;
@@ -859,11 +853,7 @@ nav a:hover {
   gap: var(--gap);
 }
 .nav--wide {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 200px;
-  transform: translateY(-50%);
+  left: 170px;
 }
 @media (max-width: 50em) {
   .nav--wide {
