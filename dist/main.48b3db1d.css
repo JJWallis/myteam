@@ -432,15 +432,17 @@ body {
   background-color: var(--clr-rapture-blue);
 }
 
-.title--build {
-  width: 75%;
+.title--sd {
   --fs-400: 2.5rem;
 }
-.title--cta {
-  letter-spacing: 0.7px;
+.title--build {
+  width: 75%;
 }
 .title--testimonials {
   margin-bottom: 4rem;
+}
+.title--cta {
+  letter-spacing: 0.7px;
 }
 
 .logo--pm {

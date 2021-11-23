@@ -1,16 +1,19 @@
 @use 'abstracts' as *;
 
 .title {
-   @include m(build) {
-      width: 75%;
+   @include m(sd) {
       --fs-400: 2.5rem;
    }
 
-   @include m(cta) {
-      letter-spacing: 0.7px;
+   @include m(build) {
+      width: 75%;
    }
 
    @include m(testimonials) {
       margin-bottom: 4rem;
+   }
+
+   @include m(cta) {
+      letter-spacing: 0.7px;
    }
 }
