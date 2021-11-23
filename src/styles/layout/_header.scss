@@ -27,5 +27,8 @@
          calc(100% + 105px) calc(100% + 105px),
          210px
       );
+      @include mq(min-width, tablet) {
+         background-position: calc(100% + 105px) 100%;
+      }
    }
 }

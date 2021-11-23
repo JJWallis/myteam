@@ -938,6 +938,11 @@ body {
   background-position: calc(100% + 105px) calc(100% + 105px);
   background-size: 210px;
 }
+@media (min-width: 50em) {
+  .header--about {
+    background-position: calc(100% + 105px) 100%;
+  }
+}
 
 nav a {
   transition: color 0.2s ease-in-out;
