@@ -2,7 +2,8 @@
 
 .title {
    @include m(build) {
-      width: 78%;
+      width: 75%;
+      --fs-400: 2.5rem;
    }
 
    @include m(cta) {

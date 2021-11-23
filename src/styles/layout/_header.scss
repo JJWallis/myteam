@@ -9,7 +9,11 @@
    @include m(home) {
       --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
       padding: var(--ct-padding-hdr);
-      @include bg-img('../assets/bg/bg-pattern-home-2.svg', center 100%, 475px);
+      @include bg-img(
+         '../assets/bg/bg-pattern-home-2.svg',
+         center 101%,
+         430px 140px
+      );
    }
 
    @include e(nav--container) {
