@@ -43,4 +43,7 @@
    &:hover {
       color: var(--clr-pm-coral);
    }
+   @include mq(min-width, tablet) {
+      font-size: 1.7rem;
+   }
 }

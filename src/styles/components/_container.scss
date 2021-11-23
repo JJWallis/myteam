@@ -41,5 +41,8 @@
       background-repeat: no-repeat;
       background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
       background-size: 200px, 250px;
+      @include mq(min-width, tablet) {
+         --ct-padding-lg: 7rem 0 min(27vh, 10rem);
+      }
    }
 }
