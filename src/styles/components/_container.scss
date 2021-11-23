@@ -43,6 +43,7 @@
       background-size: 200px, 250px;
       @include mq(min-width, tablet) {
          --ct-padding-lg: 7rem 0 min(27vh, 10rem);
+         background-size: 170px 120px, 230px 130px;
       }
    }
 }

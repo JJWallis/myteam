@@ -9,11 +9,9 @@
          width: 65%;
          max-width: 700px;
       }
+
       @include m(build) {
          width: 79%;
       }
    }
 }
-
-// min-width tablet: 71%; - Build
-// min-width tablet:  width: 80% + max-width: 740px - Testimonials

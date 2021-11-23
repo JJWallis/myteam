@@ -459,6 +459,12 @@ body {
 .title--testimonials {
   margin-bottom: 4rem;
 }
+@media (min-width: 50em) {
+  .title--testimonials {
+    width: 66%;
+    margin: 0 auto 4rem;
+  }
+}
 .title--cta {
   letter-spacing: 0.7px;
 }
@@ -585,6 +591,7 @@ body {
 @media (min-width: 50em) {
   .container--testimonials {
     --ct-padding-lg: 7rem 0 min(27vh, 10rem);
+    background-size: 170px 120px, 230px 130px;
   }
 }
 
