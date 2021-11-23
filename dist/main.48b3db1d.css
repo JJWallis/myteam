@@ -682,8 +682,14 @@ body {
   .container--contact {
     background-image: url("/bg-pattern-contact-2.252c4978.svg"), url("/bg-pattern-about-2-contact-1.e268053b.svg");
     background-repeat: no-repeat;
-    background-position: calc(100% + 95px) 100%, calc(0% - 100px) 0px;
+    background-position: calc(100% + 100px) 100%, calc(0% - 100px) 0px;
     background-size: 200px, 200px;
+  }
+}
+@media (max-width: 80em) {
+  .container--contact__child {
+    max-width: 580px;
+    margin: 0 auto;
   }
 }
 
