@@ -19,6 +19,7 @@
   --fs-200: 1.2rem;
   --fs-address: 1.1rem;
   --fs-job-title: 1.1rem;
+  --fs-employee-name: 1.6rem;
   --lh-500: 1;
   --lh-400: 1;
   --lh-300: 1.5556;
@@ -50,6 +51,7 @@
     --fs-300: 1.2rem;
     --fs-200: 0.9375rem;
     --fs-address: 0.9rem;
+    --fs-employee-name: 1.4rem;
   }
 }
 @media (min-width: 50em) {
@@ -177,6 +179,10 @@
 
 .fs-job-title {
   font-size: var(--fs-job-title);
+}
+
+.fs-employee-name {
+  font-size: var(--fs-employee-name);
 }
 
 .lh-500 {
@@ -927,12 +933,6 @@ body {
 
 .employee-name {
   font-style: normal;
-  font-size: 1.6rem;
-}
-@media (min-width: 50em) {
-  .employee-name {
-    font-size: 1.4rem;
-  }
 }
 
 .job-title {

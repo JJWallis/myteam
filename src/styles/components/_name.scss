@@ -2,8 +2,4 @@
 
 .employee-name {
    font-style: normal;
-   font-size: 1.6rem;
-   @include mq(min-width, tablet) {
-      font-size: 1.4rem;
-   }
 }
