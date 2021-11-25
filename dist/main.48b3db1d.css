@@ -412,9 +412,6 @@ body {
 .btn--director:hover {
   background-color: var(--clr-rapture-blue);
 }
-.btn--director[aria-selected=true] {
-  background-color: var(--clr-rapture-blue);
-}
 .btn--contact {
   padding: 0.7em 2em;
 }
@@ -433,6 +430,10 @@ body {
   .btn--cta {
     padding: 0.6em 2.2em;
   }
+}
+
+.btn--director[aria-selected=true] {
+  background-color: red;
 }
 
 .sidebar {
