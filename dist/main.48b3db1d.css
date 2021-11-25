@@ -18,6 +18,7 @@
   --fs-300: 1.2rem;
   --fs-200: 1.2rem;
   --fs-address: 1.1rem;
+  --fs-job-title: 1.1rem;
   --lh-500: 1;
   --lh-400: 1;
   --lh-300: 1.5556;
@@ -172,6 +173,10 @@
 
 .fs-address {
   font-size: var(--fs-address);
+}
+
+.fs-job-title {
+  font-size: var(--fs-job-title);
 }
 
 .lh-500 {
@@ -931,7 +936,6 @@ body {
 }
 
 .job-title {
-  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 80em) {
