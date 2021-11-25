@@ -5,12 +5,12 @@
    @include mq(max-width, tablet) {
       display: block;
       padding: min(10rem, 20vh) 3rem;
+      width: 310px;
       position: fixed;
       inset: 0 0 0 calc(100% - 310px);
-      width: 310px;
       z-index: 1000;
-      overflow-x: hidden;
       transform: translateX(100%);
+      overflow-x: hidden;
       transition: transform 0.5s ease-in-out;
       @include bg-img(
          $img: '../assets/bg/bg-pattern-about-1-mobile-nav-1.svg',

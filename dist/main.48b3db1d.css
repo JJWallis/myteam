@@ -478,12 +478,12 @@ body {
   .sidebar {
     display: block;
     padding: min(10rem, 20vh) 3rem;
+    width: 310px;
     position: fixed;
     inset: 0 0 0 calc(100% - 310px);
-    width: 310px;
     z-index: 1000;
-    overflow-x: hidden;
     transform: translateX(100%);
+    overflow-x: hidden;
     transition: transform 0.5s ease-in-out;
     background-image: url("/bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg");
     background-repeat: no-repeat;
@@ -528,9 +528,9 @@ body {
   display: block;
   width: 67px;
   height: 6px;
-  background-color: var(--clr-pm-coral);
   top: 0;
   left: 0;
+  background-color: var(--clr-pm-coral);
 }
 @media (max-width: 80em) {
   .small-border--hero::before {
@@ -571,7 +571,6 @@ body {
   }
 }
 .title--clients {
-  text-align: center;
   margin-bottom: 4rem;
 }
 @media (min-width: 50em) {
@@ -580,7 +579,6 @@ body {
   }
 }
 .title--directors {
-  text-align: center;
   margin-bottom: 3.5rem;
 }
 .title--contact {

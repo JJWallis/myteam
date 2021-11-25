@@ -2,9 +2,9 @@
 
 .small-border {
    @include p-el(before, $width: 67px, $height: 6px) {
-      background-color: var(--clr-pm-coral);
       top: 0;
       left: 0;
+      background-color: var(--clr-pm-coral);
    }
 
    @include m(hero) {
@@ -20,8 +20,4 @@
          background-color: var(--clr-rapture-blue);
       }
    }
-
-   // .hero &::before {
-   //    // @extend %bg-rapture;
-   // }
 }
