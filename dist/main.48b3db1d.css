@@ -1099,6 +1099,7 @@ nav a:hover {
   gap: var(--gap-directors);
 }
 .grid-container--directors__item {
+  position: relative;
   padding: 2rem 0 5.5rem;
 }
 

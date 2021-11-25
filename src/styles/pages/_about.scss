@@ -5,6 +5,7 @@
    gap: var(--gap-directors);
 
    @include e(item) {
+      position: relative;
       padding: 2rem 0 5.5rem;
    }
 }
