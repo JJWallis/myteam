@@ -61,6 +61,8 @@ $type-scale: (
    align-mobile: (
       alignment: center,
       gap: 8rem,
+      // split
+      gap-directors: 3rem,
       ct-padding-cta: 6.5rem 0,
       ct-padding-ftr: 5rem 0 4rem,
       ct-padding-about: 5rem 0 7rem,
@@ -68,6 +70,7 @@ $type-scale: (
    ),
    align-tablet: (
       gap: 5.5rem,
+      gap-directors: 5rem 1rem,
       ct-padding-cta: 7rem 0,
       ct-padding-ftr: 4rem 0,
       ct-padding-about: 6rem 0 7rem,
@@ -76,6 +79,7 @@ $type-scale: (
    align-large: (
       alignment: left,
       gap: 9rem,
+      gap-directors: 4.5rem 2rem,
       ct-padding-cta: 4.5rem 0,
       ct-padding-ftr: 3rem,
       ct-padding-about: 8rem 0 9rem,

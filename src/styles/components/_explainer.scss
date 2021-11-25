@@ -9,12 +9,6 @@
          width: 65%;
          max-width: 700px;
       }
-
-      @include m(about) {
-         @include mq(max-width, tablet) {
-            width: 90%;
-         }
-      }
    }
 
    @include m(build) {

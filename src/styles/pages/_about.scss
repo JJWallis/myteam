@@ -1,3 +1,5 @@
 @use 'abstracts' as *;
 
-// Grid container - descendant selectors for grid-items + not just classes themselves (great with grid-areas) - .container > .item {…}
+.grid-container--directors {
+   gap: var(--gap-directors);
+}

@@ -27,6 +27,7 @@
   --fw-bold: 700;
   --alignment: center;
   --gap: 8rem;
+  --gap-directors: 3rem;
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
   --ct-padding-about: 5rem 0 7rem;
@@ -58,6 +59,7 @@
 @media (min-width: 50em) {
   :root {
     --gap: 5.5rem;
+    --gap-directors: 5rem 1rem;
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
     --ct-padding-about: 6rem 0 7rem;
@@ -68,6 +70,7 @@
   :root {
     --alignment: left;
     --gap: 9rem;
+    --gap-directors: 4.5rem 2rem;
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
     --ct-padding-about: 8rem 0 9rem;
@@ -202,6 +205,10 @@
 
 .gap {
   text-align: var(--gap);
+}
+
+.gap-directors {
+  text-align: var(--gap-directors);
 }
 
 .ct-padding-cta {
@@ -929,11 +936,6 @@ body {
     max-width: 700px;
   }
 }
-@media (max-width: 50em) {
-  .explainer--hero--about {
-    width: 90%;
-  }
-}
 @media (min-width: 50em) {
   .explainer--build {
     width: 73%;
@@ -1082,6 +1084,10 @@ nav a:hover {
 .nav--wide__pm > *:not(:last-child) {
   --gap: 1.5rem;
   margin-right: var(--gap);
+}
+
+.grid-container--directors {
+  gap: var(--gap-directors);
 }
 
 .build--parent__child:first-child {
