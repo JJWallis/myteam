@@ -1117,6 +1117,12 @@ nav a:hover {
 .grid-container--directors {
   outline: 1px solid white;
   gap: var(--gap-directors);
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+@media (min-width: 50em) {
+  .grid-container--directors {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
 }
 @media (min-width: 50em) and (max-width: 80em) {
   .grid-container--directors {

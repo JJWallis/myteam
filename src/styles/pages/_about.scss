@@ -3,11 +3,14 @@
 .grid-container--directors {
    outline: 1px solid white;
    gap: var(--gap-directors);
+   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+   @include mq(min-width, tablet) {
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   }
    @include mqs(min-width, tablet, max-width, large) {
       width: 90%;
       margin: 0 auto;
    }
-
    @include e(item) {
       position: relative;
       padding: 2rem 0 4rem;
