@@ -2,8 +2,12 @@ const btns = document.querySelectorAll('.btn--director')
 
 function toggleData(e: any) {
    const target = e.target
-   const aria = target.setAttribute('aria-selected', 'true')
-   console.log(aria)
+   const isVisible = target.getAttribute('aria-selected')
+   if (isVisible === 'true') {
+      target.setAttribute('aria-selected', 'false')
+   } else {
+      target.setAttribute('aria-selected', 'true')
+   }
    //    traverse to hidden data
 }
 

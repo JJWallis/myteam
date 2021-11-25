@@ -412,6 +412,11 @@ body {
 .btn--director:hover {
   background-color: var(--clr-rapture-blue);
 }
+.btn--director[aria-selected=true] {
+  background-color: var(--clr-rapture-blue);
+  background-image: url("/icon-close.6339e390.svg");
+  background-repeat: no-repeat;
+}
 .btn--contact {
   padding: 0.7em 2em;
 }
@@ -430,10 +435,6 @@ body {
   .btn--cta {
     padding: 0.6em 2.2em;
   }
-}
-
-.btn--director[aria-selected=true] {
-  background-color: red;
 }
 
 .sidebar {

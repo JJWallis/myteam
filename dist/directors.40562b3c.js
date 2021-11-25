@@ -122,8 +122,14 @@ var btns = document.querySelectorAll('.btn--director');
 
 function toggleData(e) {
   var target = e.target;
-  var aria = target.setAttribute('aria-selected', 'true');
-  console.log(aria); //    traverse to hidden data
+  var isVisible = target.getAttribute('aria-selected');
+
+  if (isVisible === 'true') {
+    target.setAttribute('aria-selected', 'false');
+  } else {
+    target.setAttribute('aria-selected', 'true');
+  } //    traverse to hidden data
+
 }
 
 btns.forEach(function (btn) {
