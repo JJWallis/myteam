@@ -30,7 +30,7 @@
   --gap-directors: 3rem;
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
-  --ct-padding-about: 5rem 0 7rem;
+  --ct-padding-about: 5rem 0 7.5rem;
   --ct-padding-contact: 0 0 6rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
@@ -693,6 +693,18 @@ body {
     background-size: 170px 120px, 230px 130px;
   }
 }
+.container--directors {
+  padding: var(--ct-padding-about);
+  background-image: url("/bg-pattern-about-2-contact-1.e268053b.svg"), url("/bg-pattern-home-4-about-3.5345c0c0.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 100px) -100px, calc(100% + 0px) 100%;
+  background-size: 200px, 150px;
+}
+@media (min-width: 50em) {
+  .container--directors {
+    background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
+  }
+}
 .container--clients {
   padding: var(--ct-padding-about);
   background-image: url("/bg-pattern-about-4.2781565f.svg");
@@ -708,18 +720,6 @@ body {
 @media (min-width: 80em) {
   .container--clients {
     background-position: calc(0% - 0px) 0%;
-  }
-}
-.container--directors {
-  padding: var(--ct-padding-about);
-  background-image: url("/bg-pattern-about-2-contact-1.e268053b.svg"), url("/bg-pattern-home-4-about-3.5345c0c0.svg");
-  background-repeat: no-repeat;
-  background-position: calc(0% - 100px) -100px, calc(100% + 0px) 100%;
-  background-size: 200px, 150px;
-}
-@media (min-width: 50em) {
-  .container--directors {
-    background-position: calc(0% - 100px) 0px, calc(100% + 0px) 100%;
   }
 }
 .container--contact {
@@ -1121,6 +1121,7 @@ nav a:hover {
 .grid-container--directors__item {
   position: relative;
   padding: 2rem 0 4rem;
+  background-color: rgba(1, 45, 50, 0.8);
 }
 
 .extra-info {
