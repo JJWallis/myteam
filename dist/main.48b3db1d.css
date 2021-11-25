@@ -1118,7 +1118,7 @@ nav a:hover {
   outline: 1px solid white;
   gap: var(--gap-directors);
 }
-@media (min-width: 50em) {
+@media (min-width: 50em) and (max-width: 80em) {
   .grid-container--directors {
     width: 90%;
     margin: 0 auto;
