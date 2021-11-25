@@ -3,12 +3,14 @@ const btns = document.querySelectorAll('.btn--director')
 function toggleData(e: any) {
    const target = e.target
    const isVisible = target.getAttribute('aria-selected')
+   const hiddenData = target.nextElementSibling
    if (isVisible === 'true') {
       target.setAttribute('aria-selected', 'false')
+      hiddenData.setAttribute('data-visible', 'false')
    } else {
       target.setAttribute('aria-selected', 'true')
+      hiddenData.setAttribute('data-visible', 'true')
    }
-   //    traverse to hidden data
 }
 
 btns.forEach((btn) => btn.addEventListener('click', toggleData))

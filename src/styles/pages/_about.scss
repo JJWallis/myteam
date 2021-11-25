@@ -17,6 +17,11 @@
    @include flexy($dir: column, $align: center);
    padding-top: 1.8rem;
    text-align: center;
+   opacity: 0;
+   transition: opacity 0.3s linear;
+   &[data-visible='true'] {
+      opacity: 1;
+   }
    & > .quote {
       margin: 0.5rem 0 1.5rem;
       width: 90%;

@@ -1136,6 +1136,11 @@ nav a:hover {
   align-items: center;
   padding-top: 1.8rem;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.extra-info[data-visible=true] {
+  opacity: 1;
 }
 .extra-info > .quote {
   margin: 0.5rem 0 1.5rem;

@@ -123,13 +123,15 @@ var btns = document.querySelectorAll('.btn--director');
 function toggleData(e) {
   var target = e.target;
   var isVisible = target.getAttribute('aria-selected');
+  var hiddenData = target.nextElementSibling;
 
   if (isVisible === 'true') {
     target.setAttribute('aria-selected', 'false');
+    hiddenData.setAttribute('data-visible', 'false');
   } else {
     target.setAttribute('aria-selected', 'true');
-  } //    traverse to hidden data
-
+    hiddenData.setAttribute('data-visible', 'true');
+  }
 }
 
 btns.forEach(function (btn) {
