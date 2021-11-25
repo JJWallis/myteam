@@ -254,6 +254,15 @@
   transform: translateY(-50%);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 fieldset {
   padding: 0;
   margin: 0;
