@@ -20,17 +20,17 @@
          }
          border-color: hsl(var(--clr-pm-white));
          &:hover {
+            border-color: transparent;
             background-color: var(--clr-pm-white);
             color: var(--clr-dark-green);
-            border-color: transparent;
          }
       }
 
       @include m(dark) {
          &:hover {
+            border-color: transparent;
             background-color: var(--clr-dark-green);
             color: var(--clr-pm-white);
-            border-color: transparent;
          }
       }
    }
@@ -40,8 +40,6 @@
    // =========================================
 
    @include m(sd) {
-      // @extend %text-dark;
-      // @extend %bg-white;
       padding: 0.5em 2em;
       border: none;
       outline: none;

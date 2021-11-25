@@ -399,14 +399,14 @@ body {
   }
 }
 .btn--pm--light:hover {
+  border-color: transparent;
   background-color: var(--clr-pm-white);
   color: var(--clr-dark-green);
-  border-color: transparent;
 }
 .btn--pm--dark:hover {
+  border-color: transparent;
   background-color: var(--clr-dark-green);
   color: var(--clr-pm-white);
-  border-color: transparent;
 }
 .btn--sd {
   padding: 0.5em 2em;
