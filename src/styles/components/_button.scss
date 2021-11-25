@@ -72,6 +72,10 @@
       &:hover {
          background-color: var(--clr-rapture-blue);
       }
+
+      &[aria-selected='true'] {
+         background-color: var(--clr-rapture-blue);
+      }
    }
 
    // =========================================
@@ -88,6 +92,10 @@
       }
    }
 
+   @include m(disabled) {
+      opacity: 0.5;
+   }
+
    // =========================================
    // All
    // =========================================
@@ -96,9 +104,5 @@
       @include mq(min-width, tablet) {
          padding: 0.6em 2.2em;
       }
-   }
-
-   @include m(disabled) {
-      opacity: 0.5;
    }
 }
