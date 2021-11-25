@@ -28,7 +28,7 @@
          $position: calc(0% - 0px) 112.5%,
          $size: 250px
       );
-      @media (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, large)) {
+      @include mqs(min-width, tablet, max-width, large) {
          background-position: calc(0% - 0px) 122%;
       }
    }
