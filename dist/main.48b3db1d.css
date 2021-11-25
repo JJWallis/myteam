@@ -393,6 +393,16 @@ body {
 .btn--sd:hover {
   background-color: var(--clr-rapture-blue);
 }
+.btn--director {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--clr-pm-coral);
+  background-image: url("/icon-cross.d0327cea.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
 .btn--contact {
   padding: 0.7em 2em;
 }

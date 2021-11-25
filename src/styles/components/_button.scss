@@ -55,6 +55,11 @@
    // =========================================
 
    @include m(director) {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: var(--clr-pm-coral);
+      @include bg-img('../assets/about/icon-cross.svg', center, 20px);
    }
 
    // =========================================
