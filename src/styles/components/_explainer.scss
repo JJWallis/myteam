@@ -5,10 +5,10 @@
    max-width: 610px;
 
    @include mq(min-width, tablet) {
-      @include m(hero) {
-         width: 65%;
-         max-width: 700px;
-      }
+      // @include m(hero) {
+      //    width: 65%;
+      //    max-width: 700px;
+      // }
 
       @include m(build) {
          width: 79%;
