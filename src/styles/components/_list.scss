@@ -35,10 +35,11 @@
    /*============== CONTACT ==============*/
 
    @include m(contact) {
-      outline: 1px solid white;
-      @include flexy($dir: column, $align: flex-end);
+      // outline: 1px solid white;
+      @include flexy($dir: column, $align: flex-start);
       gap: 3rem;
       & > * {
+         margin-left: 5.3rem;
          width: 70%;
          @include mq(min-width, tablet) {
             width: 100%;

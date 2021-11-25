@@ -60,7 +60,7 @@
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
     --ct-padding-about: 6rem 0 7rem;
-    --ct-padding-contact: 0 0 8rem;
+    --ct-padding-contact: 0 0 6.6rem;
   }
 }
 @media (min-width: 80em) {
@@ -705,12 +705,10 @@ body {
     background-size: 200px, 200px;
   }
 }
-.container--contact__child {
-  outline: 1px solid white;
-}
 @media (max-width: 80em) {
   .container--contact__child {
-    max-width: 580px;
+    align-items: unset;
+    max-width: 630px;
     margin: 0 auto;
   }
 }
@@ -757,13 +755,13 @@ body {
   }
 }
 .list--contact {
-  outline: 1px solid white;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 3rem;
 }
 .list--contact > * {
+  margin-left: 5.3rem;
   width: 70%;
 }
 @media (min-width: 50em) {

@@ -94,9 +94,10 @@
       }
 
       @include e(child) {
-         outline: 1px solid white;
+         // outline: 1px solid white;
          @include mq(max-width, large) {
-            max-width: 580px;
+            align-items: unset;
+            max-width: 630px;
             margin: 0 auto;
          }
       }
