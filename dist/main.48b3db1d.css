@@ -967,12 +967,10 @@ body {
 
 .copyright {
   opacity: 0.7;
-  font-size: 1.1rem;
 }
 @media (min-width: 50em) {
   .copyright {
     display: block;
-    font-size: 0.9rem;
     text-align: right;
   }
 }

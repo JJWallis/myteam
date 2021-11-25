@@ -2,10 +2,8 @@
 
 .copyright {
    opacity: 0.7;
-   font-size: 1.1rem;
    @include mq(min-width, tablet) {
       display: block;
-      font-size: 0.9rem;
       text-align: right;
    }
 }
