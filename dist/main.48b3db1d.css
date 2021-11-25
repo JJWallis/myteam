@@ -394,8 +394,13 @@ body {
   background-color: var(--clr-rapture-blue);
 }
 .btn--director {
+  position: absolute;
   width: 70px;
   height: 70px;
+  z-index: 3;
+  bottom: -34px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
   background-color: var(--clr-pm-coral);
   background-image: url("/icon-cross.d0327cea.svg");

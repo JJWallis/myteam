@@ -55,8 +55,16 @@
    // =========================================
 
    @include m(director) {
-      width: 70px;
-      height: 70px;
+      @include position(
+         $pos: absolute,
+         $width: 70px,
+         $height: 70px,
+         $z-index: 3
+      ) {
+         bottom: -34px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
       border-radius: 50%;
       background-color: var(--clr-pm-coral);
       @include bg-img('../assets/about/icon-cross.svg', center, 20px);
