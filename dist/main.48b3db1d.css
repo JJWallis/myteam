@@ -1137,6 +1137,10 @@ nav a:hover {
   padding-top: 1.8rem;
   text-align: center;
 }
+.extra-info > .quote {
+  margin: 0.5rem 0 1.5rem;
+  width: 90%;
+}
 
 .build--parent__child:first-child {
   padding-top: 3rem;
