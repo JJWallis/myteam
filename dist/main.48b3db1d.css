@@ -62,7 +62,7 @@
     --gap-directors: 5rem 1rem;
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
-    --ct-padding-about: 6rem 0 7rem;
+    --ct-padding-about: 6rem 0 8.3rem;
     --ct-padding-contact: 0 0 6.6rem;
   }
 }
@@ -1117,6 +1117,12 @@ nav a:hover {
 .grid-container--directors {
   outline: 1px solid white;
   gap: var(--gap-directors);
+}
+@media (min-width: 50em) {
+  .grid-container--directors {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .grid-container--directors__item {
   position: relative;

@@ -3,6 +3,10 @@
 .grid-container--directors {
    outline: 1px solid white;
    gap: var(--gap-directors);
+   @include mq(min-width, tablet) {
+      width: 90%;
+      margin: 0 auto;
+   }
 
    @include e(item) {
       position: relative;

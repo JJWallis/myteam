@@ -121,6 +121,24 @@
    }
 }
 
+@mixin mqs($minWidth, $minKey, $maxWidth, $maxKey) {
+   @if $minWidth ==
+      'max-width' or
+      $minWidth ==
+      'min-width' or
+      $minKey ==
+      'tablet' or
+      $minKey ==
+      'large'
+   {
+      @media ($minWidth: map-get($breakpoints, $minKey)) and ($maxWidth: map-get($breakpoints, $maxKey)) {
+         @content;
+      }
+   } @else {
+      @error 'Tablet, medium, large & valid width required for media query.';
+   }
+}
+
 // =========================================
 // feature queries
 // =========================================
