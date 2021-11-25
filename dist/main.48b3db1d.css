@@ -403,10 +403,14 @@ body {
   transform: translateX(-50%);
   border-radius: 50%;
   background-color: var(--clr-pm-coral);
+  transition: background-color 0.25s ease-in-out;
   background-image: url("/icon-cross.d0327cea.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
+}
+.btn--director:hover {
+  background-color: var(--clr-rapture-blue);
 }
 .btn--contact {
   padding: 0.7em 2em;
@@ -1115,7 +1119,7 @@ nav a:hover {
 }
 .grid-container--directors__item {
   position: relative;
-  padding: 2rem 0 5.5rem;
+  padding: 2rem 0 4rem;
 }
 
 .build--parent__child:first-child {
