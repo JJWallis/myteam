@@ -35,12 +35,14 @@
    /*============== CONTACT ==============*/
 
    @include m(contact) {
-      margin-top: 2rem;
       outline: 1px solid white;
       @include flexy($dir: column, $align: flex-end);
       gap: 3rem;
       & > * {
          width: 70%;
+         @include mq(min-width, tablet) {
+            width: 100%;
+         }
       }
    }
 

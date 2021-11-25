@@ -36,8 +36,11 @@
 
    @include m(contact) {
       margin-bottom: 1rem;
+      @include mq(min-width, tablet) {
+         margin-bottom: 1.7rem;
+      }
       @include e(sd) {
-         margin-bottom: 3rem;
+         margin-bottom: 3.7rem;
       }
    }
    /* ================ ALL ============== */

@@ -516,8 +516,13 @@ body {
 .title--contact {
   margin-bottom: 1rem;
 }
+@media (min-width: 50em) {
+  .title--contact {
+    margin-bottom: 1.7rem;
+  }
+}
 .title--contact__sd {
-  margin-bottom: 3rem;
+  margin-bottom: 3.7rem;
 }
 .title--cta {
   letter-spacing: 0.7px;
@@ -752,7 +757,6 @@ body {
   }
 }
 .list--contact {
-  margin-top: 2rem;
   outline: 1px solid white;
   display: flex;
   flex-direction: column;
@@ -761,6 +765,11 @@ body {
 }
 .list--contact > * {
   width: 70%;
+}
+@media (min-width: 50em) {
+  .list--contact > * {
+    width: 100%;
+  }
 }
 .list--social {
   display: flex;
