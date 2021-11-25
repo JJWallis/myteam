@@ -288,10 +288,6 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex-grow: 1;
-}
-
 fieldset {
   padding: 0;
   margin: 0;
@@ -1138,6 +1134,10 @@ nav a:hover {
 .nav--wide__pm > *:not(:last-child) {
   --gap: 1.5rem;
   margin-right: var(--gap);
+}
+
+main {
+  flex-grow: 1;
 }
 
 .grid-container--directors {

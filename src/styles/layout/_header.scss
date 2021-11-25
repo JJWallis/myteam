@@ -3,7 +3,6 @@
 .header {
    @include m(pm) {
       padding: var(--ct-padding-hdr);
-      // outline: 3px solid var(--clr-pm-coral);
    }
 
    @include e(nav--container) {

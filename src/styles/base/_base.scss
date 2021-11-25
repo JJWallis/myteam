@@ -4,10 +4,6 @@ body {
    @include flexy($dir: column);
 }
 
-main {
-   flex-grow: 1;
-}
-
 fieldset {
    padding: 0;
    margin: 0;
