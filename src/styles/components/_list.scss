@@ -32,6 +32,8 @@
       }
    }
 
+   /*============== CONTACT ==============*/
+
    @include m(contact) {
       @include flexy($dir: column, $align: flex-end);
       gap: 3rem;
@@ -40,7 +42,7 @@
       }
    }
 
-   /*============== EXTRA ==============*/
+   /*============== ALL ==============*/
 
    @include m(social) {
       @include flexy($align: center);

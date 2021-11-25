@@ -94,7 +94,7 @@
       }
 
       @include e(child) {
-         // outline: 1px solid red;
+         outline: 1px solid white;
          @include mq(max-width, large) {
             max-width: 580px;
             margin: 0 auto;

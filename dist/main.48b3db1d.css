@@ -479,6 +479,8 @@ body {
 
 .title {
   /* ================ ABOUT ============== */
+  /* ================ CONTACT ============== */
+  /* ================ ALL ============== */
 }
 .title--build {
   width: 75%;
@@ -510,6 +512,9 @@ body {
 .title--directors {
   text-align: center;
   margin-bottom: 3.5rem;
+}
+.title--contact {
+  margin-bottom: 1rem;
 }
 .title--cta {
   letter-spacing: 0.7px;
@@ -692,6 +697,9 @@ body {
     background-size: 200px, 200px;
   }
 }
+.container--contact__child {
+  outline: 1px solid white;
+}
 @media (max-width: 80em) {
   .container--contact__child {
     max-width: 580px;
@@ -701,7 +709,8 @@ body {
 
 .list {
   /*============== ABOUT ==============*/
-  /*============== EXTRA ==============*/
+  /*============== CONTACT ==============*/
+  /*============== ALL ==============*/
 }
 .list--build {
   outline: 1px solid white;
