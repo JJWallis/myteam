@@ -244,7 +244,7 @@
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
 .grid-container {
@@ -622,7 +622,7 @@ body {
     background-size: 100%;
   }
   .mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("/icon-close.6339e390.svg");
+    background-image: url("/icon-close-mobile.14d9811b.svg");
     background-repeat: no-repeat;
   }
 }
@@ -1125,6 +1125,17 @@ nav a:hover {
 .grid-container--directors__item {
   position: relative;
   padding: 2rem 0 4rem;
+}
+
+.extra-info {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.8rem;
+  text-align: center;
 }
 
 .build--parent__child:first-child {

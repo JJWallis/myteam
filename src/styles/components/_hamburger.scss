@@ -14,7 +14,7 @@
          $size: 100%
       );
       &[aria-expanded='true'] {
-         @include bg-img($img: '../assets/about/icon-close.svg');
+         @include bg-img($img: '../assets/about/icon-close-mobile.svg');
       }
    }
 }

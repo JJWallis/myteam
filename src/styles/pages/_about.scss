@@ -9,3 +9,12 @@
       padding: 2rem 0 4rem;
    }
 }
+
+.extra-info {
+   //    pointer events when invisible or negative z-index
+   @include position(absolute, $z-index: 2);
+   inset: 0;
+   @include flexy($dir: column, $align: center);
+   padding-top: 1.8rem;
+   text-align: center;
+}
