@@ -888,20 +888,6 @@ body {
   }
 }
 
-.social-icon {
-  font-size: 2rem;
-  color: var(--clr-pm-white);
-  transition: color 0.2s ease-in-out;
-}
-.social-icon:hover {
-  color: var(--clr-pm-coral);
-}
-@media (min-width: 50em) {
-  .social-icon {
-    font-size: 1.7rem;
-  }
-}
-
 .cta--parent > :first-child {
   display: flex;
   flex-direction: column;
