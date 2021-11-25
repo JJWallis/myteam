@@ -874,6 +874,19 @@ body {
   background-position: center 0%;
   background-size: 100px;
 }
+.icon--social {
+  font-size: 2rem;
+  color: var(--clr-pm-white);
+  transition: color 0.2s ease-in-out;
+}
+.icon--social:hover {
+  color: var(--clr-pm-coral);
+}
+@media (min-width: 50em) {
+  .icon--social {
+    font-size: 1.7rem;
+  }
+}
 
 .social-icon {
   font-size: 2rem;

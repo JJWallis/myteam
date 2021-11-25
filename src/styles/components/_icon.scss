@@ -34,6 +34,18 @@
    @include m(quote) {
       @include bg-img('../assets/bg/icon-quotes.svg', center 0%, 100px);
    }
+
+   @include m(social) {
+      font-size: 2rem;
+      color: var(--clr-pm-white);
+      transition: color 0.2s ease-in-out;
+      &:hover {
+         color: var(--clr-pm-coral);
+      }
+      @include mq(min-width, tablet) {
+         font-size: 1.7rem;
+      }
+   }
 }
 
 .social-icon {
