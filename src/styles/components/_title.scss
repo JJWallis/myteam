@@ -36,6 +36,9 @@
 
    @include m(contact) {
       margin-bottom: 1rem;
+      @include e(sd) {
+         margin-bottom: 3rem;
+      }
    }
    /* ================ ALL ============== */
 

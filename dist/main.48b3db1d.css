@@ -516,6 +516,9 @@ body {
 .title--contact {
   margin-bottom: 1rem;
 }
+.title--contact__sd {
+  margin-bottom: 3rem;
+}
 .title--cta {
   letter-spacing: 0.7px;
 }
@@ -749,6 +752,8 @@ body {
   }
 }
 .list--contact {
+  margin-top: 2rem;
+  outline: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
