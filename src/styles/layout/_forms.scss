@@ -3,9 +3,6 @@
 // refactor into _contact.scss + _input.scss
 
 .form {
-   outline: none;
-   width: 100%;
-   border: 0;
    border-bottom: 1px solid white;
    &::placeholder {
       color: hsl(var(--clr-pm-white) / 0.7);

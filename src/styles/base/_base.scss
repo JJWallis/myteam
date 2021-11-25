@@ -19,10 +19,12 @@ button {
    }
 }
 
-// input {
-//    border: none;
-//    outline: 1px solid;
-// }
+input,
+textarea {
+   outline: none;
+   width: 100%;
+   border: 0;
+}
 
 // Accessibility
 

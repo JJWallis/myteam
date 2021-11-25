@@ -273,6 +273,13 @@ button:hover {
   cursor: pointer;
 }
 
+input,
+textarea {
+  outline: none;
+  width: 100%;
+  border: 0;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -1033,9 +1040,6 @@ body {
   }
 }
 .form {
-  outline: none;
-  width: 100%;
-  border: 0;
   border-bottom: 1px solid white;
 }
 .form::placeholder {
