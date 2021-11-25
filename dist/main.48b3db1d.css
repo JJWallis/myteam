@@ -766,6 +766,11 @@ body {
     justify-content: center;
   }
 }
+.list--directors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .list--contact {
   display: flex;
   flex-direction: column;
@@ -894,6 +899,9 @@ body {
   width: 100px;
   border-radius: 50%;
   border: 3px solid white;
+}
+.profile--director {
+  margin-bottom: 0.6rem;
 }
 
 .address {
@@ -1087,7 +1095,11 @@ nav a:hover {
 }
 
 .grid-container--directors {
+  outline: 1px solid white;
   gap: var(--gap-directors);
+}
+.grid-container--directors__item {
+  padding: 2rem 0 5.5rem;
 }
 
 .build--parent__child:first-child {

@@ -1,5 +1,9 @@
 @use 'abstracts' as *;
 
 .grid-container--directors {
+   outline: 1px solid white;
    gap: var(--gap-directors);
+   @include e(item) {
+      padding: 2rem 0 5.5rem;
+   }
 }

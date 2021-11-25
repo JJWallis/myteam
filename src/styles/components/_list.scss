@@ -32,6 +32,10 @@
       }
    }
 
+   @include m(directors) {
+      @include flexy($dir: column, $align: center);
+   }
+
    /*============== CONTACT ==============*/
 
    @include m(contact) {
