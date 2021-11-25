@@ -9,6 +9,7 @@
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
   --clr-transparent: transparent;
+  --fs-500-contact: 3.1rem;
   --fs-500: 4.2667rem;
   --fs-400: 2.5rem;
   --fs-300-h3: 1.5rem;
@@ -38,6 +39,7 @@
 }
 @media (min-width: 50em) {
   :root {
+    --fs-500-contact: 5rem;
     --fs-400: 2.4rem;
     --fs-300-h3: 1.2rem;
     --fs-300: 1.2rem;
@@ -127,6 +129,10 @@
 
 .bg-transparent {
   background-color: var(--clr-transparent, transparent);
+}
+
+.fs-500-contact {
+  font-size: var(--fs-500-contact);
 }
 
 .fs-500 {

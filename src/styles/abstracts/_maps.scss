@@ -17,6 +17,7 @@ $colors: (
 
 $type-scale: (
    small: (
+      fs-500-contact: 3.1rem,
       fs-500: 4.2667rem,
       // h1
       fs-400: 2.5rem,
@@ -29,6 +30,8 @@ $type-scale: (
       // wide: 0.9375rem,
    ),
    large: (
+      // tablet
+      fs-500-contact: 5rem,
       fs-400: 2.4rem,
       fs-300-h3: 1.2rem,
       fs-300: 1.2rem,
