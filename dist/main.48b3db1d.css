@@ -17,6 +17,7 @@
   --fs-300-h3-ct: 2.2rem;
   --fs-300: 1.2rem;
   --fs-200: 1.2rem;
+  --fs-address: 1.1rem;
   --lh-500: 1;
   --lh-400: 1;
   --lh-300: 1.5556;
@@ -26,6 +27,7 @@
   --fw-semi-bold: 600;
   --fw-bold: 700;
   --alignment: center;
+  --alignment-center: center;
   --gap: 8rem;
   --gap-directors: 3rem;
   --ct-padding-cta: 6.5rem 0;
@@ -46,6 +48,7 @@
     --fs-300-h3: 1.2rem;
     --fs-300: 1.2rem;
     --fs-200: 0.9375rem;
+    --fs-address: 0.9rem;
   }
 }
 @media (min-width: 50em) {
@@ -167,6 +170,10 @@
   font-size: var(--fs-200);
 }
 
+.fs-address {
+  font-size: var(--fs-address);
+}
+
 .lh-500 {
   line-height: var(--lh-500);
 }
@@ -201,6 +208,10 @@
 
 .alignment {
   text-align: var(--alignment);
+}
+
+.alignment-center {
+  text-align: var(--alignment-center);
 }
 
 .gap {
@@ -942,13 +953,10 @@ body {
 .address {
   display: block;
   opacity: 0.7;
-  font-size: 1.1rem;
-  text-align: center;
 }
 @media (min-width: 50em) {
   .address {
     text-align: right;
-    font-size: 0.9rem;
   }
 }
 @media (min-width: 80em) {

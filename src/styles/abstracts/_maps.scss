@@ -29,6 +29,7 @@ $type-scale: (
       // contact no change
       fs-200: 1.2rem,
       // wide: 0.9375rem,
+      fs-address: 1.1rem,
    ),
    large: (
       // tablet
@@ -37,6 +38,7 @@ $type-scale: (
       fs-300-h3: 1.2rem,
       fs-300: 1.2rem,
       fs-200: 0.9375rem,
+      fs-address: 0.9rem,
    ),
    lh-small: (
       lh-500: 1,
@@ -60,6 +62,7 @@ $type-scale: (
    ),
    align-mobile: (
       alignment: center,
+      alignment-center: center,
       gap: 8rem,
       // split
       gap-directors: 3rem,
