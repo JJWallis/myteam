@@ -1,7 +1,5 @@
 @use 'abstracts' as *;
 
-// refactor into _contact.scss + _input.scss
-
 .form {
    border-bottom: 1px solid white;
    &::placeholder {

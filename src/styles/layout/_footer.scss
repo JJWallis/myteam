@@ -47,7 +47,7 @@
       'address'
       'social'
       'copyright';
-   gap: 2rem;
+   gap: var(--gap-ftr);
    @include mq(max-width, tablet) {
       place-items: center;
    }
@@ -59,7 +59,6 @@
          'logo . address'
          'navigation . .'
          'social . copyright';
-      gap: 0;
    }
 
    @include mq(min-width, large) {
@@ -68,11 +67,9 @@
       grid-template-areas:
          'logo address . social'
          'navigation address . copyright';
-
-      gap: 2.2rem 6.5rem;
    }
 
-   & > * {
-      // outline: 1px solid red;
-   }
+   // & > * {
+   //    // outline: 1px solid white;
+   // }
 }

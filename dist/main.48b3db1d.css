@@ -32,6 +32,7 @@
   --alignment-center: center;
   --gap: 8rem;
   --gap-directors: 3rem;
+  --gap-ftr: 2rem;
   --ct-padding-cta: 6.5rem 0;
   --ct-padding-ftr: 5rem 0 4rem;
   --ct-padding-about: 5rem 0 7.5rem;
@@ -66,6 +67,7 @@
   :root {
     --gap: 5.5rem;
     --gap-directors: 5rem 1rem;
+    --gap-ftr: 0;
     --ct-padding-cta: 7rem 0;
     --ct-padding-ftr: 4rem 0;
     --ct-padding-about: 6rem 0 8.3rem;
@@ -77,6 +79,7 @@
     --alignment: left;
     --gap: 9rem;
     --gap-directors: 4.5rem 2rem;
+    --gap-ftr: 2.2rem 6.5rem;
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
     --ct-padding-about: 8rem 0 9rem;
@@ -231,6 +234,10 @@
 
 .gap-directors {
   text-align: var(--gap-directors);
+}
+
+.gap-ftr {
+  text-align: var(--gap-ftr);
 }
 
 .ct-padding-cta {
@@ -1032,7 +1039,7 @@ body {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-template-areas: "logo" "navigation" "address" "social" "copyright";
-  gap: 2rem;
+  gap: var(--gap-ftr);
 }
 @media (max-width: 50em) {
   .grid-container--footer {
@@ -1044,7 +1051,6 @@ body {
     grid-template-columns: auto 1fr auto;
     grid-template-rows: repeat(3, minmax(40px, auto));
     grid-template-areas: "logo . address" "navigation . ." "social . copyright";
-    gap: 0;
   }
 }
 @media (min-width: 80em) {
@@ -1052,9 +1058,9 @@ body {
     grid-template-columns: repeat(2, auto) 1fr auto;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "logo address . social" "navigation address . copyright";
-    gap: 2.2rem 6.5rem;
   }
 }
+
 .form {
   border-bottom: 1px solid white;
 }
