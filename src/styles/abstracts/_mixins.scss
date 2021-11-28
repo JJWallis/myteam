@@ -87,6 +87,16 @@
 }
 
 // =========================================
+// uppercase
+// =========================================
+
+@mixin uc() {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   // easier to read when applied  to non-headings
+}
+
+// =========================================
 // social-icons
 // =========================================
 
