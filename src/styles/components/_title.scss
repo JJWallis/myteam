@@ -3,10 +3,7 @@
 .title {
    @include m(home) {
       @include mq(min-width, large) {
-         // white-space: nowrap;
-         // @include position($pos: absolute) {
-         // left: 0;
-         // }
+         white-space: nowrap;
       }
    }
 

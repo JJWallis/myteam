@@ -77,14 +77,14 @@
 @media (min-width: 70em) {
   :root {
     --alignment: left;
-    --gap: 9rem;
+    --gap: 10rem;
     --gap-directors: 4.5rem 2rem;
     --gap-ftr: 2.2rem 6.5rem;
     --ct-padding-cta: 4.5rem 0;
     --ct-padding-ftr: 3rem;
     --ct-padding-about: 8rem 0 9rem;
     --ct-padding-contact: 0 0 10rem;
-    --fs-500: 6.6667rem;
+    --fs-500: 6rem;
     --fs-employee-name: 1.2rem;
     --fs-job-title: 0.9rem;
   }
@@ -579,6 +579,11 @@ body {
   /* ================ ABOUT ============== */
   /* ================ CONTACT ============== */
   /* ================ ALL ============== */
+}
+@media (min-width: 70em) {
+  .title--home {
+    white-space: nowrap;
+  }
 }
 .title--build {
   width: 75%;
@@ -1110,6 +1115,11 @@ body {
 @media (min-width: 70em) {
   .explainer--hero {
     width: 100%;
+  }
+}
+@media (min-width: 70em) {
+  .explainer--hero--home {
+    width: 95%;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
