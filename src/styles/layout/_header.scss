@@ -12,12 +12,14 @@
 
    @include m(home) {
       --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
-      @include bg-img(
-         '../assets/bg/bg-pattern-home-2.svg',
-         center 101%,
-         430px 140px
-      );
-      @include mq(min-width, large) {
+      @include mq(max-width, large) {
+         @include bg-img(
+            '../assets/bg/bg-pattern-home-2.svg',
+            center 101%,
+            430px 140px
+         );
+      }
+      @include mq(min-width, align-mw) {
          background-image: url('../assets/bg/bg-pattern-home-1.svg');
          background-repeat: no-repeat;
          background-position: calc(0% - 100px) 50%;

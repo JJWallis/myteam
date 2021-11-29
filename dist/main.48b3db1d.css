@@ -1232,12 +1232,16 @@ body {
 }
 .header--home {
   --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
-  background-image: url("/bg-pattern-home-2.a329aae4.svg");
-  background-repeat: no-repeat;
-  background-position: center 101%;
-  background-size: 430px 140px;
 }
-@media (min-width: 70em) {
+@media (max-width: 70em) {
+  .header--home {
+    background-image: url("/bg-pattern-home-2.a329aae4.svg");
+    background-repeat: no-repeat;
+    background-position: center 101%;
+    background-size: 430px 140px;
+  }
+}
+@media (min-width: 78em) {
   .header--home {
     background-image: url("/bg-pattern-home-1.418d3a37.svg");
     background-repeat: no-repeat;
