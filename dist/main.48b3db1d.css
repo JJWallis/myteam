@@ -791,13 +791,7 @@ body {
 }
 @media (min-width: 70em) {
   .split--parent--contact {
-    --gap: 13rem;
-  }
-}
-@media (min-width: 70em) and (max-width: 77em) {
-  .split--parent--contact {
-    --gap: 13rem;
-    padding-inline: 2.2rem;
+    --gap: 14rem;
   }
 }
 
@@ -908,7 +902,15 @@ body {
     background-image: url("/bg-pattern-contact-2.252c4978.svg"), url("/bg-pattern-about-2-contact-1.e268053b.svg");
     background-repeat: no-repeat;
     background-position: calc(100% + 100px) 100%, calc(0% - 100px) 0px;
-    background-size: 200px, 200px;
+    background-size: 200px, 190px;
+  }
+}
+@media (min-width: 70em) and (max-width: 78em) {
+  .container--contact {
+    background-image: url("/bg-pattern-contact-2.252c4978.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 100px) 100%;
+    background-size: 200px;
   }
 }
 @media (max-width: 70em) {

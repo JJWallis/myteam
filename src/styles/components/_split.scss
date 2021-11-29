@@ -53,11 +53,7 @@
 
       @include m(contact) {
          @include mq(min-width, large) {
-            --gap: 13rem;
-         }
-         @include mqs(min-width, large, max-width, contact-wide) {
-            --gap: 13rem;
-            padding-inline: 2.2rem;
+            --gap: 14rem;
          }
       }
    }
