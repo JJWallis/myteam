@@ -905,8 +905,8 @@ body {
   .container--contact {
     background-image: url("/bg-pattern-contact-2.252c4978.svg"), url("/bg-pattern-about-2-contact-1.e268053b.svg");
     background-repeat: no-repeat;
-    background-position: calc(100% + 100px) 100%, calc(0% - 100px) 0px;
-    background-size: 200px, 190px;
+    background-position: calc(100% + 85px) 100%, calc(0% - 100px) 0px;
+    background-size: 170px 210px, 190px;
   }
 }
 @media (min-width: 70em) and (max-width: 78em) {
@@ -1204,12 +1204,14 @@ body {
 
 .form {
   border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: border-bottom 0.2s ease-in-out;
 }
 .form::placeholder {
   color: hsl(var(--clr-pm-white)/0.7);
 }
 .form:hover, .form:focus {
-  border-bottom-color: hsl(var(--clr-rapture-blue));
+  border-bottom-color: var(--clr-rapture-blue);
 }
 .form--error {
   border-bottom-color: hsl(var(--clr-pm-coral));
