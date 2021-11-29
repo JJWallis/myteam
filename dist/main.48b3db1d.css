@@ -741,7 +741,6 @@ body {
 }
 
 .split--parent {
-  outline: 1px solid white;
   display: flex;
   gap: var(--gap);
 }

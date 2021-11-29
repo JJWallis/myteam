@@ -2,7 +2,7 @@
 
 .split {
    @include m(parent) {
-      outline: 1px solid white;
+      // outline: 1px solid white;
       @include flexy();
       gap: var(--gap);
       @include mq($width: max-width, $key: large) {
