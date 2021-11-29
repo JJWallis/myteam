@@ -7,17 +7,19 @@
    // outline: 1px solid white;
 
    @include m(build) {
-      --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
       padding: var(--ct-padding-lg);
+      --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
       @include bg-img(
          $img: '../assets/bg/bg-pattern-home-3.svg',
          $position: calc(100% + 128px) 0%,
          $size: 250px 333px
       );
-
       @include mq(min-width, tablet) {
          padding-top: 7.5rem;
          background-size: 250px 290px;
+      }
+      @include mq(min-width, large) {
+         background-position: calc(100% + 128px) 100%;
       }
    }
 

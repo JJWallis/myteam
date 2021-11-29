@@ -732,8 +732,8 @@ body {
   /* =============== CONTACT =================*/
 }
 .container--build {
-  --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
   padding: var(--ct-padding-lg);
+  --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
   background-position: calc(100% + 128px) 0%;
@@ -743,6 +743,11 @@ body {
   .container--build {
     padding-top: 7.5rem;
     background-size: 250px 290px;
+  }
+}
+@media (min-width: 70em) {
+  .container--build {
+    background-position: calc(100% + 128px) 100%;
   }
 }
 .container--cta {
@@ -1230,8 +1235,10 @@ main {
   width: 90%;
 }
 
-.build--parent__child:first-child {
-  padding-top: 3rem;
+@media (max-width: 70em) {
+  .build--parent__child:first-child {
+    padding-top: 3rem;
+  }
 }
 @media (min-width: 50em) {
   .build--parent__child:last-child {

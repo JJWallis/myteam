@@ -2,9 +2,11 @@
 
 .build--parent {
    @include e(child) {
-      // outline: 1px solid red;
+      // outline: 1px solid white;
       &:first-child {
-         padding-top: 3rem;
+         @include mq(max-width, large) {
+            padding-top: 3rem;
+         }
       }
       &:last-child {
          @include mq($width: min-width, $key: tablet) {
