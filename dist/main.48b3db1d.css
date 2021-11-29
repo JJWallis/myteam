@@ -1001,18 +1001,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  --gap: 4rem;
   gap: var(--gap);
+  --gap: 4rem;
 }
 @media (min-width: 50em) {
   .cta--parent > :first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-@media (min-width: 50em) {
-  .cta--parent > :first-child {
     width: 90%;
     margin: 0 auto;
   }
@@ -1201,7 +1197,8 @@ body {
 }
 @media (min-width: 50em) {
   .header--about {
-    background-position: calc(100% + 105px) 100%;
+    background-position: calc(100% + 95px) 100%;
+    background-size: 190px;
   }
 }
 

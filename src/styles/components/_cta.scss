@@ -2,12 +2,10 @@
 
 .cta--parent > :first-child {
    @include flexy($dir: column, $align: center);
-   --gap: 4rem;
    gap: var(--gap);
+   --gap: 4rem;
    @include mq(min-width, tablet) {
       @include flexy($dir: row, $just: space-between);
-   }
-   @include mq(min-width, tablet) {
       width: 90%;
       margin: 0 auto;
    }

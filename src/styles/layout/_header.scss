@@ -32,7 +32,8 @@
          210px
       );
       @include mq(min-width, tablet) {
-         background-position: calc(100% + 105px) 100%;
+         background-position: calc(100% + 95px) 100%;
+         background-size: 190px;
       }
    }
 }
