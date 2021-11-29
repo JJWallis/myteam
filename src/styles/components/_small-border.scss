@@ -6,7 +6,7 @@
       left: 0;
       background-color: var(--clr-pm-coral);
       @include mq(min-width, large) {
-         height: 4px;
+         height: 3px;
          width: 55px;
       }
    }
@@ -23,6 +23,14 @@
       @include mq(min-width, large) {
          @include p-el(before) {
             top: -45px;
+         }
+      }
+   }
+
+   @include m(about) {
+      @include mq(min-width, large) {
+         @include p-el(before) {
+            top: -15px;
          }
       }
    }

@@ -37,6 +37,9 @@
       }
 
       @include m(about) {
+         @include mq(min-width, large) {
+            min-height: 6rem;
+         }
          & > * {
             @include mq(min-width, large) {
                flex: 0 1 auto;

@@ -12,12 +12,6 @@
       @include mq(min-width, large) {
          width: 100%;
       }
-
-      @include m(about) {
-         @include mq(min-width, large) {
-            max-width: 610px;
-         }
-      }
    }
 
    @include m(build) {

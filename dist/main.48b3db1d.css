@@ -540,7 +540,7 @@ body {
 }
 @media (min-width: 70em) {
   .small-border::before {
-    height: 4px;
+    height: 3px;
     width: 55px;
   }
 }
@@ -558,6 +558,14 @@ body {
     position: absolute;
     display: block;
     top: -45px;
+  }
+}
+@media (min-width: 70em) {
+  .small-border--about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -15px;
   }
 }
 .header--home .small-border::before {
@@ -746,6 +754,11 @@ body {
 @media (min-width: 70em) {
   .split--parent > * {
     flex: 1 100%;
+  }
+}
+@media (min-width: 70em) {
+  .split--parent--about {
+    min-height: 6rem;
   }
 }
 @media (min-width: 70em) {
@@ -1065,11 +1078,6 @@ body {
 @media (min-width: 70em) {
   .explainer--hero {
     width: 100%;
-  }
-}
-@media (min-width: 70em) {
-  .explainer--hero--about {
-    max-width: 610px;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
