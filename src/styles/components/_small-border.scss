@@ -5,6 +5,10 @@
       top: 0;
       left: 0;
       background-color: var(--clr-pm-coral);
+      @include mq(min-width, large) {
+         height: 4px;
+         width: 55px;
+      }
    }
 
    @include m(hero) {

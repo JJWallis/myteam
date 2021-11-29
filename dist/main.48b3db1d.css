@@ -535,6 +535,12 @@ body {
   left: 0;
   background-color: var(--clr-pm-coral);
 }
+@media (min-width: 70em) {
+  .small-border::before {
+    height: 4px;
+    width: 55px;
+  }
+}
 @media (max-width: 70em) {
   .small-border--hero::before {
     content: "";
@@ -1004,6 +1010,11 @@ body {
   .explainer--hero {
     width: 65%;
     max-width: 700px;
+  }
+}
+@media (min-width: 70em) {
+  .explainer--hero {
+    width: 95%;
   }
 }
 @media (min-width: 50em) {
