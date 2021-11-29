@@ -1067,6 +1067,11 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 70em) {
+  .explainer--hero--about {
+    max-width: 610px;
+  }
+}
 @media (min-width: 50em) and (max-width: 70em) {
   .explainer--build {
     width: 73%;
