@@ -1123,6 +1123,11 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero {
+    width: 90%;
+  }
+}
+@media (min-width: 70em) {
+  .explainer--hero--home {
     width: 95%;
   }
 }
