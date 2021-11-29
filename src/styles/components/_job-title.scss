@@ -1,8 +1,8 @@
 @use 'abstracts' as *;
 
 .job-title {
-   margin-bottom: 1rem;
+   margin-bottom: 1.5rem;
    @include mq(min-width, large) {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
    }
 }

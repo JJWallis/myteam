@@ -85,6 +85,8 @@
     --ct-padding-about: 8rem 0 9rem;
     --ct-padding-contact: 0 0 10rem;
     --fs-500: 6.6667rem;
+    --fs-employee-name: 1.2rem;
+    --fs-job-title: 0.9rem;
   }
 }
 
@@ -732,6 +734,11 @@ body {
 .container--testimonials .split--parent {
   --gap: 4rem;
 }
+@media (min-width: 70em) {
+  .container--testimonials .split--parent {
+    --gap: 2rem;
+  }
+}
 .split--parent > * {
   position: relative;
 }
@@ -996,11 +1003,11 @@ body {
 }
 
 .job-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 70em) {
   .job-title {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1271,6 +1278,7 @@ main {
   align-items: center;
 }
 .testimonials--parent__quotes article .quote {
+  padding-top: 0.5rem;
   margin-bottom: 1.3rem;
 }
 @media (min-width: 50em) {
@@ -1280,7 +1288,8 @@ main {
 }
 @media (min-width: 70em) {
   .testimonials--parent__quotes article .quote {
-    width: 90%;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

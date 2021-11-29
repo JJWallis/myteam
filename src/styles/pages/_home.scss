@@ -22,12 +22,14 @@
          padding-top: 3.4rem;
          @include flexy($dir: column, $align: center);
          & .quote {
+            padding-top: 0.5rem;
             margin-bottom: 1.3rem;
             @include mq(min-width, tablet) {
                margin-bottom: 2rem;
             }
             @include mq(min-width, large) {
-               width: 90%;
+               width: 100%;
+               margin-bottom: 1rem;
             }
          }
       }

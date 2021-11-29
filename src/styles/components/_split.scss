@@ -23,6 +23,9 @@
 
       .container--testimonials & {
          --gap: 4rem;
+         @include mq(min-width, large) {
+            --gap: 2rem;
+         }
       }
 
       // children
