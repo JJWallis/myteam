@@ -940,9 +940,6 @@ body {
   /*============== CONTACT ==============*/
   /*============== ALL ==============*/
 }
-.list--build {
-  outline: 1px solid red;
-}
 @media (max-width: 50em) {
   .list--build {
     --flow-space: 8rem;
@@ -955,14 +952,16 @@ body {
     align-items: center;
   }
 }
-.list--build__child {
-  outline: 1px solid blue;
-}
 @media (max-width: 50em) {
   .list--build__child {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (min-width: 50em) and (max-width: 70em) {
+  .list--build__child {
+    margin-left: 5.3rem;
   }
 }
 .list--build__child h3 {

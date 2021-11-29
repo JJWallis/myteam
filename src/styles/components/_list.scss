@@ -2,8 +2,6 @@
 
 .list {
    @include m(build) {
-      outline: 1px solid red;
-      // min() horizontal margin for aligment?
       @include mq(max-width, tablet) {
          --flow-space: 8rem;
       }
@@ -12,11 +10,11 @@
       }
 
       @include e(child) {
-         outline: 1px solid blue;
          @include mq(max-width, tablet) {
             @include flexy($dir: column, $align: center);
          }
          @include mqs(min-width, tablet, max-width, large) {
+            margin-left: 5.3rem;
          }
          & h3 {
             margin-bottom: 0.5rem;
