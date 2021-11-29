@@ -1243,7 +1243,7 @@ body {
 }
 
 .form {
-  border-bottom: 1px solid white;
+  border-bottom: 1.5px solid white;
   cursor: pointer;
   transition: border-bottom 0.2s ease-in-out;
 }
@@ -1251,7 +1251,7 @@ body {
   color: var(--clr-pm-white);
 }
 .form:hover, .form:focus {
-  border-bottom-color: var(--clr-rapture-blue);
+  border-bottom: 1.5px solid var(--clr-rapture-blue);
 }
 .form__input {
   padding: 1.5rem 0.7rem;

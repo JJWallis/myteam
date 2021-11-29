@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .form {
-   border-bottom: 1px solid white;
+   border-bottom: 1.5px solid white;
    cursor: pointer;
    transition: border-bottom 0.2s ease-in-out;
    &::placeholder {
@@ -9,7 +9,7 @@
    }
    &:hover,
    &:focus {
-      border-bottom-color: var(--clr-rapture-blue);
+      border-bottom: 1.5px solid var(--clr-rapture-blue);
    }
 
    @include e(input) {
