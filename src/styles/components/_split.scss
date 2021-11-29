@@ -61,9 +61,7 @@
       }
 
       @include m(contact) {
-         @include mq(min-width, large) {
-            --gap: 14rem;
-         }
+         gap: var(--gap-contact);
       }
    }
 }

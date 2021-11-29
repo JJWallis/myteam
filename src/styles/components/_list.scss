@@ -46,9 +46,12 @@
       // outline: 1px solid white;
       @include flexy($dir: column, $align: flex-start);
       gap: 3rem;
+      @include mq(min-width, tablet) {
+         gap: 3.5rem;
+      }
       & > * {
          margin-left: 5.3rem;
-         width: 70%;
+         width: 65%;
          @include mq(min-width, tablet) {
             width: 100%;
          }
