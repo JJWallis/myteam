@@ -633,11 +633,16 @@ body {
 }
 @media (min-width: 70em) {
   .title--contact {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 .title--contact__sd {
   margin-bottom: 3.7rem;
+}
+@media (min-width: 70em) {
+  .title--contact__sd {
+    margin-bottom: 3.3rem;
+  }
 }
 .title--cta {
   letter-spacing: 0.7px;
@@ -769,20 +774,19 @@ body {
   }
 }
 @media (min-width: 70em) {
+  .split--parent--offset > * {
+    flex: 0 1 auto;
+  }
+}
+@media (min-width: 70em) {
   .split--parent--about {
     --gap: 10.5rem;
     min-height: 6rem;
-  }
-  .split--parent--about > * {
-    flex: 0 1 auto;
   }
 }
 @media (min-width: 70em) {
   .split--parent--contact {
     --gap: 13rem;
-  }
-  .split--parent--contact > * {
-    flex: 0 1 auto;
   }
 }
 
