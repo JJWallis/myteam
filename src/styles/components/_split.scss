@@ -5,13 +5,19 @@
       // outline: 1px solid white;
       @include flexy();
       gap: var(--gap);
-      @include mq($width: max-width, $key: large) {
+      @include mq(max-width, large) {
          @include flexy($dir: column, $align: center);
       }
 
       .header--pm & {
          @include mq($width: max-width, $key: large) {
             --gap: 1.8rem;
+         }
+      }
+
+      .header--home & {
+         @include mq(min-width, large) {
+            --gap: 8rem;
          }
       }
 

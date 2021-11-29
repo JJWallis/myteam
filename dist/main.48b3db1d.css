@@ -761,6 +761,11 @@ body {
     --gap: 1.8rem;
   }
 }
+@media (min-width: 70em) {
+  .header--home .split--parent {
+    --gap: 8rem;
+  }
+}
 @media (max-width: 50em) {
   .container--build .split--parent {
     --gap: 12rem;
