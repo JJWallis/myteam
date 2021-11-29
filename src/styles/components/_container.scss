@@ -83,6 +83,7 @@
       }
       @include mq(min-width, large) {
          background-position: calc(0% - 0px) 0%;
+         background-size: 180px;
       }
    }
 
