@@ -31,13 +31,17 @@
       // children
       & > * {
          position: relative;
-         @include mq($width: min-width, $key: large) {
+         @include mq(min-width, large) {
             flex: 1 100%;
          }
       }
-   }
 
-   // @include m(child) {
-   // position: relative;
-   // }
+      @include m(about) {
+         & > * {
+            @include mq(min-width, large) {
+               flex: 0 1 auto;
+            }
+         }
+      }
+   }
 }

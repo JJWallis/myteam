@@ -355,6 +355,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -745,6 +746,11 @@ body {
 @media (min-width: 70em) {
   .split--parent > * {
     flex: 1 100%;
+  }
+}
+@media (min-width: 70em) {
+  .split--parent--about > * {
+    flex: 0 1 auto;
   }
 }
 
