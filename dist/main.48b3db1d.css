@@ -1083,6 +1083,7 @@ body {
 @media (min-width: 70em) {
   .address {
     text-align: left;
+    line-height: 1.8;
   }
 }
 
@@ -1202,6 +1203,7 @@ body {
   }
 }
 .form__text-area {
+  resize: none;
   padding: 2rem 0.7rem 3rem;
   margin-bottom: 1.5rem;
 }
