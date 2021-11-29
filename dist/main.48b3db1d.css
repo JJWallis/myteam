@@ -1162,11 +1162,6 @@ body {
     width: 85%;
   }
 }
-@media (min-width: 50em) and (max-width: 70em) {
-  .explainer--build {
-    width: 73%;
-  }
-}
 
 .footer--pm {
   padding: var(--ct-padding-ftr);
