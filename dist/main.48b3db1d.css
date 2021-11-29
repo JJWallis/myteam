@@ -414,6 +414,7 @@ body {
   display: inline-block;
   padding: 0.3em 2.1em 0.5em;
   border: 2.5px solid;
+  font-weight: var(--fw-medium);
 }
 @media (min-width: 50em) {
   .btn--pm {
@@ -432,6 +433,9 @@ body {
   border-color: transparent;
   background-color: var(--clr-pm-white);
   color: var(--clr-dark-green);
+}
+.btn--pm--dark {
+  font-weight: var(--fw-semi-bold);
 }
 .btn--pm--dark:hover {
   border-color: transparent;
@@ -608,7 +612,7 @@ body {
 }
 @media (min-width: 70em) {
   .title--build {
-    width: 75%;
+    width: 80%;
   }
 }
 .title--testimonials {

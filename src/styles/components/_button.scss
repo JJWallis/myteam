@@ -13,6 +13,7 @@
       display: inline-block;
       padding: 0.3em 2.1em 0.5em;
       border: 2.5px solid;
+      font-weight: var(--fw-medium);
       @include mq(min-width, tablet) {
          padding: 0.4em 2.1em 0.6em;
       }
@@ -30,6 +31,7 @@
       }
 
       @include m(dark) {
+         font-weight: var(--fw-semi-bold);
          &:hover {
             border-color: transparent;
             background-color: var(--clr-dark-green);
