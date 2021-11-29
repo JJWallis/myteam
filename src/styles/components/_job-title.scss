@@ -2,6 +2,7 @@
 
 .job-title {
    margin-bottom: 1.5rem;
+   font-style: italic;
    @include mq(min-width, large) {
       margin-bottom: 2rem;
    }

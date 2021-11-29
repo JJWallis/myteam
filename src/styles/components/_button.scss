@@ -11,8 +11,11 @@
 
    @include m(pm) {
       display: inline-block;
-      padding: 0.4em 2.1em;
+      padding: 0.3em 2.1em 0.5em;
       border: 2.5px solid;
+      @include mq(min-width, tablet) {
+         padding: 0.4em 2.1em 0.6em;
+      }
 
       @include m(light) {
          @include mq(max-width, tablet) {

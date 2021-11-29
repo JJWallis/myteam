@@ -412,8 +412,13 @@ body {
 }
 .btn--pm {
   display: inline-block;
-  padding: 0.4em 2.1em;
+  padding: 0.3em 2.1em 0.5em;
   border: 2.5px solid;
+}
+@media (min-width: 50em) {
+  .btn--pm {
+    padding: 0.4em 2.1em 0.6em;
+  }
 }
 .btn--pm--light {
   border-color: hsl(var(--clr-pm-white));
@@ -659,6 +664,7 @@ body {
 }
 .title--cta {
   letter-spacing: 0.7px;
+  font-weight: var(--fw-bold);
 }
 
 .logo--pm {
@@ -699,7 +705,7 @@ body {
     width: 320px;
     height: 100px;
     bottom: -288px;
-    right: 100px;
+    right: 40px;
   }
 }
 @media (max-width: 70em) {
@@ -925,7 +931,7 @@ body {
     background-size: 170px 210px, 190px;
   }
 }
-@media (min-width: 70em) and (max-width: 78em) {
+@media (min-width: 70em) and (max-width: 79em) {
   .container--contact {
     background-image: url("/bg-pattern-contact-2.252c4978.svg");
     background-repeat: no-repeat;
@@ -1101,10 +1107,12 @@ body {
 
 .employee-name {
   font-style: normal;
+  font-weight: var(--fw-semi-bold);
 }
 
 .job-title {
   margin-bottom: 1.5rem;
+  font-style: italic;
 }
 @media (min-width: 70em) {
   .job-title {
@@ -1285,7 +1293,7 @@ body {
     background-size: 430px 130px;
   }
 }
-@media (min-width: 78em) {
+@media (min-width: 79em) {
   .header--home {
     background-image: url("/bg-pattern-home-1.418d3a37.svg");
     background-repeat: no-repeat;
