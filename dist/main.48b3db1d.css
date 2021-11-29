@@ -792,7 +792,7 @@ body {
 @media (min-width: 70em) and (max-width: 77em) {
   .split--parent--contact {
     --gap: 13rem;
-    padding-inline: 2.1rem;
+    padding-inline: 2.2rem;
   }
 }
 
