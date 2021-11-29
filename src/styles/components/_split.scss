@@ -38,6 +38,7 @@
 
       @include m(about) {
          @include mq(min-width, large) {
+            --gap: 10.5rem;
             min-height: 6rem;
          }
          & > * {

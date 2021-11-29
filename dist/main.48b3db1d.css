@@ -758,6 +758,7 @@ body {
 }
 @media (min-width: 70em) {
   .split--parent--about {
+    --gap: 10.5rem;
     min-height: 6rem;
   }
 }
