@@ -39,7 +39,7 @@
   --ct-padding-contact: 0 0 6rem;
   --margin-test: 3rem;
   --margin-hero: 8rem;
-  --align-mw: 60rem;
+  --align-mw: 65rem;
   --ct-padding-lg: 4rem 0 min(15vh, 8.5rem);
   --ct-padding-hdr: 4rem 0 min(15vh, 8.5rem);
   --flow-space: 1.5rem;
@@ -561,6 +561,11 @@ body {
   /* ================ CONTACT ============== */
   /* ================ ALL ============== */
 }
+@media (min-width: 70em) {
+  .title--home {
+    white-space: nowrap;
+  }
+}
 .title--build {
   width: 75%;
 }
@@ -1014,7 +1019,7 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero {
-    width: 95%;
+    width: 100%;
   }
 }
 @media (min-width: 50em) {

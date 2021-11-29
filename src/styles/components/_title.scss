@@ -1,6 +1,12 @@
 @use 'abstracts' as *;
 
 .title {
+   @include m(home) {
+      @include mq(min-width, large) {
+         white-space: nowrap;
+      }
+   }
+
    @include m(build) {
       width: 75%;
       @include mq(min-width, tablet) {
