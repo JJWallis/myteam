@@ -631,6 +631,11 @@ body {
     margin-bottom: 1.7rem;
   }
 }
+@media (min-width: 70em) {
+  .title--contact {
+    margin-bottom: 2.5rem;
+  }
+}
 .title--contact__sd {
   margin-bottom: 3.7rem;
 }
@@ -1186,7 +1191,8 @@ body {
 }
 @media (min-width: 70em) {
   .form__text-area {
-    padding: 1.5rem 0.7rem 2.5rem;
+    padding: 1.5rem 0.7rem 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
