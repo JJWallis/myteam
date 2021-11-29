@@ -816,6 +816,11 @@ body {
   /* =============== ABOUT =================*/
   /* =============== CONTACT =================*/
 }
+@media (min-width: 50em) and (max-width: 70em) {
+  .container--tablet {
+    width: 80%;
+  }
+}
 .container--build {
   padding: var(--ct-padding-lg);
   --ct-padding-lg: 6.5rem 0 min(15vh, 8.5rem);

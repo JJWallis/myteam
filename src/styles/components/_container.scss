@@ -4,6 +4,11 @@
    width: 90%;
    max-width: var(--align-mw);
    margin-inline: auto;
+   @include m(tablet) {
+      @include mqs(min-width, tablet, max-width, large) {
+         width: 80%;
+      }
+   }
 
    @include m(build) {
       padding: var(--ct-padding-lg);
