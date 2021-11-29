@@ -595,7 +595,7 @@ body {
 }
 @media (min-width: 50em) {
   .title--build {
-    width: 68%;
+    width: 74%;
   }
 }
 @media (min-width: 70em) {
@@ -696,7 +696,7 @@ body {
     width: 320px;
     height: 100px;
     bottom: -288px;
-    right: 30px;
+    right: 100px;
   }
 }
 @media (max-width: 70em) {
@@ -1275,8 +1275,8 @@ body {
   .header--home {
     background-image: url("/bg-pattern-home-2.a329aae4.svg");
     background-repeat: no-repeat;
-    background-position: center 101%;
-    background-size: 430px 140px;
+    background-position: center 100%;
+    background-size: 430px 130px;
   }
 }
 @media (min-width: 78em) {
@@ -1382,16 +1382,10 @@ main {
   width: 90%;
 }
 
-.build--parent {
-  outline: 1px solid white;
-}
 @media (max-width: 70em) {
   .build--parent__child:first-child {
     padding-top: 3rem;
   }
-}
-.build--parent__child:last-child {
-  outline: 1px solid white;
 }
 @media (min-width: 50em) {
   .build--parent__child:last-child {

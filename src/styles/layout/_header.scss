@@ -15,8 +15,8 @@
       @include mq(max-width, large) {
          @include bg-img(
             '../assets/bg/bg-pattern-home-2.svg',
-            center 101%,
-            430px 140px
+            center 100%,
+            430px 130px
          );
       }
       @include mq(min-width, align-mw) {
