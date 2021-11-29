@@ -2,15 +2,21 @@
 
 .list {
    @include m(build) {
-      // outline: 1px solid white;
+      outline: 1px solid red;
       // min() horizontal margin for aligment?
-      @include mq($width: max-width, $key: tablet) {
+      @include mq(max-width, tablet) {
          --flow-space: 8rem;
+      }
+      @include mqs(min-width, tablet, max-width, large) {
+         @include flexy($dir: column, $align: center);
       }
 
       @include e(child) {
-         @include mq($width: max-width, $key: tablet) {
+         outline: 1px solid blue;
+         @include mq(max-width, tablet) {
             @include flexy($dir: column, $align: center);
+         }
+         @include mqs(min-width, tablet, max-width, large) {
          }
          & h3 {
             margin-bottom: 0.5rem;

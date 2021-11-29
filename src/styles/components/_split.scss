@@ -22,8 +22,11 @@
       }
 
       .container--build & {
-         @include mq($width: max-width, $key: tablet) {
+         @include mq(max-width, tablet) {
             --gap: 12rem;
+         }
+         @include mqs(min-width, tablet, max-width, large) {
+            align-items: flex-start;
          }
       }
 

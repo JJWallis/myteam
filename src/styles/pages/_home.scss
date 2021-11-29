@@ -1,14 +1,15 @@
 @use 'abstracts' as *;
 
 .build--parent {
+   outline: 1px solid white;
    @include e(child) {
-      // outline: 1px solid white;
       &:first-child {
          @include mq(max-width, large) {
             padding-top: 3rem;
          }
       }
       &:last-child {
+         outline: 1px solid white;
          @include mq($width: min-width, $key: tablet) {
             text-align: left;
          }
