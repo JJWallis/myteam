@@ -26,6 +26,9 @@
             @include mq(min-width, tablet) {
                margin-bottom: 2rem;
             }
+            @include mq(min-width, large) {
+               width: 90%;
+            }
          }
       }
    }

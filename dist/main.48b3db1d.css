@@ -569,11 +569,6 @@ body {
   /* ================ CONTACT ============== */
   /* ================ ALL ============== */
 }
-@media (min-width: 70em) {
-  .title--home {
-    white-space: nowrap;
-  }
-}
 .title--build {
   width: 75%;
 }
@@ -1281,6 +1276,11 @@ main {
 @media (min-width: 50em) {
   .testimonials--parent__quotes article .quote {
     margin-bottom: 2rem;
+  }
+}
+@media (min-width: 70em) {
+  .testimonials--parent__quotes article .quote {
+    width: 90%;
   }
 }
 
