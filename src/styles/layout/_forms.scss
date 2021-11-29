@@ -5,18 +5,11 @@
    cursor: pointer;
    transition: border-bottom 0.2s ease-in-out;
    &::placeholder {
-      color: hsl(var(--clr-pm-white) / 0.7);
+      color: var(--clr-pm-white);
    }
    &:hover,
    &:focus {
       border-bottom-color: var(--clr-rapture-blue);
-   }
-
-   @include m(error) {
-      border-bottom-color: hsl(var(--clr-pm-coral));
-      &::placeholder {
-         color: hsl(var(--clr-pm-coral) / 0.7);
-      }
    }
 
    @include e(input) {
@@ -33,6 +26,13 @@
       @include mq(min-width, large) {
          padding: 1.5rem 0.7rem 2rem;
          margin-bottom: 1.5rem;
+      }
+   }
+
+   @include m(error) {
+      border-bottom-color: var(--clr-pm-coral);
+      &::placeholder {
+         color: rgba(hsl(0 87% 73%), 0.7);
       }
    }
 }
