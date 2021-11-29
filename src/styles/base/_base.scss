@@ -32,6 +32,6 @@ textarea {
 
 // Accessibility
 
-// :focus-within {
-//    outline: 3px dotted red;
-// }
+:focus {
+   outline: 3px dotted var(--clr-rapture-blue);
+}

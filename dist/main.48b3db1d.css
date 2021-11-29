@@ -317,6 +317,10 @@ textarea {
   border: 0;
 }
 
+:focus {
+  outline: 3px dotted var(--clr-rapture-blue);
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -834,7 +838,7 @@ body {
 @media (min-width: 50em) {
   .container--testimonials {
     --ct-padding-lg: 7rem 0 min(27vh, 10rem);
-    background-size: 170px 120px, 230px 130px;
+    background-size: 170px 120px, 210px 110px;
   }
 }
 @media (min-width: 70em) {
