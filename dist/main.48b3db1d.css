@@ -1097,11 +1097,18 @@ body {
 }
 .header--home {
   --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
-  padding: var(--ct-padding-hdr);
   background-image: url("/bg-pattern-home-2.a329aae4.svg");
   background-repeat: no-repeat;
   background-position: center 101%;
   background-size: 430px 140px;
+}
+@media (min-width: 70em) {
+  .header--home {
+    background-image: url("/bg-pattern-home-2.a329aae4.svg"), url("/bg-pattern-home-1.418d3a37.svg");
+    background-repeat: no-repeat;
+    background-position: 79% 101%, calc(0% - 50px) 50%;
+    background-size: 430px 140px;
+  }
 }
 .header--about {
   background-image: url("/bg-pattern-about-1-mobile-nav-1.81ae8fa9.svg");

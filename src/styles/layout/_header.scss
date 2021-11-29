@@ -12,12 +12,18 @@
 
    @include m(home) {
       --ct-padding-hdr: 4rem 0 min(40vh, 18rem);
-      padding: var(--ct-padding-hdr);
       @include bg-img(
          '../assets/bg/bg-pattern-home-2.svg',
          center 101%,
          430px 140px
       );
+      @include mq(min-width, large) {
+         background-image: url('../assets/bg/bg-pattern-home-2.svg'),
+            url('../assets/bg/bg-pattern-home-1.svg');
+         background-repeat: no-repeat;
+         background-position: 79% 101%, calc(0% - 50px) 50%;
+         background-size: 430px 140px;
+      }
    }
 
    @include m(about) {
