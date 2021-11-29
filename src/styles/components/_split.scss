@@ -3,6 +3,7 @@
 .split {
    @include m(parent) {
       outline: 1px solid white;
+      @include flexy();
       gap: var(--gap);
       @include mq($width: max-width, $key: large) {
          @include flexy($dir: column, $align: center);
@@ -23,9 +24,17 @@
       .container--testimonials & {
          --gap: 4rem;
       }
+
+      // children
+      & > * {
+         position: relative;
+         @include mq($width: min-width, $key: large) {
+            flex: 1 100%;
+         }
+      }
    }
 
-   @include m(child) {
-      position: relative;
-   }
+   // @include m(child) {
+   // position: relative;
+   // }
 }

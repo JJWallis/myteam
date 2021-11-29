@@ -664,6 +664,7 @@ body {
 
 .split--parent {
   outline: 1px solid white;
+  display: flex;
   gap: var(--gap);
 }
 @media (max-width: 70em) {
@@ -686,8 +687,13 @@ body {
 .container--testimonials .split--parent {
   --gap: 4rem;
 }
-.split--child {
+.split--parent > * {
   position: relative;
+}
+@media (min-width: 70em) {
+  .split--parent > * {
+    flex: 1 100%;
+  }
 }
 
 .container {
