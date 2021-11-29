@@ -1,6 +1,7 @@
 $breakpoints: (
    tablet: 50em,
    large: 70em,
+   contact-wide: 77em,
 );
 
 $colors: (
@@ -106,5 +107,4 @@ $layout: (
    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
    ct-padding-hdr: 4rem 0 min(15vh, 8.5rem),
    flow-space: 1.5rem,
-   // flex-basis: 100%
 );

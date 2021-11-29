@@ -789,6 +789,12 @@ body {
     --gap: 13rem;
   }
 }
+@media (min-width: 70em) and (max-width: 77em) {
+  .split--parent--contact {
+    --gap: 13rem;
+    padding-inline: 2.1rem;
+  }
+}
 
 .container {
   width: 90%;
@@ -1255,7 +1261,7 @@ nav a:hover {
   gap: var(--gap);
 }
 .nav--wide {
-  left: 170px;
+  left: 190px;
 }
 @media (max-width: 50em) {
   .nav--wide {

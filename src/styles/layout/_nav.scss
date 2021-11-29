@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 nav {
-   // fix - wouldn't work if multiple navs on page
    & a {
       transition: color 0.2s ease-in-out;
       &:hover {
@@ -21,7 +20,7 @@ nav {
       @include mq(max-width, tablet) {
          display: none;
       }
-      left: 170px;
+      left: 190px;
       @include e(pm) {
          & > * {
             display: inline-block;
