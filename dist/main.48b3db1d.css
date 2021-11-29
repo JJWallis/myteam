@@ -549,6 +549,14 @@ body {
     opacity: 0;
   }
 }
+@media (min-width: 70em) {
+  .small-border--build::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -45px;
+  }
+}
 .header--home .small-border::before {
   content: "";
   position: absolute;
@@ -572,6 +580,11 @@ body {
 @media (min-width: 50em) {
   .title--build {
     width: 68%;
+  }
+}
+@media (min-width: 70em) {
+  .title--build {
+    width: 75%;
   }
 }
 .title--testimonials {
@@ -1036,7 +1049,7 @@ body {
     width: 100%;
   }
 }
-@media (min-width: 50em) {
+@media (min-width: 50em) and (max-width: 70em) {
   .explainer--build {
     width: 73%;
   }

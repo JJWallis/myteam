@@ -12,6 +12,9 @@
       @include mq(min-width, tablet) {
          width: 68%;
       }
+      @include mq(min-width, large) {
+         width: 75%;
+      }
    }
 
    @include m(testimonials) {

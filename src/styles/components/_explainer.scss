@@ -15,7 +15,7 @@
    }
 
    @include m(build) {
-      @include mq(min-width, tablet) {
+      @include mqs(min-width, tablet, max-width, large) {
          width: 73%;
       }
    }

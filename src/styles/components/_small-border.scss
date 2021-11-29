@@ -19,6 +19,14 @@
       }
    }
 
+   @include m(build) {
+      @include mq(min-width, large) {
+         @include p-el(before) {
+            top: -45px;
+         }
+      }
+   }
+
    .header--home & {
       @include p-el(before) {
          background-color: var(--clr-rapture-blue);
