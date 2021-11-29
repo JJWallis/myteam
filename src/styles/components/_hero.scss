@@ -5,8 +5,15 @@
       margin-top: min(var(--margin-hero), 15vh);
 
       @include e(child) {
+         @include mq(min-width, large) {
+            &:last-child {
+               @include flexy($align: center);
+            }
+         }
          & > article {
-            @include flexy($dir: column, $align: center);
+            @include mq(max-width, large) {
+               @include flexy($dir: column, $align: center);
+            }
          }
       }
    }
