@@ -27,5 +27,11 @@
             }
          }
       }
+
+      @include m(contact) {
+         @include mq(min-width, large) {
+            @include flexy($dir: column, $just: center);
+         }
+      }
    }
 }

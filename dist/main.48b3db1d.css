@@ -686,6 +686,13 @@ body {
     align-items: center;
   }
 }
+@media (min-width: 70em) {
+  .hero--parent--contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .skip-to-content {
   position: absolute;
@@ -1168,9 +1175,19 @@ body {
 .form__input {
   padding: 1.5rem 0.7rem;
 }
+@media (min-width: 70em) {
+  .form__input {
+    padding: 1.1rem 0.7rem;
+  }
+}
 .form__text-area {
   padding: 2rem 0.7rem 3rem;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 70em) {
+  .form__text-area {
+    padding: 1.5rem 0.7rem 2.5rem;
+  }
 }
 
 .header--pm {
