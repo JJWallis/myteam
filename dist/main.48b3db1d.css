@@ -817,14 +817,29 @@ body {
 }
 @media (min-width: 50em) {
   .container--build {
-    padding-top: 7.5rem;
+    --ct-padding-lg: 7.5rem 0 min(15vh, 8.5rem);
     background-size: 250px 290px;
   }
 }
 @media (min-width: 70em) {
   .container--build {
+    --ct-padding-lg: 10rem 0 min(20vh, 9rem);
     background-position: calc(100% + 110px) 100%;
     background-size: 210px 230px;
+  }
+}
+.container--testimonials {
+  --ct-padding-lg: 12rem 0 min(30vh, 14rem);
+  padding: var(--ct-padding-lg);
+  background-image: url("/bg-pattern-home-4-about-3.5345c0c0.svg"), url("/bg-pattern-home-5.d123f279.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
+  background-size: 200px, 250px;
+}
+@media (min-width: 50em) {
+  .container--testimonials {
+    --ct-padding-lg: 7rem 0 min(27vh, 10rem);
+    background-size: 170px 120px, 230px 130px;
   }
 }
 .container--cta {
@@ -843,20 +858,6 @@ body {
   .container--cta {
     background-position: calc(0% - 0px) 100%;
     background-size: 170px;
-  }
-}
-.container--testimonials {
-  --ct-padding-lg: 12rem 0 min(30vh, 14rem);
-  padding: var(--ct-padding-lg);
-  background-image: url("/bg-pattern-home-4-about-3.5345c0c0.svg"), url("/bg-pattern-home-5.d123f279.svg");
-  background-repeat: no-repeat;
-  background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
-  background-size: 200px, 250px;
-}
-@media (min-width: 50em) {
-  .container--testimonials {
-    --ct-padding-lg: 7rem 0 min(27vh, 10rem);
-    background-size: 170px 120px, 230px 130px;
   }
 }
 .container--directors {

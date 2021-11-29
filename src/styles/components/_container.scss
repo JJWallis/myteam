@@ -4,7 +4,6 @@
    width: 90%;
    max-width: var(--align-mw);
    margin-inline: auto;
-   // outline: 1px solid white;
 
    @include m(build) {
       padding: var(--ct-padding-lg);
@@ -15,12 +14,27 @@
          $size: 250px 333px
       );
       @include mq(min-width, tablet) {
-         padding-top: 7.5rem;
+         --ct-padding-lg: 7.5rem 0 min(15vh, 8.5rem);
          background-size: 250px 290px;
       }
       @include mq(min-width, large) {
+         --ct-padding-lg: 10rem 0 min(20vh, 9rem);
          background-position: calc(100% + 110px) 100%;
          background-size: 210px 230px;
+      }
+   }
+
+   @include m(testimonials) {
+      --ct-padding-lg: 12rem 0 min(30vh, 14rem);
+      padding: var(--ct-padding-lg);
+      background-image: url('../assets/bg/bg-pattern-home-4-about-3.svg'),
+         url('../assets/bg/bg-pattern-home-5.svg');
+      background-repeat: no-repeat;
+      background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
+      background-size: 200px, 250px;
+      @include mq(min-width, tablet) {
+         --ct-padding-lg: 7rem 0 min(27vh, 10rem);
+         background-size: 170px 120px, 230px 130px;
       }
    }
 
@@ -37,20 +51,6 @@
       @include mq(min-width, large) {
          background-position: calc(0% - 0px) 100%;
          background-size: 170px;
-      }
-   }
-
-   @include m(testimonials) {
-      --ct-padding-lg: 12rem 0 min(30vh, 14rem);
-      padding: var(--ct-padding-lg);
-      background-image: url('../assets/bg/bg-pattern-home-4-about-3.svg'),
-         url('../assets/bg/bg-pattern-home-5.svg');
-      background-repeat: no-repeat;
-      background-position: calc(0% - 0px) 0%, calc(100% + 0px) 100%;
-      background-size: 200px, 250px;
-      @include mq(min-width, tablet) {
-         --ct-padding-lg: 7rem 0 min(27vh, 10rem);
-         background-size: 170px 120px, 230px 130px;
       }
    }
 
