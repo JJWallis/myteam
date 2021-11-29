@@ -14,8 +14,8 @@
       transition: transform 0.5s ease-in-out;
       @include bg-img(
          $img: '../assets/bg/bg-pattern-about-1-mobile-nav-1.svg',
-         $position: calc(100% + 153px) 100%,
-         $size: 300px
+         $position: calc(100% + 120px) 100%,
+         $size: 240px
       );
       & li:nth-child(2) {
          margin-left: 0.4rem;
