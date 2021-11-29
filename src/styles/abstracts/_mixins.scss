@@ -97,19 +97,6 @@
 }
 
 // =========================================
-// social-icons
-// =========================================
-
-@mixin social-icon() {
-   transition: transform 200ms linear, color 130ms linear;
-   &:hover,
-   &:focus {
-      color: var(--clr-pm-coral);
-      transform: scale(1.1);
-   }
-}
-
-// =========================================
 // media query
 // =========================================
 

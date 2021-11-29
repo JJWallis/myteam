@@ -2,7 +2,7 @@
 
 .list {
    @include m(build) {
-      outline: 1px solid white;
+      // outline: 1px solid white;
       // min() horizontal margin for aligment?
       @include mq($width: max-width, $key: tablet) {
          --flow-space: 8rem;

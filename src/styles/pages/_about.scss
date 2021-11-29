@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .grid-container--directors {
-   outline: 1px solid white;
+   // outline: 1px solid white;
    gap: var(--gap-directors);
    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
    @include mq(min-width, tablet) {

@@ -74,7 +74,7 @@
     --ct-padding-contact: 0 0 6.6rem;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   :root {
     --alignment: left;
     --gap: 9rem;
@@ -535,7 +535,7 @@ body {
   left: 0;
   background-color: var(--clr-pm-coral);
 }
-@media (max-width: 80em) {
+@media (max-width: 70em) {
   .small-border--hero::before {
     content: "";
     position: absolute;
@@ -610,7 +610,7 @@ body {
 .logo--sd {
   width: 130px;
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .logo--sd {
     width: 150px;
   }
@@ -663,12 +663,17 @@ body {
 }
 
 .split--parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  outline: 1px solid white;
   gap: var(--gap);
 }
-@media (max-width: 80em) {
+@media (max-width: 70em) {
+  .split--parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 70em) {
   .header--pm .split--parent {
     --gap: 1.8rem;
   }
@@ -713,7 +718,7 @@ body {
   background-position: calc(0% - 0px) 112.5%;
   background-size: 250px;
 }
-@media (min-width: 50em) and (max-width: 80em) {
+@media (min-width: 50em) and (max-width: 70em) {
   .container--cta {
     background-position: calc(0% - 0px) 122%;
   }
@@ -756,7 +761,7 @@ body {
     background-position: calc(0% - 0px) -100px;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .container--clients {
     background-position: calc(0% - 0px) 0%;
   }
@@ -776,7 +781,7 @@ body {
     background-size: 200px, 200px;
   }
 }
-@media (max-width: 80em) {
+@media (max-width: 70em) {
   .container--contact__child {
     align-items: unset;
     max-width: 630px;
@@ -788,9 +793,6 @@ body {
   /*============== ABOUT ==============*/
   /*============== CONTACT ==============*/
   /*============== ALL ==============*/
-}
-.list--build {
-  outline: 1px solid white;
 }
 @media (max-width: 50em) {
   .list--build {
@@ -851,7 +853,7 @@ body {
   --gap: 0.8rem;
   gap: var(--gap);
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .list--social {
     display: flex;
     justify-content: flex-end;
@@ -939,7 +941,7 @@ body {
 .job-title {
   margin-bottom: 1rem;
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .job-title {
     margin-bottom: 3rem;
   }
@@ -964,7 +966,7 @@ body {
     text-align: right;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .address {
     text-align: left;
   }
@@ -1010,7 +1012,7 @@ body {
     padding-bottom: 1.2rem;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .footer__nav {
     padding-bottom: 0;
   }
@@ -1049,7 +1051,7 @@ body {
     grid-template-areas: "logo . address" "navigation . ." "social . copyright";
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .grid-container--footer {
     grid-template-columns: repeat(2, auto) 1fr auto;
     grid-template-rows: repeat(2, auto);
@@ -1141,7 +1143,6 @@ main {
 }
 
 .grid-container--directors {
-  outline: 1px solid white;
   gap: var(--gap-directors);
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
@@ -1150,7 +1151,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 }
-@media (min-width: 50em) and (max-width: 80em) {
+@media (min-width: 50em) and (max-width: 70em) {
   .grid-container--directors {
     width: 90%;
     margin: 0 auto;

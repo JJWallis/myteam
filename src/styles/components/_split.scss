@@ -2,8 +2,11 @@
 
 .split {
    @include m(parent) {
-      @include flexy($dir: column, $align: center);
+      outline: 1px solid white;
       gap: var(--gap);
+      @include mq($width: max-width, $key: large) {
+         @include flexy($dir: column, $align: center);
+      }
 
       .header--pm & {
          @include mq($width: max-width, $key: large) {
