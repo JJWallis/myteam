@@ -807,6 +807,12 @@ body {
     background-position: calc(0% - 0px) 122%;
   }
 }
+@media (min-width: 70em) {
+  .container--cta {
+    background-position: calc(0% - 0px) 100%;
+    background-size: 170px;
+  }
+}
 .container--testimonials {
   --ct-padding-lg: 12rem 0 min(30vh, 14rem);
   padding: var(--ct-padding-lg);

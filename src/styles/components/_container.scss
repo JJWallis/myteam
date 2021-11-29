@@ -34,6 +34,10 @@
       @include mqs(min-width, tablet, max-width, large) {
          background-position: calc(0% - 0px) 122%;
       }
+      @include mq(min-width, large) {
+         background-position: calc(0% - 0px) 100%;
+         background-size: 170px;
+      }
    }
 
    @include m(testimonials) {
