@@ -18,11 +18,10 @@
          430px 140px
       );
       @include mq(min-width, large) {
-         background-image: url('../assets/bg/bg-pattern-home-2.svg'),
-            url('../assets/bg/bg-pattern-home-1.svg');
+         background-image: url('../assets/bg/bg-pattern-home-1.svg');
          background-repeat: no-repeat;
-         background-position: 79% 100%, calc(0% - 100px) 50%;
-         background-size: 320px 100px, 200px;
+         background-position: calc(0% - 100px) 50%;
+         background-size: 200px;
       }
    }
 

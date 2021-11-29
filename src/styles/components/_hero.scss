@@ -8,6 +8,17 @@
          @include mq(min-width, large) {
             &:last-child {
                @include flexy($align: flex-end);
+               .header--home & {
+                  @include p-el(
+                     after,
+                     $content: url('../assets/bg/bg-pattern-home-2.svg'),
+                     $width: 320px,
+                     $height: 100px
+                  ) {
+                     bottom: -288px;
+                     right: 30px;
+                  }
+               }
             }
          }
          & > article {

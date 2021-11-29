@@ -641,6 +641,15 @@ body {
     display: flex;
     align-items: flex-end;
   }
+  .header--home .hero--parent__child:last-child::after {
+    content: url("/bg-pattern-home-2.a329aae4.svg");
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 100px;
+    bottom: -288px;
+    right: 30px;
+  }
 }
 @media (max-width: 70em) {
   .hero--parent__child > article {
@@ -1128,10 +1137,10 @@ body {
 }
 @media (min-width: 70em) {
   .header--home {
-    background-image: url("/bg-pattern-home-2.a329aae4.svg"), url("/bg-pattern-home-1.418d3a37.svg");
+    background-image: url("/bg-pattern-home-1.418d3a37.svg");
     background-repeat: no-repeat;
-    background-position: 79% 100%, calc(0% - 100px) 50%;
-    background-size: 320px 100px, 200px;
+    background-position: calc(0% - 100px) 50%;
+    background-size: 200px;
   }
 }
 .header--about {
