@@ -19,7 +19,8 @@
          background-size: 250px 290px;
       }
       @include mq(min-width, large) {
-         background-position: calc(100% + 128px) 100%;
+         background-position: calc(100% + 110px) 100%;
+         background-size: 210px 230px;
       }
    }
 
