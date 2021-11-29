@@ -639,7 +639,7 @@ body {
 @media (min-width: 70em) {
   .hero--parent__child:last-child {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 @media (max-width: 70em) {

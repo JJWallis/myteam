@@ -7,7 +7,7 @@
       @include e(child) {
          @include mq(min-width, large) {
             &:last-child {
-               @include flexy($align: center);
+               @include flexy($align: flex-end);
             }
          }
          & > article {
