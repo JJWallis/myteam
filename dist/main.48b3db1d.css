@@ -1137,7 +1137,7 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero--home {
-    width: 95%;
+    width: 85%;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
