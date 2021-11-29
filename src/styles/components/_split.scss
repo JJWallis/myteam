@@ -40,9 +40,16 @@
          @include mq(min-width, large) {
             --gap: 10.5rem;
             min-height: 6rem;
+            & > * {
+               flex: 0 1 auto;
+            }
          }
-         & > * {
-            @include mq(min-width, large) {
+      }
+
+      @include m(contact) {
+         @include mq(min-width, large) {
+            --gap: 13rem;
+            & > * {
                flex: 0 1 auto;
             }
          }

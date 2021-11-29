@@ -773,9 +773,15 @@ body {
     --gap: 10.5rem;
     min-height: 6rem;
   }
+  .split--parent--about > * {
+    flex: 0 1 auto;
+  }
 }
 @media (min-width: 70em) {
-  .split--parent--about > * {
+  .split--parent--contact {
+    --gap: 13rem;
+  }
+  .split--parent--contact > * {
     flex: 0 1 auto;
   }
 }
