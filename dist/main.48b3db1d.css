@@ -1120,11 +1120,6 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero {
-    width: 100%;
-  }
-}
-@media (min-width: 70em) {
-  .explainer--hero--home {
     width: 95%;
   }
 }
@@ -1266,6 +1261,13 @@ body {
   .header--about {
     background-position: calc(100% + 95px) 100%;
     background-size: 190px;
+  }
+}
+@media (min-width: 70em) {
+  .header--about {
+    --ct-padding-hdr: 4rem 0 min(17vh, 10rem);
+    background-position: calc(100% + 85px) 100%;
+    background-size: 170px 180px;
   }
 }
 
