@@ -592,9 +592,18 @@ body {
 }
 @media (min-width: 50em) {
   .title--testimonials {
+    margin: 0 auto 4rem;
+  }
+}
+@media (min-width: 50em) and (max-width: 70em) {
+  .title--testimonials {
     width: 65%;
     max-width: 550px;
-    margin: 0 auto 4rem;
+  }
+}
+@media (min-width: 70em) {
+  .title--testimonials {
+    width: 75%;
   }
 }
 .title--clients {
