@@ -85,6 +85,7 @@
     --ct-padding-about: 8rem 0 9rem;
     --ct-padding-contact: 0 0 10rem;
     --fs-500: 6rem;
+    --fs-400: 2.5rem;
     --fs-employee-name: 1.2rem;
     --fs-job-title: 0.9rem;
   }
@@ -825,7 +826,7 @@ body {
   .container--build {
     --ct-padding-lg: 10rem 0 min(20vh, 9rem);
     background-position: calc(100% + 110px) 100%;
-    background-size: 210px 230px;
+    background-size: 195px 230px;
   }
 }
 .container--testimonials {

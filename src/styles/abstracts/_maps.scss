@@ -23,15 +23,11 @@ $type-scale: (
       fs-500-contact: 3.1rem,
       fs-500: 4.2667rem,
       fs-500-about: 4.2667rem,
-      // h1
       fs-400: 2.5rem,
-      // h2 no change
       fs-300-h3: 1.5rem,
       fs-300-h3-ct: 2.2rem,
       fs-300: 1.2rem,
-      // contact no change
       fs-200: 1.2rem,
-      // wide: 0.9375rem,
       fs-address: 1.1rem,
       fs-job-title: 1.1rem,
       fs-employee-name: 1.6rem,
@@ -49,9 +45,7 @@ $type-scale: (
    lh-small: (
       lh-500: 1,
       lh-400: 1,
-      // h2 no change
       lh-300: 1.5556,
-      // contact no change
       lh-200: 1.666,
    ),
    lh-large: (
@@ -97,6 +91,7 @@ $type-scale: (
       ct-padding-about: 8rem 0 9rem,
       ct-padding-contact: 0 0 10rem,
       fs-500: 6rem,
+      fs-400: 2.5rem,
       fs-employee-name: 1.2rem,
       fs-job-title: 0.9rem,
    ),
