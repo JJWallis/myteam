@@ -4,6 +4,10 @@
    width: 100%;
    max-width: 610px;
 
+   @include mqs(min-width, tablet, max-width, large) {
+      width: 85%;
+   }
+
    @include m(hero) {
       @include mq(min-width, tablet) {
          width: 65%;
@@ -20,9 +24,9 @@
       }
    }
 
-   @include m(build) {
+   @include m(testimonials) {
       @include mqs(min-width, tablet, max-width, large) {
-         width: 85%;
+         max-width: 700px;
       }
    }
 }
