@@ -3,9 +3,7 @@
 .logo {
    @include m(pm) {
       left: 0;
-      @include mq(min-width, tablet) {
-         width: 130px;
-      }
+      width: 130px;
    }
 
    @include m(sd) {

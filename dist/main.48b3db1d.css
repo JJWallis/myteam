@@ -682,11 +682,7 @@ body {
 
 .logo--pm {
   left: 0;
-}
-@media (min-width: 50em) {
-  .logo--pm {
-    width: 130px;
-  }
+  width: 130px;
 }
 .logo--sd {
   width: 130px;
