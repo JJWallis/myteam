@@ -1,7 +1,7 @@
 const btns = document.querySelectorAll('.btn--director')
 
 function toggleData(e: any) {
-   const target = e.target
+   const { target } = e
    const isVisible = target.getAttribute('aria-selected')
    const hiddenData = target.nextElementSibling
    if (isVisible === 'true') {
