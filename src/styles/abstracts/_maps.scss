@@ -66,6 +66,7 @@ $type-scale: (
       gap-directors: 3rem,
       gap-ftr: 2rem,
       gap-contact: 4rem,
+      flow-space: 1.5rem,
       ct-padding-cta: 6.5rem 0,
       ct-padding-ftr: 5rem 0 4rem,
       ct-padding-about: 5rem 0 7.5rem,
@@ -87,6 +88,7 @@ $type-scale: (
       gap-directors: 4.5rem 2rem,
       gap-ftr: 2.2rem 6.5rem,
       gap-contact: 14rem,
+      flow-space: 2rem,
       ct-padding-cta: 4.5rem 0,
       ct-padding-ftr: 3rem,
       ct-padding-about: 8rem 0 10rem,
@@ -104,5 +106,4 @@ $layout: (
    align-mw: 65rem,
    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
    ct-padding-hdr: 4rem 0 min(15vh, 8.5rem),
-   flow-space: 1.5rem,
 );
