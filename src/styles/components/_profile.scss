@@ -4,7 +4,7 @@
    height: 100px;
    width: 100px;
    border-radius: 50%;
-   border: 3px solid white;
+   border: 3px solid var(--clr-profile-border);
    @include m(director) {
       margin-bottom: 0.6rem;
    }

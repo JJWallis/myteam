@@ -9,6 +9,7 @@
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
   --clr-transparent: transparent;
+  --clr-profile-border: #b3ffff;
   --fs-500-contact: 2.9rem;
   --fs-500: 3.8rem;
   --fs-500-about: 3.8rem;
@@ -149,6 +150,10 @@
 
 .bg-transparent {
   background-color: var(--clr-transparent, transparent);
+}
+
+.bg-profile-border {
+  background-color: var(--clr-profile-border, #b3ffff);
 }
 
 .fs-500-contact {
@@ -1152,7 +1157,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid var(--clr-profile-border);
 }
 .profile--director {
   margin-bottom: 0.6rem;
@@ -1309,7 +1314,7 @@ body {
   color: var(--clr-pm-white);
 }
 .form:hover, .form:focus {
-  border-bottom: 1.5px solid var(--clr-rapture-blue);
+  border-bottom: 1.5px solid var(--clr-profile-border);
 }
 .form__input {
   padding: 1.8rem 0.7rem 1.2rem;

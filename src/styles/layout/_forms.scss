@@ -9,7 +9,7 @@
    }
    &:hover,
    &:focus {
-      border-bottom: 1.5px solid var(--clr-rapture-blue);
+      border-bottom: 1.5px solid var(--clr-profile-border);
    }
 
    @include e(input) {
