@@ -1200,12 +1200,6 @@ body {
     font-size: 1rem;
   }
 }
-@media (min-width: 50em) and (max-width: 70em) {
-  .explainer--directors {
-    width: 90%;
-    max-width: 500px;
-  }
-}
 @media (min-width: 70em) {
   .explainer--directors {
     width: 69%;
@@ -1396,17 +1390,23 @@ main {
 
 .grid-container--directors {
   gap: var(--gap-directors);
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
 }
 @media (min-width: 50em) {
   .grid-container--directors {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
   .grid-container--directors {
     width: 90%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 70em) {
+  .grid-container--directors {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .grid-container--directors__item {
