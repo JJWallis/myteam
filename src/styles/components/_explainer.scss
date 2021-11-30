@@ -33,7 +33,6 @@
    @include m(testimonials) {
       @include mqs(min-width, tablet, max-width, large) {
          line-height: 1.7;
-         max-width: 700px;
       }
    }
 

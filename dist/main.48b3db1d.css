@@ -528,9 +528,6 @@ body {
     background-position: calc(100% + 120px) 100%;
     background-size: 240px;
   }
-  .sidebar li:nth-child(2) {
-    margin-left: 0.4rem;
-  }
   .sidebar[data-visible=true] {
     transform: translateX(0);
   }
@@ -564,17 +561,11 @@ body {
   content: "";
   position: absolute;
   display: block;
-  width: 67px;
-  height: 6px;
+  width: 50px;
+  height: 4px;
   top: 0;
   left: 0;
   background-color: var(--clr-pm-coral);
-}
-@media (min-width: 70em) {
-  .small-border::before {
-    height: 4px;
-    width: 50px;
-  }
 }
 @media (max-width: 70em) {
   .small-border--hero::before {
@@ -812,6 +803,11 @@ body {
 }
 .container--testimonials .split--parent {
   --gap: 4rem;
+}
+@media (min-width: 50em) {
+  .container--testimonials .split--parent {
+    --gap: 3rem;
+  }
 }
 @media (min-width: 70em) {
   .container--testimonials .split--parent {
@@ -1227,7 +1223,6 @@ body {
 @media (min-width: 50em) and (max-width: 70em) {
   .explainer--testimonials {
     line-height: 1.7;
-    max-width: 700px;
   }
 }
 .explainer--directors {
@@ -1500,12 +1495,7 @@ main {
 }
 .testimonials--parent__quotes article .quote {
   padding-top: 0.5rem;
-  margin-bottom: 1.3rem;
-}
-@media (min-width: 50em) {
-  .testimonials--parent__quotes article .quote {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 1rem;
 }
 @media (min-width: 70em) {
   .testimonials--parent__quotes article .quote {

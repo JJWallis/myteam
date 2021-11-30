@@ -17,9 +17,6 @@
          $position: calc(100% + 120px) 100%,
          $size: 240px
       );
-      & li:nth-child(2) {
-         margin-left: 0.4rem;
-      }
       &[data-visible='true'] {
          transform: translateX(0);
       }
