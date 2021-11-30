@@ -869,7 +869,7 @@ body {
 @media (min-width: 70em) {
   .container--build {
     --ct-padding-lg: 10rem 0 min(20vh, 9rem);
-    background-position: calc(100% + 82px) 100%;
+    background-position: calc(100% + 85px) 100%;
     background-size: 165px 230px;
   }
 }
@@ -1220,7 +1220,7 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero--home {
-    width: 80%;
+    width: 84%;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {

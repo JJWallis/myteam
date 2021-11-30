@@ -25,7 +25,7 @@
       }
       @include m(home) {
          @include mq(min-width, large) {
-            width: 80%;
+            width: 84%;
          }
       }
    }
