@@ -1019,6 +1019,7 @@ body {
 }
 .list--contact > * {
   margin-left: 5.3rem;
+  padding-left: 0.7rem;
   width: 65%;
 }
 @media (min-width: 50em) {
