@@ -54,7 +54,7 @@
          $size: 250px
       );
       @include mqs(min-width, tablet, max-width, large) {
-         background-position: calc(0% - 0px) 122%;
+         background-position: calc(0% - 0px) 131%;
       }
       @include mq(min-width, large) {
          background-position: calc(0% - 0px) 100%;

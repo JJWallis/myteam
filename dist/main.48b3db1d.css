@@ -898,7 +898,7 @@ body {
 }
 @media (min-width: 50em) and (max-width: 70em) {
   .container--cta {
-    background-position: calc(0% - 0px) 122%;
+    background-position: calc(0% - 0px) 131%;
   }
 }
 @media (min-width: 70em) {
