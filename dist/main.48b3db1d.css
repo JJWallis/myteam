@@ -1220,7 +1220,7 @@ body {
 }
 @media (min-width: 70em) {
   .explainer--hero--home {
-    width: 85%;
+    width: 80%;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
@@ -1369,7 +1369,7 @@ body {
 }
 @media (min-width: 79em) {
   .header--home {
-    background-position: calc(0% - 100px) 50%;
+    background-position: calc(0% - 100px) 37%;
   }
 }
 .header--about {
