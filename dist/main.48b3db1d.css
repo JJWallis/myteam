@@ -1330,6 +1330,11 @@ body {
     margin-bottom: 1.5rem;
   }
 }
+.form--error {
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--clr-pm-coral);
+}
 .form[data-error=true] {
   border-bottom-color: var(--clr-pm-coral);
 }

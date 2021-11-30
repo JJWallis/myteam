@@ -26,6 +26,12 @@
       }
    }
 
+   @include m(error) {
+      font-style: italic;
+      font-size: 2rem;
+      color: var(--clr-pm-coral);
+   }
+
    &[data-error='true'] {
       border-bottom-color: var(--clr-pm-coral);
       &::placeholder {

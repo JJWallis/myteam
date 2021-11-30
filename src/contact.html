@@ -6,6 +6,7 @@
       <title>myteam - Contact</title>
       <link rel="stylesheet" href="./styles/main.scss" type="text/css" />
       <script defer src="./scripts/nav.ts"></script>
+      <script defer src="./scripts/validation.ts"></script>
       <script
          defer
          src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"
@@ -148,7 +149,10 @@
                   <form action="/" class="">
                      <legend class="sr-only">Contact form</legend>
                      <fieldset>
-                        <label for="input-name" class="sr-only">Name</label>
+                        <label
+                           for="input-name"
+                           aria-label="Full-name input"
+                        ></label>
                         <input
                            type="text"
                            id="input-name"
