@@ -4,7 +4,7 @@ const btnSubmit = form.querySelector('button[type="submit"]')
 const regex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-function validate(e: any) {
+function validate(e: Event) {
    const userData = Array.from(form.querySelectorAll('[data-required="true"]'))
    const errors = userData.filter(
       (input: any) => input.value === '' || input.value === null
@@ -16,11 +16,11 @@ function validate(e: any) {
       errors.push(email)
    if (errors.length) {
       e.preventDefault()
-      errors.forEach((input: any) => createErrorMsg(input))
+      errors.forEach((input: Element) => createErrorMsg(input))
    }
 }
 
-function createErrorMsg(errorInput: any) {
+function createErrorMsg(errorInput: Element) {
    const label = errorInput.previousElementSibling
    const errorMsg = document.createElement('div')
    if (errorInput.tagName === 'TEXTAREA') {
@@ -34,7 +34,7 @@ function createErrorMsg(errorInput: any) {
       errorMsg.innerText = 'This field is required'
    }
    label.append(errorMsg)
-   errorInput.setAttribute('data-error', true)
+   errorInput.setAttribute('data-error', 'true')
 }
 
 form.addEventListener('submit', validate)

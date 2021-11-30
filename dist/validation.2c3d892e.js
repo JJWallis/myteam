@@ -156,7 +156,7 @@ function createErrorMsg(errorInput) {
   }
 
   label.append(errorMsg);
-  errorInput.setAttribute('data-error', true);
+  errorInput.setAttribute('data-error', 'true');
 }
 
 form.addEventListener('submit', validate); // refactor - inner text only set to email one if email (ternary post beefy conditions)
