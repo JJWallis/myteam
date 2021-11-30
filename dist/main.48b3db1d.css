@@ -1331,7 +1331,6 @@ body {
   }
 }
 .form--label {
-  outline: 1px solid white;
   position: relative;
   display: block;
 }
@@ -1341,9 +1340,8 @@ body {
   font-weight: var(--fw-semi-bold);
   color: var(--clr-pm-coral);
   white-space: nowrap;
-  outline: 1px solid white;
   position: absolute;
-  bottom: -45px;
+  bottom: -102px;
   left: 15px;
 }
 .form[data-error=true] {
