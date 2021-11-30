@@ -10,13 +10,12 @@
 
    @include m(hero) {
       @include mq(min-width, tablet) {
-         width: 65%;
+         width: 63%;
          max-width: 700px;
       }
       @include mq(min-width, large) {
          width: 90%;
       }
-
       @include m(home) {
          @include mq(min-width, large) {
             width: 85%;
