@@ -17,7 +17,7 @@
 
       .header--home & {
          @include mq(min-width, large) {
-            --gap: 7rem;
+            --gap: 7.5rem;
          }
       }
 

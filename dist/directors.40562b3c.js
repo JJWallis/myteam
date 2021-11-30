@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var btns = document.querySelectorAll('.btn--director');
 
 function toggleData(e) {
-  var target = e.target;
+  var target = e ? e.target : null;
   var isVisible = target.getAttribute('aria-selected');
   var hiddenData = target.nextElementSibling;
 

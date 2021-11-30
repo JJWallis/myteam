@@ -787,7 +787,7 @@ body {
 }
 @media (min-width: 70em) {
   .header--home .split--parent {
-    --gap: 7rem;
+    --gap: 7.5rem;
   }
 }
 @media (max-width: 50em) {
