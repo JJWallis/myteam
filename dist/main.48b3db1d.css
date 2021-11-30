@@ -797,7 +797,7 @@ body {
 }
 @media (max-width: 50em) {
   .container--build .split--parent {
-    --gap: 12rem;
+    --gap: 10rem;
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
@@ -897,7 +897,7 @@ body {
   padding: var(--ct-padding-cta);
   background-image: url("/bg-pattern-home-6-about-5.56b63356.svg");
   background-repeat: no-repeat;
-  background-position: calc(0% - 0px) 112.5%;
+  background-position: calc(0% - 0px) 114.5%;
   background-size: 250px;
 }
 @media (min-width: 50em) and (max-width: 70em) {
@@ -1044,8 +1044,6 @@ body {
 }
 .list--contact > * {
   margin-left: 5.3rem;
-  padding-left: 0.7rem;
-  width: 65%;
 }
 @media (min-width: 50em) {
   .list--contact > * {
@@ -1144,7 +1142,7 @@ body {
 }
 
 .job-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   font-style: italic;
 }
 @media (min-width: 70em) {
