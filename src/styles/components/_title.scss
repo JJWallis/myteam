@@ -52,12 +52,12 @@
          margin-bottom: 1.7rem;
       }
       @include mq(min-width, large) {
-         margin-bottom: 2rem;
+         margin-bottom: 2.5rem;
       }
       @include e(sd) {
          margin-bottom: 3.7rem;
          @include mq(min-width, large) {
-            margin-bottom: 3.3rem;
+            margin-bottom: 3.4rem;
          }
       }
    }
