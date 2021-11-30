@@ -16,7 +16,7 @@
       @include bg-img(
          $img: '../assets/bg/bg-pattern-home-3.svg',
          $position: calc(100% + 128px) 0%,
-         $size: 250px 333px
+         $size: 250px
       );
       @include mq(min-width, tablet) {
          --ct-padding-lg: 7.5rem 0 min(15vh, 8.5rem);

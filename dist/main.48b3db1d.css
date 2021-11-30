@@ -402,7 +402,7 @@ select {
   }
 }
 body {
-  font: var(--fw-regular) var(--fs-200) "livvic", sans-serif;
+  font: var(--fw-medium) var(--fs-200) "livvic", sans-serif;
   line-height: var(--lh-200);
 }
 
@@ -603,7 +603,7 @@ body {
   }
 }
 .title--build {
-  width: 75%;
+  width: 70%;
 }
 @media (min-width: 50em) {
   .title--build {
@@ -838,7 +838,7 @@ body {
   background-image: url("/bg-pattern-home-3.0bc3c47a.svg");
   background-repeat: no-repeat;
   background-position: calc(100% + 128px) 0%;
-  background-size: 250px 333px;
+  background-size: 250px;
 }
 @media (min-width: 50em) {
   .container--build {
