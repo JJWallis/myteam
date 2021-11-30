@@ -1321,12 +1321,12 @@ body {
 }
 .form__text-area {
   resize: none;
-  padding: 2rem 0.7rem 1rem;
+  padding: 2rem 0.7rem 3rem;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 70em) {
   .form__text-area {
-    padding: 1.5rem 0.7rem 1.8rem;
+    padding: 1.5rem 0.7rem 2rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -1343,6 +1343,21 @@ body {
   position: absolute;
   bottom: -102px;
   left: 15px;
+}
+.form--error--text-area {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-pm-coral);
+  white-space: nowrap;
+  position: absolute;
+  bottom: -164px;
+  left: 15px;
+}
+@media (min-width: 70em) {
+  .form--error--text-area {
+    bottom: -140px;
+  }
 }
 .form[data-error=true] {
   border-bottom-color: var(--clr-pm-coral);

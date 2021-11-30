@@ -18,7 +18,11 @@ function validate(e: any) {
 function createErrorMsg(errorInput: any) {
    const label = errorInput.previousElementSibling
    const errorMsg = document.createElement('div')
-   errorMsg.classList.add('form--error')
+   if (errorInput.tagName === 'TEXTAREA') {
+      errorMsg.classList.add('form--error--text-area')
+   } else {
+      errorMsg.classList.add('form--error')
+   }
    errorMsg.innerText = 'This field is required'
    label.append(errorMsg)
    errorInput.setAttribute('data-error', true)
