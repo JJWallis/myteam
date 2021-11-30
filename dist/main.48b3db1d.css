@@ -954,12 +954,16 @@ body {
     background-size: 170px 210px, 190px;
   }
 }
-@media (min-width: 70em) and (max-width: 79em) {
+@media (min-width: 70em) {
   .container--contact {
-    background-image: url("/bg-pattern-contact-2.252c4978.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% + 100px) 100%;
-    background-size: 200px;
+    background-position: calc(100% + 100px) 100%, calc(0% - 80px) 100%;
+    background-size: 200px, 150px;
+  }
+}
+@media (min-width: 79em) {
+  .container--contact {
+    background-position: calc(100% + 100px) 100%, calc(0% - 100px) 0px;
+    background-size: 200px, 200px;
   }
 }
 @media (max-width: 70em) {

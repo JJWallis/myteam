@@ -108,11 +108,13 @@
          background-position: calc(100% + 85px) 100%, calc(0% - 100px) 0px;
          background-size: 170px 210px, 190px;
       }
-      @include mqs(min-width, large, max-width, align-mw) {
-         background-image: url('../assets/bg/bg-pattern-contact-2.svg');
-         background-repeat: no-repeat;
-         background-position: calc(100% + 100px) 100%;
-         background-size: 200px;
+      @include mq(min-width, large) {
+         background-position: calc(100% + 100px) 100%, calc(0% - 80px) 100%;
+         background-size: 200px, 150px;
+      }
+      @include mq(min-width, align-mw) {
+         background-position: calc(100% + 100px) 100%, calc(0% - 100px) 0px;
+         background-size: 200px, 200px;
       }
 
       @include e(child) {
