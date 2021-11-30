@@ -1331,7 +1331,9 @@ body {
   }
 }
 .form--label {
+  outline: 1px solid white;
   position: relative;
+  display: block;
 }
 .form--error {
   font-style: italic;
@@ -1339,8 +1341,8 @@ body {
   font-weight: var(--fw-semi-bold);
   color: var(--clr-pm-coral);
   white-space: nowrap;
+  outline: 1px solid white;
   position: absolute;
-  width: 100%;
   bottom: -45px;
   left: 15px;
 }

@@ -27,7 +27,9 @@
    }
 
    @include m(label) {
+      outline: 1px solid white;
       position: relative;
+      display: block;
    }
 
    @include m(error) {
@@ -36,7 +38,8 @@
       font-weight: var(--fw-semi-bold);
       color: var(--clr-pm-coral);
       white-space: nowrap;
-      @include position($pos: absolute, $width: 100%) {
+      outline: 1px solid white;
+      @include position($pos: absolute) {
          bottom: -45px;
          left: 15px;
       }
