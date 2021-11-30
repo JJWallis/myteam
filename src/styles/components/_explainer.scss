@@ -14,7 +14,7 @@
          max-width: 700px;
       }
       @include mq(min-width, large) {
-         width: 90%;
+         width: 100%;
       }
       @include m(home) {
          @include mq(min-width, large) {
