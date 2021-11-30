@@ -42,8 +42,8 @@
       @include mq(max-width, tablet) {
          font-size: 1rem;
       }
-      @include mq(min-width, large) {
-         width: 69%;
+      @include mq(min-width, tablet) {
+         width: 70%;
       }
    }
 }

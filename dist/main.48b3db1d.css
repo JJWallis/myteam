@@ -1234,9 +1234,9 @@ body {
     font-size: 1rem;
   }
 }
-@media (min-width: 70em) {
+@media (min-width: 50em) {
   .explainer--directors {
-    width: 69%;
+    width: 70%;
   }
 }
 
