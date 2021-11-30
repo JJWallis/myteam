@@ -4,11 +4,18 @@
    width: 100%;
    max-width: 610px;
 
+   @include mq(min-width, tablet) {
+      line-height: 1.7;
+   }
+
    @include mqs(min-width, tablet, max-width, large) {
       width: 85%;
    }
 
    @include m(hero) {
+      @include mqs(min-width, tablet, max-width, large) {
+         line-height: 1.9;
+      }
       @include mq(min-width, tablet) {
          width: 63%;
          max-width: 700px;
@@ -25,6 +32,7 @@
 
    @include m(testimonials) {
       @include mqs(min-width, tablet, max-width, large) {
+         line-height: 1.7;
          max-width: 700px;
       }
    }

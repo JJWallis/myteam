@@ -2,7 +2,6 @@ $breakpoints: (
    tablet: 50em,
    large: 70em,
    align-mw: 79em,
-   // hdr home + contact hero wide bg imgs
 );
 
 $colors: (
@@ -32,7 +31,6 @@ $type-scale: (
       fs-employee-name: 1.6rem,
    ),
    large: (
-      // tablet
       fs-500-contact: 5rem,
       fs-400: 2.4rem,
       fs-300-h3: 1.2rem,
@@ -81,6 +79,7 @@ $type-scale: (
       ct-padding-ftr: 4rem 0,
       ct-padding-about: 6rem 0 8.3rem,
       ct-padding-contact: 0 0 6.6rem,
+      fs-500: 4.5rem,
    ),
    align-large: (
       alignment: left,
