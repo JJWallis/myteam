@@ -1,13 +1,15 @@
 const form = document.querySelector('form')
-const email: any = form.querySelector('#input-email')
+const email: HTMLInputElement = form.querySelector('#input-email')
 const btnSubmit = form.querySelector('button[type="submit"]')
 const regex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 function validate(e: Event) {
-   const userData = Array.from(form.querySelectorAll('[data-required="true"]'))
+   const userData: HTMLInputElement[] = Array.from(
+      form.querySelectorAll('[data-required="true"]')
+   )
    const errors = userData.filter(
-      (input: any) => input.value === '' || input.value === null
+      (input: HTMLInputElement) => input.value === '' || input.value === null
    )
    if (
       !regex.test(email.value) &&
@@ -16,7 +18,7 @@ function validate(e: Event) {
       errors.push(email)
    if (errors.length) {
       e.preventDefault()
-      errors.forEach((input: Element) => createErrorMsg(input))
+      errors.forEach((input) => createErrorMsg(input))
    }
 }
 
