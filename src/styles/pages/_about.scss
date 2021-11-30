@@ -33,4 +33,7 @@
       opacity: 1;
       pointer-events: all;
    }
+   @include mq(max-width, tablet) {
+      padding-top: 2.6rem;
+   }
 }

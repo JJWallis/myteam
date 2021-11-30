@@ -1465,6 +1465,11 @@ main {
   opacity: 1;
   pointer-events: all;
 }
+@media (max-width: 50em) {
+  .extra-info {
+    padding-top: 2.6rem;
+  }
+}
 
 @media (max-width: 70em) {
   .build--parent__child:first-child {
