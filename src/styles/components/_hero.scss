@@ -31,6 +31,7 @@
       @include m(contact) {
          @include mq(min-width, large) {
             @include flexy($dir: column, $just: flex-end);
+            margin-bottom: 0.5rem;
          }
       }
    }

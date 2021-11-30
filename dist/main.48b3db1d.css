@@ -677,7 +677,7 @@ body {
 }
 @media (min-width: 70em) {
   .title--contact__sd {
-    margin-bottom: 3.4rem;
+    margin-bottom: 3.8rem;
   }
 }
 .title--cta {
@@ -738,6 +738,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -956,7 +957,7 @@ body {
 }
 @media (min-width: 70em) {
   .container--contact {
-    background-position: calc(100% + 100px) 100%, calc(0% - 80px) 100%;
+    background-position: calc(100% + 100px) 100%, calc(0% - 110px) 0%;
     background-size: 200px, 150px;
   }
 }
@@ -1305,12 +1306,7 @@ body {
   border-bottom: 1.5px solid var(--clr-rapture-blue);
 }
 .form__input {
-  padding: 1.7rem 0.7rem 1.2rem;
-}
-@media (min-width: 70em) {
-  .form__input {
-    padding: 1.1rem 0.7rem;
-  }
+  padding: 1.8rem 0.7rem 1.2rem;
 }
 .form__text-area {
   resize: none;
