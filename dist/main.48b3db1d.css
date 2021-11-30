@@ -1321,12 +1321,12 @@ body {
 }
 .form__text-area {
   resize: none;
-  padding: 2rem 0.7rem 3rem;
+  padding: 2rem 0.7rem 1rem;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 70em) {
   .form__text-area {
-    padding: 1.5rem 0.7rem 2rem;
+    padding: 1.5rem 0.7rem 1.8rem;
     margin-bottom: 1.5rem;
   }
 }

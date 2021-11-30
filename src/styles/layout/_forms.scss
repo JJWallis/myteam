@@ -18,10 +18,10 @@
 
    @include e(text-area) {
       resize: none;
-      padding: 2rem 0.7rem 3rem;
+      padding: 2rem 0.7rem 1rem;
       margin-bottom: 1.5rem;
       @include mq(min-width, large) {
-         padding: 1.5rem 0.7rem 2rem;
+         padding: 1.5rem 0.7rem 1.8rem;
          margin-bottom: 1.5rem;
       }
    }
