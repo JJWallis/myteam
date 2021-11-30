@@ -121,13 +121,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var form = document.querySelector('form');
 var email = form.querySelector('#input-email');
 var btnSubmit = form.querySelector('button[type="submit"]');
+var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 function validate(e) {
   var userData = Array.from(form.querySelectorAll('[data-required="true"]'));
   console.log(userData);
   var errors = userData.filter(function (input) {
     return input.value === '' || input.value === null;
-  }); //    email regex
+  });
 
   if (errors.length) {
     e.preventDefault();
