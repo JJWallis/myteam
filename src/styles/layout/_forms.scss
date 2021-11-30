@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .form {
-   border-bottom: 1.5px solid white;
+   border-bottom: 1px solid white;
    cursor: pointer;
    transition: border-bottom 0.2s ease-in-out;
    &::placeholder {
@@ -26,10 +26,10 @@
       }
    }
 
-   @include m(error) {
+   &[data-error='true'] {
       border-bottom-color: var(--clr-pm-coral);
       &::placeholder {
-         color: rgba(hsl(0 87% 73%), 0.7);
+         color: var(--clr-pm-coral);
       }
    }
 }

@@ -1306,7 +1306,7 @@ body {
 }
 
 .form {
-  border-bottom: 1.5px solid white;
+  border-bottom: 1px solid white;
   cursor: pointer;
   transition: border-bottom 0.2s ease-in-out;
 }
@@ -1330,11 +1330,11 @@ body {
     margin-bottom: 1.5rem;
   }
 }
-.form--error {
+.form[data-error=true] {
   border-bottom-color: var(--clr-pm-coral);
 }
-.form--error::placeholder {
-  color: rgba(246, 126, 126, 0.7);
+.form[data-error=true]::placeholder {
+  color: var(--clr-pm-coral);
 }
 
 .header--pm {
