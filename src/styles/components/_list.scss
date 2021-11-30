@@ -50,6 +50,8 @@
       }
       & > * {
          margin-left: 5.3rem;
+         padding-left: 0.4rem;
+         width: 80%;
          @include mq(min-width, tablet) {
             width: 130%;
          }

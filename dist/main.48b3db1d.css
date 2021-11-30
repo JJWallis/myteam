@@ -1044,6 +1044,8 @@ body {
 }
 .list--contact > * {
   margin-left: 5.3rem;
+  padding-left: 0.4rem;
+  width: 80%;
 }
 @media (min-width: 50em) {
   .list--contact > * {
