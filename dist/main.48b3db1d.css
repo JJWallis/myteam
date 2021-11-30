@@ -87,7 +87,7 @@
     --ct-padding-ftr: 3rem;
     --ct-padding-about: 8rem 0 10rem;
     --ct-padding-contact: 0 0 10rem;
-    --fs-500: 6rem;
+    --fs-500: 5.8rem;
     --fs-400: 2.5rem;
     --fs-employee-name: 1.2rem;
     --fs-job-title: 0.9rem;
@@ -776,7 +776,7 @@ body {
 }
 @media (min-width: 70em) {
   .header--home .split--parent {
-    --gap: 8rem;
+    --gap: 7rem;
   }
 }
 @media (max-width: 50em) {
@@ -787,6 +787,11 @@ body {
 @media (min-width: 50em) and (max-width: 70em) {
   .container--build .split--parent {
     align-items: flex-start;
+  }
+}
+@media (min-width: 70em) {
+  .container--build .split--parent {
+    --gap: 10rem;
   }
 }
 .container--testimonials .split--parent {

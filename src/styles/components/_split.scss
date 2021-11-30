@@ -17,7 +17,7 @@
 
       .header--home & {
          @include mq(min-width, large) {
-            --gap: 8rem;
+            --gap: 7rem;
          }
       }
 
@@ -27,6 +27,9 @@
          }
          @include mqs(min-width, tablet, max-width, large) {
             align-items: flex-start;
+         }
+         @include mq(min-width, large) {
+            --gap: 10rem;
          }
       }
 
