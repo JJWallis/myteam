@@ -607,7 +607,7 @@ body {
 }
 @media (min-width: 50em) {
   .title--build {
-    width: 74%;
+    width: 75%;
   }
 }
 @media (min-width: 70em) {
@@ -1181,6 +1181,11 @@ body {
     width: 85%;
   }
 }
+@media (min-width: 50em) and (max-width: 70em) {
+  .explainer--build {
+    width: 85%;
+  }
+}
 
 .footer--pm {
   padding: var(--ct-padding-ftr);
@@ -1296,6 +1301,11 @@ body {
     background-repeat: no-repeat;
     background-position: center 100%;
     background-size: 430px 130px;
+  }
+}
+@media (min-width: 50em) {
+  .header--home {
+    background-size: 400px 120px;
   }
 }
 @media (min-width: 79em) {

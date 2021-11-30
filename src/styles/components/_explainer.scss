@@ -19,4 +19,10 @@
          }
       }
    }
+
+   @include m(build) {
+      @include mqs(min-width, tablet, max-width, large) {
+         width: 85%;
+      }
+   }
 }

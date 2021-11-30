@@ -19,6 +19,9 @@
             430px 130px
          );
       }
+      @include mq(min-width, tablet) {
+         background-size: 400px 120px;
+      }
       @include mq(min-width, align-mw) {
          background-image: url('../assets/bg/bg-pattern-home-1.svg');
          background-repeat: no-repeat;
