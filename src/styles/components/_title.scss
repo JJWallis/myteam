@@ -13,7 +13,7 @@
          width: 75%;
       }
       @include mq(min-width, large) {
-         width: 80%;
+         width: 85%;
       }
    }
 
@@ -23,7 +23,7 @@
          margin: 0 auto 4rem;
       }
       @include mqs(min-width, tablet, max-width, large) {
-         width: 70%;
+         width: 75%;
          max-width: 550px;
       }
       @include mq(min-width, large) {

@@ -627,7 +627,7 @@ body {
 }
 @media (min-width: 70em) {
   .title--build {
-    width: 80%;
+    width: 85%;
   }
 }
 .title--testimonials {
@@ -640,7 +640,7 @@ body {
 }
 @media (min-width: 50em) and (max-width: 70em) {
   .title--testimonials {
-    width: 70%;
+    width: 75%;
     max-width: 550px;
   }
 }
@@ -1135,7 +1135,7 @@ body {
   font-weight: var(--fw-semi-bold);
 }
 .employee-name--directors {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .job-title {
