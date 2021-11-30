@@ -123,7 +123,8 @@ var email = form.querySelector('#input-email');
 var btnSubmit = form.querySelector('button[type="submit"]');
 
 function validate(e) {
-  var userData = Array.from(form.querySelectorAll('.form'));
+  var userData = Array.from(form.querySelectorAll('[data-required="true"]'));
+  console.log(userData);
   var errors = userData.filter(function (input) {
     return input.value === '' || input.value === null;
   }); //    email regex
@@ -142,6 +143,7 @@ function createErrorMsg(errorInput) {
   errorMsg.classList.add('form--error');
   errorMsg.innerText = 'This field is required';
   label.append(errorMsg);
+  errorInput.setAttribute('data-error', true);
 }
 
 form.addEventListener('submit', validate);
