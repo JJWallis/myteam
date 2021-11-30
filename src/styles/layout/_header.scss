@@ -22,11 +22,14 @@
       @include mq(min-width, tablet) {
          background-size: 400px 120px;
       }
-      @include mq(min-width, align-mw) {
+      @include mq(min-width, large) {
          background-image: url('../assets/bg/bg-pattern-home-1.svg');
          background-repeat: no-repeat;
-         background-position: calc(0% - 100px) 50%;
+         background-position: calc(0% - 100px) 90%;
          background-size: 200px;
+      }
+      @include mq(min-width, align-mw) {
+         background-position: calc(0% - 100px) 50%;
       }
    }
 

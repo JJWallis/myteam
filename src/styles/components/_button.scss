@@ -93,6 +93,14 @@
             display: none;
          }
          right: 0;
+         @include mq(min-width, large) {
+            right: 4rem;
+         }
+         @include m(ct) {
+            @include mq(min-width, large) {
+               right: 0;
+            }
+         }
       }
    }
 
