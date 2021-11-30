@@ -9,7 +9,7 @@ function validate(e: Event) {
       form.querySelectorAll('[data-required="true"]')
    )
    const errors = userData.filter(
-      (input: HTMLInputElement) => input.value === '' || input.value === null
+      (input) => input.value === '' || input.value === null
    )
    if (
       !regex.test(email.value) &&
@@ -22,7 +22,7 @@ function validate(e: Event) {
    }
 }
 
-function createErrorMsg(errorInput: Element) {
+function createErrorMsg(errorInput: HTMLInputElement) {
    const label = errorInput.previousElementSibling
    const errorMsg = document.createElement('div')
    if (errorInput.tagName === 'TEXTAREA') {
