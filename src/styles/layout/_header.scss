@@ -45,8 +45,11 @@
       }
       @include mq(min-width, large) {
          --ct-padding-hdr: 4rem 0 min(17vh, 10rem);
-         background-position: calc(100% + 85px) 100%;
+         background-position: calc(100% + 113px) 100%;
          background-size: 170px 180px;
+      }
+      @include mq(min-width, align-mw) {
+         background-position: calc(100% + 85px) 100%;
       }
    }
 }

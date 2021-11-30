@@ -797,7 +797,7 @@ body {
 }
 @media (min-width: 70em) {
   .container--build .split--parent {
-    --gap: 10rem;
+    --gap: 11rem;
   }
 }
 .container--testimonials .split--parent {
@@ -1383,8 +1383,13 @@ body {
 @media (min-width: 70em) {
   .header--about {
     --ct-padding-hdr: 4rem 0 min(17vh, 10rem);
-    background-position: calc(100% + 85px) 100%;
+    background-position: calc(100% + 113px) 100%;
     background-size: 170px 180px;
+  }
+}
+@media (min-width: 79em) {
+  .header--about {
+    background-position: calc(100% + 85px) 100%;
   }
 }
 

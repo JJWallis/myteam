@@ -29,7 +29,7 @@
             align-items: flex-start;
          }
          @include mq(min-width, large) {
-            --gap: 10rem;
+            --gap: 11rem;
          }
       }
 
