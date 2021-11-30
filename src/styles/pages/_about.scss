@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .grid-container--directors {
-   // outline: 1px solid white;
    gap: var(--gap-directors);
    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
    @include mq(min-width, tablet) {
@@ -29,9 +28,5 @@
    &[data-visible='true'] {
       opacity: 1;
       pointer-events: all;
-   }
-   & > .quote {
-      margin: 0.5rem 0 1.5rem;
-      width: 90%;
    }
 }

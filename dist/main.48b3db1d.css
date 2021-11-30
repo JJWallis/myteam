@@ -1191,6 +1191,11 @@ body {
     max-width: 700px;
   }
 }
+.explainer--directors {
+  margin: 0.5rem 0 1.5rem;
+  width: 80%;
+  max-width: 450px;
+}
 
 .footer--pm {
   padding: var(--ct-padding-ftr);
@@ -1410,10 +1415,6 @@ main {
 .extra-info[data-visible=true] {
   opacity: 1;
   pointer-events: all;
-}
-.extra-info > .quote {
-  margin: 0.5rem 0 1.5rem;
-  width: 90%;
 }
 
 @media (max-width: 70em) {

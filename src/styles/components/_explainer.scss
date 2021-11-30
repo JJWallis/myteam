@@ -28,4 +28,10 @@
          max-width: 700px;
       }
    }
+
+   @include m(directors) {
+      margin: 0.5rem 0 1.5rem;
+      width: 80%;
+      max-width: 450px;
+   }
 }
