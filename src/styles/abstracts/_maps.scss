@@ -1,6 +1,6 @@
 $breakpoints: (
-   tablet: 50em,
-   large: 70em,
+   tablet: 49.999em,
+   large: 69.999em,
    align-mw: 79em,
 );
 
@@ -100,7 +100,6 @@ $type-scale: (
 );
 
 $layout: (
-   margin-test: 3rem,
    margin-hero: 8rem,
    align-mw: 65rem,
    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
