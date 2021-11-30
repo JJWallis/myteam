@@ -10,7 +10,7 @@
   --clr-dark-green: #002529;
   --clr-transparent: transparent;
   --fs-500-contact: 3.1rem;
-  --fs-500: 4.2667rem;
+  --fs-500: 3.8rem;
   --fs-500-about: 4.2667rem;
   --fs-400: 2.5rem;
   --fs-300-h3: 1.5rem;
@@ -1161,7 +1161,7 @@ body {
 }
 
 .explainer {
-  width: 98%;
+  width: 100%;
   max-width: 610px;
 }
 @media (min-width: 50em) {
