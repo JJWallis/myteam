@@ -17,7 +17,7 @@
    @include e(item) {
       position: relative;
       padding: 2rem 0 4rem;
-      background-color: rgba(hsl(186 96% 10%), 0.8);
+      background-color: hsl(186 96% 10%);
    }
 }
 

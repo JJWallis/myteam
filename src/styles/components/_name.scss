@@ -3,4 +3,7 @@
 .employee-name {
    font-style: normal;
    font-weight: var(--fw-semi-bold);
+   @include m(directors) {
+      font-size: 1.1rem;
+   }
 }

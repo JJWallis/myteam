@@ -1134,6 +1134,9 @@ body {
   font-style: normal;
   font-weight: var(--fw-semi-bold);
 }
+.employee-name--directors {
+  font-size: 1.1rem;
+}
 
 .job-title {
   margin-bottom: 1.5rem;
@@ -1437,7 +1440,7 @@ main {
 .grid-container--directors__item {
   position: relative;
   padding: 2rem 0 4rem;
-  background-color: rgba(1, 45, 50, 0.8);
+  background-color: #012d32;
 }
 
 .extra-info {
