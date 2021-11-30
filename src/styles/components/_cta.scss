@@ -3,7 +3,7 @@
 .cta--parent > :first-child {
    @include flexy($dir: column, $align: center);
    gap: var(--gap);
-   --gap: 4rem;
+   --gap: 2rem;
    @include mq(min-width, tablet) {
       @include flexy($dir: row, $just: space-between);
       width: 90%;

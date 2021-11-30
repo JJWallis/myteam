@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .build--parent {
-   // outline: 1px solid white;
    @include e(child) {
       &:first-child {
          @include mq(max-width, large) {
@@ -9,7 +8,6 @@
          }
       }
       &:last-child {
-         // outline: 1px solid white;
          @include mq($width: min-width, $key: tablet) {
             text-align: left;
          }
@@ -20,7 +18,7 @@
 .testimonials--parent {
    @include e(quotes) {
       & article {
-         padding-top: 3.4rem;
+         padding-top: 3rem;
          @include flexy($dir: column, $align: center);
          & .quote {
             padding-top: 0.5rem;
