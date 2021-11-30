@@ -118,7 +118,6 @@
       }
 
       @include e(child) {
-         // outline: 1px solid white;
          @include mq(max-width, large) {
             align-items: unset;
             max-width: 630px;
