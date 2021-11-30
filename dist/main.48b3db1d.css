@@ -1469,10 +1469,20 @@ main {
 }
 
 .testimonials--parent__quotes article {
-  padding-top: 3rem;
+  padding-top: 3.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 50em) {
+  .testimonials--parent__quotes article {
+    padding-top: 3.4rem;
+  }
+}
+@media (min-width: 70em) {
+  .testimonials--parent__quotes article {
+    padding-top: 3.5rem;
+  }
 }
 .testimonials--parent__quotes article .quote {
   padding-top: 0.5rem;

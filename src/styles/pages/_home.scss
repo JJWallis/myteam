@@ -18,8 +18,14 @@
 .testimonials--parent {
    @include e(quotes) {
       & article {
-         padding-top: 3rem;
+         padding-top: 3.1rem;
          @include flexy($dir: column, $align: center);
+         @include mq(min-width, tablet) {
+            padding-top: 3.4rem;
+         }
+         @include mq(min-width, large) {
+            padding-top: 3.5rem;
+         }
          & .quote {
             padding-top: 0.5rem;
             margin-bottom: 1.3rem;
