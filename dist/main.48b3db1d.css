@@ -1396,7 +1396,7 @@ main {
 
 .grid-container--directors {
   gap: var(--gap-directors);
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 @media (min-width: 50em) {
   .grid-container--directors {
