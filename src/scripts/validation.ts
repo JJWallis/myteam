@@ -1,5 +1,5 @@
 const form = document.querySelector('form')
-const email = form.querySelector('#input-email')
+const email: any = form.querySelector('#input-email')
 const btnSubmit = form.querySelector('button[type="submit"]')
 const regex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -9,7 +9,11 @@ function validate(e: any) {
    const errors = userData.filter(
       (input: any) => input.value === '' || input.value === null
    )
-
+   if (
+      !regex.test(email.value) &&
+      !errors.find((input) => input.id === 'input-email')
+   )
+      errors.push(email)
    if (errors.length) {
       e.preventDefault()
       errors.forEach((input: any) => createErrorMsg(input))
@@ -23,10 +27,8 @@ function createErrorMsg(errorInput: any) {
       errorMsg.classList.add('form--error--text-area')
       errorMsg.innerText = 'This field is required'
    } else if (errorInput.id === 'input-email') {
-      if (!regex.test(errorInput.value)) {
-         errorMsg.classList.add('form--error')
-         errorMsg.innerText = 'Correct email format is required'
-      }
+      errorMsg.classList.add('form--error')
+      errorMsg.innerText = 'Correct email format is required'
    } else {
       errorMsg.classList.add('form--error')
       errorMsg.innerText = 'This field is required'
@@ -36,3 +38,6 @@ function createErrorMsg(errorInput: any) {
 }
 
 form.addEventListener('submit', validate)
+
+// refactor - inner text only set to email one if email (ternary post beefy conditions)
+// same for classList - only add textarea one if ...
