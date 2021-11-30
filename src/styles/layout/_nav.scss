@@ -31,4 +31,8 @@ nav {
          }
       }
    }
+
+   @include m(contact) {
+      font-size: 1rem;
+   }
 }

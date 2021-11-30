@@ -97,6 +97,7 @@
             right: 4rem;
          }
          @include m(ct) {
+            font-size: 1rem;
             @include mq(min-width, large) {
                right: 0;
             }
