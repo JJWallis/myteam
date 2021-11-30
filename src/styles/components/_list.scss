@@ -43,7 +43,6 @@
    /*============== CONTACT ==============*/
 
    @include m(contact) {
-      // outline: 1px solid white;
       @include flexy($dir: column, $align: flex-start);
       gap: 3rem;
       @include mq(min-width, tablet) {
@@ -54,7 +53,7 @@
          padding-left: 0.7rem;
          width: 65%;
          @include mq(min-width, tablet) {
-            width: 100%;
+            width: 130%;
          }
       }
    }
