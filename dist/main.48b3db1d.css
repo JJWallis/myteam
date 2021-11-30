@@ -1314,7 +1314,7 @@ body {
   color: var(--clr-pm-white);
 }
 .form:hover, .form:focus {
-  border-bottom: 1.5px solid var(--clr-profile-border);
+  border-bottom: 1px solid var(--clr-profile-border);
 }
 .form__input {
   padding: 1.8rem 0.7rem 1.2rem;
@@ -1330,9 +1330,13 @@ body {
     margin-bottom: 1.5rem;
   }
 }
+.form--label {
+  position: relative;
+}
 .form--error {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 0.8rem;
+  font-weight: var(--fw-semi-bold);
   color: var(--clr-pm-coral);
 }
 .form[data-error=true] {

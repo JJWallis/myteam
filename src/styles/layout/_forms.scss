@@ -9,7 +9,7 @@
    }
    &:hover,
    &:focus {
-      border-bottom: 1.5px solid var(--clr-profile-border);
+      border-bottom: 1px solid var(--clr-profile-border);
    }
 
    @include e(input) {
@@ -26,9 +26,14 @@
       }
    }
 
+   @include m(label) {
+      position: relative;
+   }
+
    @include m(error) {
       font-style: italic;
-      font-size: 2rem;
+      font-size: 0.8rem;
+      font-weight: var(--fw-semi-bold);
       color: var(--clr-pm-coral);
    }
 
