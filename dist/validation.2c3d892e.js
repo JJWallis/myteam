@@ -143,24 +143,13 @@ function validate(e) {
 function createErrorMsg(errorInput) {
   var label = errorInput.previousElementSibling;
   var errorMsg = document.createElement('div');
-
-  if (errorInput.tagName === 'TEXTAREA') {
-    errorMsg.classList.add('form--error--text-area');
-    errorMsg.innerText = 'This field is required';
-  } else if (errorInput.id === 'input-email') {
-    errorMsg.classList.add('form--error');
-    errorMsg.innerText = 'Correct email format is required';
-  } else {
-    errorMsg.classList.add('form--error');
-    errorMsg.innerText = 'This field is required';
-  }
-
+  errorMsg.classList.add(errorInput.tagName === 'TEXTAREA' ? 'form--error--text-area' : 'form--error');
+  errorMsg.innerText = errorInput.id === 'input-email' ? 'Correct email format is required' : 'This field is required';
   label.append(errorMsg);
   errorInput.setAttribute('data-error', 'true');
 }
 
-form.addEventListener('submit', validate); // refactor - inner text only set to email one if email (ternary post beefy conditions)
-// same for classList - only add textarea one if ...
+form.addEventListener('submit', validate);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
