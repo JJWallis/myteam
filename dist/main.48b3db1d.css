@@ -9,9 +9,9 @@
   --clr-sacramento-green: #012d32;
   --clr-dark-green: #002529;
   --clr-transparent: transparent;
-  --fs-500-contact: 3.1rem;
+  --fs-500-contact: 2.9rem;
   --fs-500: 3.8rem;
-  --fs-500-about: 4.2667rem;
+  --fs-500-about: 3.8rem;
   --fs-400: 2.5rem;
   --fs-300-h3: 1.5rem;
   --fs-300-h3-ct: 2.2rem;
@@ -1254,7 +1254,7 @@ body {
   border-bottom: 1.5px solid var(--clr-rapture-blue);
 }
 .form__input {
-  padding: 1.5rem 0.7rem;
+  padding: 1.7rem 0.7rem 1.2rem;
 }
 @media (min-width: 70em) {
   .form__input {

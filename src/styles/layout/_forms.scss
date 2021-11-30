@@ -13,7 +13,7 @@
    }
 
    @include e(input) {
-      padding: 1.5rem 0.7rem;
+      padding: 1.7rem 0.7rem 1.2rem;
       @include mq(min-width, large) {
          padding: 1.1rem 0.7rem;
       }
