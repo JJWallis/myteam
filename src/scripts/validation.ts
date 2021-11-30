@@ -6,7 +6,6 @@ const regex =
 
 function validate(e: any) {
    const userData = Array.from(form.querySelectorAll('[data-required="true"]'))
-   console.log(userData)
    const errors = userData.filter(
       (input: any) => input.value === '' || input.value === null
    )
@@ -22,10 +21,16 @@ function createErrorMsg(errorInput: any) {
    const errorMsg = document.createElement('div')
    if (errorInput.tagName === 'TEXTAREA') {
       errorMsg.classList.add('form--error--text-area')
+      errorMsg.innerText = 'This field is required'
+   } else if (errorInput.id === 'input-email') {
+      if (!regex.test(errorInput.value)) {
+         errorMsg.classList.add('form--error')
+         errorMsg.innerText = 'Correct email format is required'
+      }
    } else {
       errorMsg.classList.add('form--error')
+      errorMsg.innerText = 'This field is required'
    }
-   errorMsg.innerText = 'This field is required'
    label.append(errorMsg)
    errorInput.setAttribute('data-error', true)
 }
