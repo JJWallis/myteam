@@ -32,9 +32,14 @@
 
    @include m(error) {
       font-style: italic;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-weight: var(--fw-semi-bold);
       color: var(--clr-pm-coral);
+      white-space: nowrap;
+      @include position($pos: absolute, $width: 100%) {
+         bottom: -45px;
+         left: 15px;
+      }
    }
 
    &[data-error='true'] {

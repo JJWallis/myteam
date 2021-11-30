@@ -1335,9 +1335,14 @@ body {
 }
 .form--error {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: var(--fw-semi-bold);
   color: var(--clr-pm-coral);
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  bottom: -45px;
+  left: 15px;
 }
 .form[data-error=true] {
   border-bottom-color: var(--clr-pm-coral);
