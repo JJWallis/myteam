@@ -114,7 +114,7 @@ As explained in the [Useful resources](#useful-resources) section, one of the ma
 }
 ```
 
-Tablet design provided - opened our eyes to design possibilityes + ways of filling space | not just enlarging font + trying to fit it all barely in until major change happens for medium screens (flex-row) | moving bg imgs around vs hidding them (wider styles)
+Since this was my first project where an official tablet design was provided for me to work with, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point, I was relying on increasing font-sizes to fill the empty space before the layout would respond to a wider viewport design. Naturally I was aware that this was only a temporary 'solution', if a solution at all, but within this project I was able to experiment with moving background shapes around (as showcased above) at different viewport sizes to fill the empty space in a much more appropriate manner.
 
 ```ts
  const isVisible = hamburger.getAttribute('aria-expanded')
