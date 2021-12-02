@@ -96,7 +96,7 @@ Since this was my first time building a multi-page site, I decided to implement 
 }
 ```
 
-Logical properties - min(), max() + inset, aspect-ratio, grid + place-items: center (shorthands)
+As explained in the [Useful resources](#useful-resources) section, one of the major features I learnt from Kevin through watching his course on Scrimba was his use of logical properties (min(), max(), clamp()) to achieve fluid spacing between different screen sizes. This means we don't necessarily have to declare a media query to change that spacing amount manually, but the logical property will dynamically handle this behaviour for us. It also nicely accomodates a landscape orientation for tablet devices which, as demonstrated with the code snippet above, will fluidly respond to maintain a the set minimum amount of vertical spacing when the viewports height is decreased.
 
 ```scss
 .header {
