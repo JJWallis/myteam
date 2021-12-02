@@ -117,20 +117,6 @@ As explained in the [Useful resources](#useful-resources) section, one of the ma
 Since this was my first project where an official tablet design was provided for me to work with, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point, I was relying on increasing font-sizes to fill the empty space before the layout would respond to a wider viewport design. Naturally I was aware that this was only a temporary 'solution', if a solution at all, but within this project I was able to experiment with moving background shapes around (as showcased above) at different viewport sizes to fill the empty space in a much more appropriate manner.
 
 ```ts
- const isVisible = hamburger.getAttribute('aria-expanded')
-   if (isVisible === 'false') {
-      hamburger.setAttribute('aria-expanded', 'true')
-```
-
-```html
-<body class="home bg-pm-green text-pm-white" data-visible="false">
-   ...
-</body>
-```
-
-Accessibility - aria-expand + selected | using data attrs - toggle mobile nav + overlay on body | use same data attr for multiple purposes | classes - often doing descendant class selctors (which can interfere with other dynamic classes in same context) | always a powerful technique - tooltips | like to seperate classes from JS where possible - keep to data naming convention | using data-required to select forms below...
-
-```ts
 function validate(e: Event) {
    const userData: HTMLInputElement[] = Array.from(
       form.querySelectorAll('[data-required="true"]')
@@ -154,9 +140,11 @@ Validation - dynamic methods (from React) | boolean logic being auto-returned fr
 
 ### Continued development
 
-Development process - building design system 1st vs writing HTML 1st (have classes to apply)
+Although I was happy with my final solution to the challenge, I did make a lot of mistakes along the way regarding my efficiency and the order in which I decided to begin tackling certain tasks. As an example, I built out the HTML for all three pages first before even touching any of the CSS, which was a big mistake since all further changes I made to one page would have to be copied over to the others if those styles were shared by them.
 
-SVG animation - hamburger + cross icons in about page | add extra level of sophistication
+I would like to implement some form of animation for the hamburger toggle, as well as the dynamic open/close icons on the about page to add an extra level of sophistication to the site.
+
+Finally I feel it would be beneficial to better organise my Sass maps for future projects by splitting them up into smaller maps, instead of nesting multiple loops within one another and using conditional logic to output different results based on the map currently being iterated over.
 
 Sass maps - more organised | Sass lists - haven't used yet (brake up maps more if appropiate)
 
