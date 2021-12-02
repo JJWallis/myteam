@@ -136,7 +136,7 @@ function validate(e: Event) {
 }
 ```
 
-Validation - dynamic methods (from React) | boolean logic being auto-returned from these | checking if length is thruthy - no need to specify number
+I was really proud of the dynamic logic that I implemented for validating all form inputs within this project. Having spent most of my time recently working within the React framework, I found myself thinking in a more advanced manner when returning to vanilla JavaScript/TypeScript, especially in regards to using data structures and the methods they come with to perform logic in a more concise syntax.
 
 ### Continued development
 
