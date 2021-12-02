@@ -86,7 +86,7 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 -  [Kevin Powell - most common HTML mistakes](https://www.youtube.com/watch?v=NexL5_Vdoq8&ab_channel=KevinPowell) - This video was a great resource in showing me how to semantically structure a HTML page, focusing on not overusing headings and instead styling additional context about sections of content in the style of another element, if that design is desired.
 
--  [Generate Custom Properties & Utility Classes with Sass](https://www.youtube.com/watch?v=gP8yFWCTr7Q&ab_channel=KevinPowell) - As mentioned previously, I decided to use utility classes throughout the whole of this project to cover a lot of the basic styles the design required (font-sizes, colours, etc). Since I was working in Sass, I used this tutorial to learn more about certain features
+-  [Generate Custom Properties & Utility Classes with Sass](https://www.youtube.com/watch?v=gP8yFWCTr7Q&ab_channel=KevinPowell) - As mentioned previously, I decided to use utility classes throughout the whole of this project to cover a lot of the basic styles the design required (font-sizes, colours, etc). Since I was working in Sass, I used this tutorial to learn more about specific features like `@each` loops, that we can use to generate variables and utility classes based off data inputted into either Sass maps or lists.
 
 ## Author
 
