@@ -59,7 +59,13 @@ Your users should be able to:
 }
 ```
 
-```js
+```ts
+ const isVisible = hamburger.getAttribute('aria-expanded')
+   if (isVisible === 'false') {
+      hamburger.setAttribute('aria-expanded', 'true')
+```
+
+```ts
 function validate(e: Event) {
    const userData: HTMLInputElement[] = Array.from(
       form.querySelectorAll('[data-required="true"]')
