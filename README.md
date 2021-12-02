@@ -53,7 +53,11 @@ Your users should be able to:
 <a class="skip-to-content text-pm-white btn btn--pm" href="#main-content"
    >Skip to main content</a
 >
+
+<legend class="sr-only">Contact form</legend>
 ```
+
+Skip to content link | Accessibility - form (aria-label + legend + labels - with .sr-only class)
 
 ```scss
 $type-scale: (
@@ -80,7 +84,19 @@ $type-scale: (
 
 Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
 
-Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes
+Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes | CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
+
+```scss
+.sidebar {
+   display: none;
+   @include mq(max-width, tablet) {
+      display: block;
+      padding: min(10rem, 20vh) 3rem;
+   }
+}
+```
+
+Logical properties - min(), max() + inset, aspect-ratio, grid + place-items: center (shorthands)
 
 ```ts
  const isVisible = hamburger.getAttribute('aria-expanded')
@@ -147,10 +163,4 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 ###### TODO
 
-CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
-
-Accessibility - form (aria-label + legend + labels - with .sr-only class)
-
 Tablet design provided - opened our eyes to design possibilityes + ways of filling space | not just enlarging font + trying to fit it all barely in until major change happens for medium screens (flex-row) | moving bg imgs around vs hidding them (wider styles)
-
-Logical properties - min(), max() + inset, aspect-ratio, grid + place-items: center (shorthands)
