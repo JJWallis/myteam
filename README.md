@@ -53,17 +53,40 @@ Your users should be able to:
 <h1>Some HTML code I'm proud of</h1>
 ```
 
-```css
-.proud-of-this-css {
-   color: papayawhip;
+```scss
+$type-scale: (
+   small: (
+      fs-500-contact: 2.9rem,
+      fs-500: 3.8rem,
+      fs-500-about: 3.8rem,
+      ...,
+   ),
+);
+
+:root {
+   @each $color, $value in $colors {
+      --clr-#{$color}: #{$value};
+   }
+}
+
+@each $color, $value in $colors {
+   .text-#{$color} {
+      color: var(--clr-#{$color}, $value);
+   }
 }
 ```
+
+Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
+
+Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes
 
 ```ts
  const isVisible = hamburger.getAttribute('aria-expanded')
    if (isVisible === 'false') {
       hamburger.setAttribute('aria-expanded', 'true')
 ```
+
+Accessibility - aria-expand + selected | using data attrs - toggle mobile nav + overlay on body | use same data attr for multiple purposes | classes - often doing descendant class selctors (which can interfere with other dynamic classes in same context) | always a powerful technique - tooltips | like to seperate classes from JS where possible - keep to data naming convention | using data-required to select forms below...
 
 ```ts
 function validate(e: Event) {
@@ -115,20 +138,6 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 -  Linkedin - [Joshua Jameson-Wallis]()
 
 ###### TODO
-
-HTML:
-
-CSS:
-
-JS:
-
-Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
-
-Accessibility - aria-selected
-
-specific selectors to re-use active class + keep JS code more DRY
-
-Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes
 
 CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
 
