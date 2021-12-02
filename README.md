@@ -14,7 +14,6 @@ This is a solution to the [myteam website challenge on Frontend Mentor](https://
    -  [Continued development](#continued-development)
    -  [Useful resources](#useful-resources)
 -  [Author](#author)
--  [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -61,10 +60,26 @@ Your users should be able to:
 ```
 
 ```js
-const proudOfThisFunc = () => {
-   console.log('🎉')
+function validate(e: Event) {
+   const userData: HTMLInputElement[] = Array.from(
+      form.querySelectorAll('[data-required="true"]')
+   )
+   const errors = userData.filter(
+      (input) => input.value === '' || input.value === null
+   )
+   if (
+      !regex.test(email.value) &&
+      !errors.find((input) => input.id === 'input-email')
+   )
+      errors.push(email)
+   if (errors.length) {
+      e.preventDefault()
+      errors.forEach((input) => createErrorMsg(input))
+   }
 }
 ```
+
+Validation - dynamic methods (from React) | boolean logic being auto-returned from these | checking if length is thruthy - no need to specify number
 
 ### Continued development
 
@@ -92,8 +107,6 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-## Acknowledgments
 
 ###### TODO
 
