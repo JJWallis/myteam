@@ -84,9 +84,7 @@ $type-scale: (
 }
 ```
 
-Design system - utility classes pre HTML | components + how to re-use as much as poss (1st with ultilities after)
-
-Sass TH features - organised map vs hardcoding css vars + utility classes | placeholders vs utility classes | CSS vars vs Sass vars - overriding | alpha channel | can’t override Sass variables directly (have to declare multiple versions of them)
+Since this was my first time building a multi-page site, I decided to implement the use of utility classes to handle all the basic styling required cross-site. Sass provides many features that allow us to not only produce these utility classes, but also declare CSS variables based on a set of data housed in either a map or list. Furthermore, these variables can be re-declared at different media breakpoints so that their value changes, ultimately providing us a neat syntax to achieving responsiveness design within our projects.
 
 ```scss
 .sidebar {
