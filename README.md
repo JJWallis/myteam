@@ -50,7 +50,9 @@ Your users should be able to:
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<a class="skip-to-content text-pm-white btn btn--pm" href="#main-content"
+   >Skip to main content</a
+>
 ```
 
 ```scss
@@ -84,6 +86,12 @@ Sass TH features - organised map vs hardcoding css vars + utility classes | plac
  const isVisible = hamburger.getAttribute('aria-expanded')
    if (isVisible === 'false') {
       hamburger.setAttribute('aria-expanded', 'true')
+```
+
+```html
+<body class="home bg-pm-green text-pm-white" data-visible="false">
+   ...
+</body>
 ```
 
 Accessibility - aria-expand + selected | using data attrs - toggle mobile nav + overlay on body | use same data attr for multiple purposes | classes - often doing descendant class selctors (which can interfere with other dynamic classes in same context) | always a powerful technique - tooltips | like to seperate classes from JS where possible - keep to data naming convention | using data-required to select forms below...
