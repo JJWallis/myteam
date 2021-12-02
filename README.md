@@ -156,13 +156,9 @@ Validation - dynamic methods (from React) | boolean logic being auto-returned fr
 
 Development process - building design system 1st vs writing HTML 1st (have classes to apply)
 
-Img handling -
+SVG animation - hamburger + cross icons in about page | add extra level of sophistication
 
-SVG animation -
-
-Sass maps - for out-putting CSS rules (vs hard-coding)
-
-Accessibility - write more semantic HTML (better wrappers, multiple headers + footers, headings where appropaite)
+Sass maps - more organised | Sass lists - haven't used yet (brake up maps more if appropiate)
 
 ### Useful resources
 
