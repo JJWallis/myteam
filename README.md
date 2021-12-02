@@ -98,6 +98,24 @@ Sass TH features - organised map vs hardcoding css vars + utility classes | plac
 
 Logical properties - min(), max() + inset, aspect-ratio, grid + place-items: center (shorthands)
 
+```scss
+.header {
+   @include m(home) {
+      @include mq(min-width, large) {
+         background-image: url('../assets/bg/bg-pattern-home-1.svg');
+         background-repeat: no-repeat;
+         background-position: calc(0% - 100px) 90%;
+         background-size: 200px;
+      }
+      @include mq(min-width, align-mw) {
+         background-position: calc(0% - 100px) 37%;
+      }
+   }
+}
+```
+
+Tablet design provided - opened our eyes to design possibilityes + ways of filling space | not just enlarging font + trying to fit it all barely in until major change happens for medium screens (flex-row) | moving bg imgs around vs hidding them (wider styles)
+
 ```ts
  const isVisible = hamburger.getAttribute('aria-expanded')
    if (isVisible === 'false') {
@@ -160,7 +178,3 @@ Accessibility - write more semantic HTML (better wrappers, multiple headers + fo
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-###### TODO
-
-Tablet design provided - opened our eyes to design possibilityes + ways of filling space | not just enlarging font + trying to fit it all barely in until major change happens for medium screens (flex-row) | moving bg imgs around vs hidding them (wider styles)
