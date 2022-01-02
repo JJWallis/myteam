@@ -84,7 +84,7 @@ $type-scale: (
 }
 ```
 
-Since this was my first time building a multi-page site, I decided to implement the use of utility classes to handle all the basic styling required cross-site. Sass provides many features that allow us to not only produce these utility classes, but also declare CSS variables based on a set of data housed in either a map or list. Furthermore, these variables can be re-declared at different media breakpoints so that their value changes, ultimately providing us a neat syntax to achieving responsiveness design within our projects.
+Since this was my first time building a multi-page site, I decided to implement the use of utility classes to handle all the basic styling required cross-site. Sass provides many features that allow us to not only produce these utility classes, but also declare CSS variables based on a set of data housed in either a map or a list. Furthermore, these variables can be re-declared at different media breakpoints so that their value automatically changes, preventing the need for us to manually do so.
 
 ```scss
 .sidebar {
@@ -96,7 +96,7 @@ Since this was my first time building a multi-page site, I decided to implement 
 }
 ```
 
-As explained in the [Useful resources](#useful-resources) section, one of the major features I learnt from Kevin through watching his course on Scrimba was his use of logical properties (min(), max(), clamp()) to achieve fluid spacing between different screen sizes. This means we don't necessarily have to declare a media query to change that spacing amount manually, but the logical property will dynamically handle this behaviour for us. It also nicely accomodates a landscape orientation for tablet devices which, as demonstrated with the code snippet above, will fluidly respond to maintain a the set minimum amount of vertical spacing when the viewports height is decreased.
+As explained in the [Useful resources](#useful-resources) section, one of the major features I learnt from Kevin through watching his course on Scrimba, was his use of logical properties (`min()`) to achieve fluid spacing between different screen sizes. This means we don't necessarily have to declare a media query to change that spacing amount manually, but the logical property will dynamically handle this behaviour for us. It also nicely accomodates a landscape orientation for tablet devices which, as demonstrated with the code snippet above, will fluidly respond to maintain a minimum amount of vertical spacing when the viewports height is decreased.
 
 ```scss
 .header {
@@ -114,7 +114,7 @@ As explained in the [Useful resources](#useful-resources) section, one of the ma
 }
 ```
 
-Since this was my first project where an official tablet design was provided for me to work with, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point, I was relying on increasing font-sizes to fill the empty space before the layout would respond to a wider viewport design. Naturally I was aware that this was only a temporary 'solution', if a solution at all, but within this project I was able to experiment with moving background shapes around (as showcased above) at different viewport sizes to fill the empty space in a much more appropriate manner.
+Since this was my first project where an official tablet design was provided for me to work with, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point, I was relying on increasing font-sizes to fill the empty space before the layout would respond to a wider viewport. Naturally, I was aware that this was only a temporary solution, if a solution at all, but within this project I was able to experiment with altering the position of background shapes at different viewports to fill the empty space in a more appropriate manner.
 
 ```ts
 function validate(e: Event) {
