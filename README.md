@@ -30,7 +30,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -161,4 +161,4 @@ Sass maps - more organised | Sass lists - haven't used yet (brake up maps more i
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
--  Linkedin - [Joshua Jameson-Wallis]()
+-  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
