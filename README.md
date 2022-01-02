@@ -57,9 +57,9 @@ Your users should be able to:
 <legend class="sr-only">Contact form</legend>
 ```
 
-One big step I took towards increasing the accessibility of my future projects was learning about how to implement a 'skip to content' link, which would be visually hidden but still accessible by visually impaired users of the site. This link would direct users to the `<main>` sections content, which provides a great benefit to users who don't want to tab through pre-existing content each time they visit the page.
+One big step I took towards increasing the accessibility of my future projects was learning about how to implement a 'skip to content' link, which would be visually hidden but still accessible by visually impaired users. This link would direct users to the `<main>` sections of content, which provides a great benefit to users who don't want to tab through pre-existing content each time they visit the page.
 
-I also included a `<legend>` within the form on the Contact page, even though according to the design one didn't seem to be present. I added the 'sr-only' class to visually hide the `<legend>` but it would still be read aloud with each form element the user would focus on.
+I also included a `<legend>` within the form on the Contact page, even though within the design there didn't seem to be one visible. I added the 'sr-only' class to visually hide the `<legend>`, but it would still be read aloud with each form element the user would focus on.
 
 ```scss
 $type-scale: (
