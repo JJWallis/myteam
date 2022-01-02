@@ -136,17 +136,15 @@ function validate(e: Event) {
 }
 ```
 
-I was really proud of the dynamic logic that I implemented for validating all form inputs within this project. Having spent most of my time recently working within the React framework, I found myself thinking in a more advanced manner when returning to vanilla JavaScript/TypeScript, especially in regards to using data structures and the methods they come with to perform logic in a more concise syntax.
+I was really proud of the dynamic logic that I implemented for validating all the form inputs within this project. Having spent most of my time recently working within the React library, I found myself thinking in a more advanced manner when returning to vanilla JavaScript, especially in regards to using data structures and the methods they come with to perform logic in a more concise syntax.
 
 ### Continued development
 
-Although I was happy with my final solution to the challenge, I did make a lot of mistakes along the way regarding my efficiency and the order in which I decided to begin tackling certain tasks. As an example, I built out the HTML for all three pages first before even touching any of the CSS, which was a big mistake since all further changes I made to one page would have to be copied over to the others if those styles were shared by them.
+Although I was happy with my final solution to the challenge, I did make a lot of mistakes along the way regarding my efficiency and the order in which I decided to begin tackling certain tasks. For example, I built out the HTML for all three pages first before even touching any of the CSS, which was a big mistake since all further changes I made to one page would then have to be copied over to the others if shared between them.
 
-I would like to implement some form of animation for the hamburger toggle, as well as the dynamic open/close icons on the about page to add an extra level of sophistication to the site.
+I would like to learn more about advanced animation for use on the hamburger icon when clicked, as well as the dynamic open/close icons on the about page to add an extra level of sophistication to the site.
 
-Finally I feel it would be beneficial to better organise my Sass maps for future projects by splitting them up into smaller maps, instead of nesting multiple loops within one another and using conditional logic to output different results based on the map currently being iterated over.
-
-Sass maps - more organised | Sass lists - haven't used yet (brake up maps more if appropiate)
+Finally, I feel it would be beneficial to better organise my Sass maps for future projects by splitting them up into smaller maps, instead of nesting multiple loops within one another and using conditional logic to output different results.
 
 ### Useful resources
 
