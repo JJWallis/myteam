@@ -84,7 +84,7 @@ $type-scale: (
 }
 ```
 
-Since this was my first time building a multi-page site, I decided to implement the use of utility classes to handle all the basic styling required cross-site. Sass provides many features that allow us to not only produce these utility classes, but also declare CSS variables based on a set of data housed in either a map or a list. Furthermore, these variables can be re-declared at different media breakpoints so that their value automatically changes, preventing the need for us to manually do so.
+Since this was my first time building a multi-page website, I decided to use utility classes to handle all the basic styling required cross-site. Sass provides many features that allow us to not only produce these utility classes, but also declare CSS variables based on a set of data housed in either a map or list. Furthermore, these variables can be re-declared at different media breakpoints so that their value automatically changes, preventing the need for us to manually do so.
 
 ```scss
 .sidebar {
