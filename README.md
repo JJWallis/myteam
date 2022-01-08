@@ -136,9 +136,9 @@ I was really proud of the dynamic logic implemented for validating all the form 
 
 ### Continued development
 
-Although I was happy with my final solution to the challenge, I did make a lot of mistakes along the way regarding my efficiency and the order in which I decided to begin tackling certain tasks. For example, I built out the HTML for all three pages first before even touching any of the CSS, which was a big mistake since all further changes I made to one page would then have to be copied over to the others if shared between them.
+I look forward to oranising my approach better regarding the order in which I tackle certain tasks. I built out the HTML for all three pages first before touching any of the CSS, which was a big mistake since all further changes I made would have to be copied over to any others who shared those features.
 
-I would like to learn more about advanced animation for use on the hamburger icon when clicked, as well as the dynamic open/close icons on the about page to add an extra level of sophistication to the site.
+I would like to learn more about advanced animation for use on the hamburger icon when clicked, as well as the dynamic open and close icons on the about page to add an extra level of sophistication to the site.
 
 Finally, I feel it would be beneficial to better organise my Sass maps for future projects by splitting them up into smaller maps, instead of nesting multiple loops within one another and using conditional logic to output different results.
 
