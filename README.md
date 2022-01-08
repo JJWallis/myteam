@@ -100,21 +100,17 @@ As explained in the [Useful resources](#useful-resources) section, one of the ma
 
 ```scss
 .header {
-   @include m(home) {
-      @include mq(min-width, large) {
-         background-image: url('../assets/bg/bg-pattern-home-1.svg');
-         background-repeat: no-repeat;
-         background-position: calc(0% - 100px) 90%;
-         background-size: 200px;
-      }
-      @include mq(min-width, align-mw) {
-         background-position: calc(0% - 100px) 37%;
-      }
+   @include mq(min-width, large) {
+      background-position: calc(0% - 100px) 90%;
+      background-size: 200px;
+   }
+   @include mq(min-width, align-mw) {
+      background-position: calc(0% - 100px) 37%;
    }
 }
 ```
 
-Since this was my first project where an official tablet design was provided for me to work with, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point, I was relying on increasing font-sizes to fill the empty space before the layout would respond to a wider viewport. Naturally, I was aware that this was only a temporary solution, if a solution at all, but within this project I was able to experiment with altering the position of background shapes at different viewports to fill the empty space in a more appropriate manner.
+Since this was my first time building a project with an official tablet design, it truly opened my eyes to the design possibilites and techniques we may use to accomodate such devices. Up until this point I was relying on increasing font sizes to fill the empty space before the layout would respond for a wider viewport. Naturally I was aware that this wasn't a viable solution, so here I was able to experiment with altering the position of background shapes and allowing line widths to extend further instead.
 
 ```ts
 function validate(e: Event) {
@@ -136,7 +132,7 @@ function validate(e: Event) {
 }
 ```
 
-I was really proud of the dynamic logic that I implemented for validating all the form inputs within this project. Having spent most of my time recently working within the React library, I found myself thinking in a more advanced manner when returning to vanilla JavaScript, especially in regards to using data structures and the methods they come with to perform logic in a more concise syntax.
+I was really proud of the dynamic logic implemented for validating all the form inputs within this project. Having spent most of my time recently working within React, I found myself thinking in a more advanced manner when returning to vanilla Typescript, especially in regards to using data structures and the methods they come with to perform logic in a more concise manner.
 
 ### Continued development
 
