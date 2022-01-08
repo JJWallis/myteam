@@ -70,7 +70,9 @@ $type-scale: (
       ...,
    ),
 );
+```
 
+```scss
 :root {
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};
