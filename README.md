@@ -96,7 +96,7 @@ Since this was my first time building a multi-page website, I decided to use uti
 }
 ```
 
-As explained in the [Useful resources](#useful-resources) section, one of the major features I learnt from Kevin through watching his course on Scrimba, was his use of logical properties (`min()`) to achieve fluid spacing between different screen sizes. This means we don't necessarily have to declare a media query to change that spacing amount manually, but the logical property will dynamically handle this behaviour for us. It also nicely accomodates a landscape orientation for tablet devices which, as demonstrated with the code snippet above, will fluidly respond to maintain a minimum amount of vertical spacing when the viewports height is decreased.
+As explained in the [Useful resources](#useful-resources) section, one of the major features I learnt from Kevin's course was his use of logical properties (`min()`) to achieve fluid spacing between different screen sizes. This means that we don't necessarily have to declare a media query to change that spacing value, but the logical property will dynamically scale for us. It also accomodates for a landscape orientation on tablet devices, which will fluidly respond to maintain a minimum amount of vertical spacing when the viewports' height is decreased.
 
 ```scss
 .header {
