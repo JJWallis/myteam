@@ -49,6 +49,8 @@ Your users should be able to:
 
 ### What I learned
 
+Gitflow - workflow methodology - implement it + document why used it (dev branch (only two branches since not working in a team), .gitignore working now to solve .cache + dist merge issues with Parcel b4)
+
 ```html
 <a class="skip-to-content text-pm-white btn btn--pm" href="#main-content"
    >Skip to main content</a
