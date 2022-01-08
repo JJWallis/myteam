@@ -49,7 +49,7 @@ Your users should be able to:
 
 ### What I learned
 
-Gitflow - workflow methodology - implement it + document why used it (dev branch (only two branches since not working in a team), .gitignore working now to solve .cache + dist merge issues with Parcel b4)
+For this specific project I decided to create an additional 'dev' branch to build out the primary features which would then be merged into the master branch when completed. I realise that when working as part of a bigger team, normally there would be multiple other branches branching off from the dev branch to work on specific features, before being merged back into dev and ultimately into master as either a new update or major version.
 
 ```html
 <a class="skip-to-content text-pm-white btn btn--pm" href="#main-content"
