@@ -8,14 +8,13 @@ function validate(e: Event) {
    const userData: HTMLInputElement[] = Array.from(
       form.querySelectorAll('[data-required="true"]')
    )
-   const errors = userData.filter(
-      (input) => input.value === '' || input.value === null
-   )
+   const errors = userData.filter(({ value }) => value === '' || value === null)
    if (
       !regex.test(email.value) &&
-      !errors.find((input) => input.id === 'input-email')
-   )
+      !errors.find(({ id }) => id === 'input-email')
+   ) {
       errors.push(email)
+   }
    if (errors.length) {
       e.preventDefault()
       errors.forEach((input) => createErrorMsg(input))
